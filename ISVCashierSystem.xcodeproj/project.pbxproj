@@ -16,6 +16,8 @@
 		0085D6ED1E6816AD00BCB29C /* ISVCashierSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */; };
 		00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22AF1E687087004A4D82 /* ISVTabBarController.m */; };
 		00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */; };
+		00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */; };
+		00FE22BD1E6877B0004A4D82 /* ISVMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22BC1E6877B0004A4D82 /* ISVMeViewController.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,10 @@
 		00FE22AF1E687087004A4D82 /* ISVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVTabBarController.m; sourceTree = "<group>"; };
 		00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVNavigationController.h; sourceTree = "<group>"; };
 		00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVNavigationController.m; sourceTree = "<group>"; };
+		00FE22B81E68779F004A4D82 /* ISVHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVHomeViewController.h; sourceTree = "<group>"; };
+		00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVHomeViewController.m; sourceTree = "<group>"; };
+		00FE22BB1E6877B0004A4D82 /* ISVMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVMeViewController.h; sourceTree = "<group>"; };
+		00FE22BC1E6877B0004A4D82 /* ISVMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVMeViewController.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +160,8 @@
 		00FE22AB1E68704A004A4D82 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				00FE22B41E687782004A4D82 /* Home(首页) */,
+				00FE22B61E687782004A4D82 /* Me(我的) */,
 				00FE22AC1E68704A004A4D82 /* Main */,
 			);
 			path = Classes;
@@ -174,6 +182,40 @@
 				00FE22AF1E687087004A4D82 /* ISVTabBarController.m */,
 				00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */,
 				00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00FE22B41E687782004A4D82 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				00FE22B51E687782004A4D82 /* Controller */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		00FE22B51E687782004A4D82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00FE22B81E68779F004A4D82 /* ISVHomeViewController.h */,
+				00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00FE22B61E687782004A4D82 /* Me(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				00FE22B71E687782004A4D82 /* Controller */,
+			);
+			path = "Me(我的)";
+			sourceTree = "<group>";
+		};
+		00FE22B71E687782004A4D82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00FE22BB1E6877B0004A4D82 /* ISVMeViewController.h */,
+				00FE22BC1E6877B0004A4D82 /* ISVMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -378,8 +420,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */,
 				0085D6CF1E6816AD00BCB29C /* ViewController.m in Sources */,
 				0085D6CC1E6816AD00BCB29C /* AppDelegate.m in Sources */,
+				00FE22BD1E6877B0004A4D82 /* ISVMeViewController.m in Sources */,
 				00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */,
 				00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */,
 				0085D6C91E6816AD00BCB29C /* main.m in Sources */,
