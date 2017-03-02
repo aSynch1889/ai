@@ -10,11 +10,12 @@
 		0085D6C91E6816AD00BCB29C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6C81E6816AD00BCB29C /* main.m */; };
 		0085D6CC1E6816AD00BCB29C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6CB1E6816AD00BCB29C /* AppDelegate.m */; };
 		0085D6CF1E6816AD00BCB29C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6CE1E6816AD00BCB29C /* ViewController.m */; };
-		0085D6D21E6816AD00BCB29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085D6D01E6816AD00BCB29C /* Main.storyboard */; };
 		0085D6D41E6816AD00BCB29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0085D6D31E6816AD00BCB29C /* Assets.xcassets */; };
 		0085D6D71E6816AD00BCB29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085D6D51E6816AD00BCB29C /* LaunchScreen.storyboard */; };
 		0085D6E21E6816AD00BCB29C /* ISVCashierSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6E11E6816AD00BCB29C /* ISVCashierSystemTests.m */; };
 		0085D6ED1E6816AD00BCB29C /* ISVCashierSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */; };
+		00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22AF1E687087004A4D82 /* ISVTabBarController.m */; };
+		00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +43,6 @@
 		0085D6CB1E6816AD00BCB29C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0085D6CD1E6816AD00BCB29C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0085D6CE1E6816AD00BCB29C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0085D6D11E6816AD00BCB29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0085D6D31E6816AD00BCB29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0085D6D61E6816AD00BCB29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0085D6D81E6816AD00BCB29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +52,10 @@
 		0085D6E81E6816AD00BCB29C /* ISVCashierSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISVCashierSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISVCashierSystemUITests.m; sourceTree = "<group>"; };
 		0085D6EE1E6816AD00BCB29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FE22AE1E687087004A4D82 /* ISVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVTabBarController.h; sourceTree = "<group>"; };
+		00FE22AF1E687087004A4D82 /* ISVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVTabBarController.m; sourceTree = "<group>"; };
+		00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVNavigationController.h; sourceTree = "<group>"; };
+		00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVNavigationController.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,7 +116,7 @@
 				0085D6CB1E6816AD00BCB29C /* AppDelegate.m */,
 				0085D6CD1E6816AD00BCB29C /* ViewController.h */,
 				0085D6CE1E6816AD00BCB29C /* ViewController.m */,
-				0085D6D01E6816AD00BCB29C /* Main.storyboard */,
+				00FE22AB1E68704A004A4D82 /* Classes */,
 				0085D6D31E6816AD00BCB29C /* Assets.xcassets */,
 				0085D6D51E6816AD00BCB29C /* LaunchScreen.storyboard */,
 				0085D6D81E6816AD00BCB29C /* Info.plist */,
@@ -145,6 +149,33 @@
 				0085D6EE1E6816AD00BCB29C /* Info.plist */,
 			);
 			path = ISVCashierSystemUITests;
+			sourceTree = "<group>";
+		};
+		00FE22AB1E68704A004A4D82 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00FE22AC1E68704A004A4D82 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		00FE22AC1E68704A004A4D82 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				00FE22AD1E68704A004A4D82 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		00FE22AD1E68704A004A4D82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00FE22AE1E687087004A4D82 /* ISVTabBarController.h */,
+				00FE22AF1E687087004A4D82 /* ISVTabBarController.m */,
+				00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */,
+				00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		5F8111660384CBEEB24F4AB8 /* Pods */ = {
@@ -275,7 +306,6 @@
 			files = (
 				0085D6D71E6816AD00BCB29C /* LaunchScreen.storyboard in Resources */,
 				0085D6D41E6816AD00BCB29C /* Assets.xcassets in Resources */,
-				0085D6D21E6816AD00BCB29C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +380,8 @@
 			files = (
 				0085D6CF1E6816AD00BCB29C /* ViewController.m in Sources */,
 				0085D6CC1E6816AD00BCB29C /* AppDelegate.m in Sources */,
+				00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */,
+				00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */,
 				0085D6C91E6816AD00BCB29C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,14 +418,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0085D6D01E6816AD00BCB29C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0085D6D11E6816AD00BCB29C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0085D6D51E6816AD00BCB29C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
