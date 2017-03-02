@@ -36,10 +36,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+
     //初始化项目
-    
+    //
 }
 
 - (void)didReceiveMemoryWarning {
