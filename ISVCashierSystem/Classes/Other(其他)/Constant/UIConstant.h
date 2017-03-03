@@ -51,9 +51,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 // 全局
 #define ISVNavBgColor ISVRGB(70,120,253)
-#define ISVMainlColor ISVRGB(70,120,253) // 全局主色调70,120,253
+//#define ISVMainlColor ISVRGB(70,120,253) // 全局主色调70,120,253
+#define ISVMainlColor UIColorFromHex(0x4678fd) //app用色，顶部条，重要文件，icon
 #define ISVMainlColorFrosted ISVMainlColor  // 磨砂效果
-#define ISVBackgroundColor ISVRGB(242,242,242) //全局背景色
+#define ISVBackgroundColor UIColorFromHex(0xeeedf3) //全局背景色 eeedf3
 #define ISVContraColor ISVRGB(254,145,146)  // 本项目通用粉红色
 
 #define kProjectIconTitColor ISVRGB(60, 198, 119)   // 项目图标绿色
