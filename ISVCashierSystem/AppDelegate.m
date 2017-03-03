@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ISVTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -20,10 +21,9 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+   
+    self.window.rootViewController = [[ISVTabBarController alloc]init];
     [self.window makeKeyAndVisible];
-    
-    ViewController *rootViewController = [[ViewController alloc] init];
-    self.window.rootViewController = rootViewController;
     
     return YES;
 }

@@ -14,9 +14,21 @@
 
 @implementation ISVHomeViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    // Called when the view is about to made visible. Default does nothing
+
+    [super viewWillAppear:animated];
+
+
+
+
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

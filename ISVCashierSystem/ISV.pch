@@ -1,0 +1,17 @@
+//
+//  ISV.pch
+//  ISVCashierSystem
+//
+//  Created by aaaa on 17/3/3.
+//  Copyright © 2017年 ISV Co.,Ltd. All rights reserved.
+//
+
+#ifndef ISV_pch
+#define ISV_pch
+
+#ifdef __OBJC__
+    #import "Constant.h"
+
+#endif
+
+#endif /* ISV_pch */
