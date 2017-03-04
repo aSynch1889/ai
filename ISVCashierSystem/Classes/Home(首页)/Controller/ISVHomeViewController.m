@@ -9,6 +9,7 @@
 #import "ISVHomeViewController.h"
 #import "UIButton+ISVExt.h"
 #import "scanCodeViewController.h"
+#import "salesAnalysisViewController.h"
 @interface ISVHomeViewController ()
 @property(nonatomic, strong)UIButton *collectionBtn;//收款码
 @property(nonatomic, strong)UIButton *scanBtn;//扫一扫
@@ -42,6 +43,13 @@
     scanCodeViewController* scanCodeVC = [[scanCodeViewController alloc]init];
     [self .navigationController pushViewController:scanCodeVC animated:YES];
 }
+
+- (void)aiBtnClick {
+    salesAnalysisViewController *saVC = [[salesAnalysisViewController alloc]init];
+    [self.navigationController pushViewController:saVC animated:YES];
+    
+}
+
 
 - (void)setUp {
     UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, kSCREEN_WIDTH, 140)];
@@ -100,6 +108,8 @@
     self.aiBtn.showsTouchWhenHighlighted = YES;
     [self.aiBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
     [self.aiBtn adjustButtonImageTopAndTitleBottom];
+    [self.aiBtn addTarget:self action:@selector(aiBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
     
     self.addMemberBtn = [[UIButton alloc]init];
     [self.view addSubview:self.addMemberBtn];
