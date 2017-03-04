@@ -8,6 +8,7 @@
 
 #import "ISVMeViewController.h"
 #import "systemSetupViewController.h"
+#import "registerViewController.h"
 @interface ISVMeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray* imageArray;
     NSArray* userInfoCenterArr;
@@ -106,11 +107,8 @@
             
             
         }else if (indexPath.row == 2){
-            
-            
-            
-        }else if (indexPath.row == 3){
-            
+            registerViewController *regVC = [[registerViewController alloc]init];
+            [self.navigationController pushViewController:regVC animated:YES];
         }
     }else if (indexPath.section == 2){
         systemSetupViewController *sysVC = [[systemSetupViewController alloc]init];

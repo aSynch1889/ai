@@ -7,9 +7,10 @@
 //
 
 #import "loginViewController.h"
+#import "loginView.h"
 
 @interface loginViewController ()
-
+@property (nonatomic, strong) loginView *aView;  //实例化一个VView的对象
 @end
 
 @implementation loginViewController
@@ -18,7 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //登录页面
+    _aView = [[loginView alloc]initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)];  //初始化时一定要设置frame，否则VView上的两个按钮将无法被点击
     
+    [_aView viewInit];
+    
+    
+    [self.view addSubview:_aView];
 }
 
 - (void)didReceiveMemoryWarning {
