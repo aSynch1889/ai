@@ -27,7 +27,7 @@
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
     segmentedControl.frame = CGRectMake(0,kNavBarHeight,kSCREEN_WIDTH,44);
     segmentedControl.selectedSegmentIndex = 0;
-//    segmentedControl.tintColor = [UIColor redColor];
+    segmentedControl.tintColor = [UIColor redColor];
     segmentedControl.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:segmentedControl];
     

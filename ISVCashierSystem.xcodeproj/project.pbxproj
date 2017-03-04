@@ -37,6 +37,8 @@
 		00FE238B1E6A92BC004A4D82 /* loginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE238A1E6A92BC004A4D82 /* loginView.m */; };
 		00FE238E1E6B0F95004A4D82 /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE238D1E6B0F95004A4D82 /* homeView.m */; };
 		00FE23911E6B11EB004A4D82 /* scanCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23901E6B11EB004A4D82 /* scanCodeView.m */; };
+		00FE23941E6B1B4F004A4D82 /* changePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23931E6B1B4F004A4D82 /* changePwdViewController.m */; };
+		00FE23981E6B1B92004A4D82 /* changePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23971E6B1B92004A4D82 /* changePwdView.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +124,10 @@
 		00FE238D1E6B0F95004A4D82 /* homeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeView.m; sourceTree = "<group>"; };
 		00FE238F1E6B11EB004A4D82 /* scanCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanCodeView.h; sourceTree = "<group>"; };
 		00FE23901E6B11EB004A4D82 /* scanCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanCodeView.m; sourceTree = "<group>"; };
+		00FE23921E6B1B4F004A4D82 /* changePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changePwdViewController.h; sourceTree = "<group>"; };
+		00FE23931E6B1B4F004A4D82 /* changePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changePwdViewController.m; sourceTree = "<group>"; };
+		00FE23961E6B1B92004A4D82 /* changePwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changePwdView.h; sourceTree = "<group>"; };
+		00FE23971E6B1B92004A4D82 /* changePwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changePwdView.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -283,6 +289,7 @@
 		00FE22B61E687782004A4D82 /* Me(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				00FE23951E6B1B81004A4D82 /* View */,
 				00FE22B71E687782004A4D82 /* Controller */,
 			);
 			path = "Me(我的)";
@@ -295,6 +302,8 @@
 				00FE22BC1E6877B0004A4D82 /* ISVMeViewController.m */,
 				00FE23831E6A89D2004A4D82 /* systemSetupViewController.h */,
 				00FE23841E6A89D2004A4D82 /* systemSetupViewController.m */,
+				00FE23921E6B1B4F004A4D82 /* changePwdViewController.h */,
+				00FE23931E6B1B4F004A4D82 /* changePwdViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -389,6 +398,15 @@
 				00FE23871E6A8C72004A4D82 /* registerView.m */,
 				00FE23891E6A92BC004A4D82 /* loginView.h */,
 				00FE238A1E6A92BC004A4D82 /* loginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00FE23951E6B1B81004A4D82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00FE23961E6B1B92004A4D82 /* changePwdView.h */,
+				00FE23971E6B1B92004A4D82 /* changePwdView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -606,6 +624,7 @@
 				00FE236B1E6A7CD0004A4D82 /* collectionSuccessViewController.m in Sources */,
 				00FE238B1E6A92BC004A4D82 /* loginView.m in Sources */,
 				00FE23881E6A8C72004A4D82 /* registerView.m in Sources */,
+				00FE23941E6B1B4F004A4D82 /* changePwdViewController.m in Sources */,
 				00FE23751E6A8788004A4D82 /* addMemberViewController.m in Sources */,
 				00FE23821E6A8965004A4D82 /* loginViewController.m in Sources */,
 				00FE22C61E69009F004A4D82 /* UIImage+ISVExtension.m in Sources */,
@@ -618,6 +637,7 @@
 				00FE23781E6A8851004A4D82 /* memberManagerViewController.m in Sources */,
 				00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */,
 				00FE235F1E69C6F7004A4D82 /* scanCodeViewController.m in Sources */,
+				00FE23981E6B1B92004A4D82 /* changePwdView.m in Sources */,
 				0085D6C91E6816AD00BCB29C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
