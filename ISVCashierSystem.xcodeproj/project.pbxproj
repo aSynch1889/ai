@@ -28,6 +28,11 @@
 		00FE236B1E6A7CD0004A4D82 /* collectionSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE236A1E6A7CD0004A4D82 /* collectionSuccessViewController.m */; };
 		00FE236E1E6A7E63004A4D82 /* salesAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE236D1E6A7E63004A4D82 /* salesAnalysisViewController.m */; };
 		00FE23721E6A81BC004A4D82 /* salesAnalysisTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23711E6A81BC004A4D82 /* salesAnalysisTableViewCell.m */; };
+		00FE23751E6A8788004A4D82 /* addMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23741E6A8788004A4D82 /* addMemberViewController.m */; };
+		00FE23781E6A8851004A4D82 /* memberManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23771E6A8851004A4D82 /* memberManagerViewController.m */; };
+		00FE237F1E6A893E004A4D82 /* registerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE237E1E6A893E004A4D82 /* registerViewController.m */; };
+		00FE23821E6A8965004A4D82 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23811E6A8965004A4D82 /* loginViewController.m */; };
+		00FE23851E6A89D2004A4D82 /* systemSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23841E6A89D2004A4D82 /* systemSetupViewController.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +100,16 @@
 		00FE236D1E6A7E63004A4D82 /* salesAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = salesAnalysisViewController.m; sourceTree = "<group>"; };
 		00FE23701E6A81BC004A4D82 /* salesAnalysisTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = salesAnalysisTableViewCell.h; sourceTree = "<group>"; };
 		00FE23711E6A81BC004A4D82 /* salesAnalysisTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = salesAnalysisTableViewCell.m; sourceTree = "<group>"; };
+		00FE23731E6A8788004A4D82 /* addMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addMemberViewController.h; sourceTree = "<group>"; };
+		00FE23741E6A8788004A4D82 /* addMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addMemberViewController.m; sourceTree = "<group>"; };
+		00FE23761E6A8851004A4D82 /* memberManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memberManagerViewController.h; sourceTree = "<group>"; };
+		00FE23771E6A8851004A4D82 /* memberManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memberManagerViewController.m; sourceTree = "<group>"; };
+		00FE237D1E6A893E004A4D82 /* registerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registerViewController.h; sourceTree = "<group>"; };
+		00FE237E1E6A893E004A4D82 /* registerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerViewController.m; sourceTree = "<group>"; };
+		00FE23801E6A8965004A4D82 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		00FE23811E6A8965004A4D82 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		00FE23831E6A89D2004A4D82 /* systemSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = systemSetupViewController.h; sourceTree = "<group>"; };
+		00FE23841E6A89D2004A4D82 /* systemSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = systemSetupViewController.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +209,7 @@
 		00FE22AB1E68704A004A4D82 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				00FE23791E6A891B004A4D82 /* login(注册登录) */,
 				00FE22BE1E68FC0D004A4D82 /* Other(其他) */,
 				00FE22B41E687782004A4D82 /* Home(首页) */,
 				00FE22B61E687782004A4D82 /* Me(我的) */,
@@ -244,6 +260,10 @@
 				00FE236A1E6A7CD0004A4D82 /* collectionSuccessViewController.m */,
 				00FE236C1E6A7E63004A4D82 /* salesAnalysisViewController.h */,
 				00FE236D1E6A7E63004A4D82 /* salesAnalysisViewController.m */,
+				00FE23731E6A8788004A4D82 /* addMemberViewController.h */,
+				00FE23741E6A8788004A4D82 /* addMemberViewController.m */,
+				00FE23761E6A8851004A4D82 /* memberManagerViewController.h */,
+				00FE23771E6A8851004A4D82 /* memberManagerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +281,8 @@
 			children = (
 				00FE22BB1E6877B0004A4D82 /* ISVMeViewController.h */,
 				00FE22BC1E6877B0004A4D82 /* ISVMeViewController.m */,
+				00FE23831E6A89D2004A4D82 /* systemSetupViewController.h */,
+				00FE23841E6A89D2004A4D82 /* systemSetupViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +334,41 @@
 			children = (
 				00FE23701E6A81BC004A4D82 /* salesAnalysisTableViewCell.h */,
 				00FE23711E6A81BC004A4D82 /* salesAnalysisTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00FE23791E6A891B004A4D82 /* login(注册登录) */ = {
+			isa = PBXGroup;
+			children = (
+				00FE237A1E6A891B004A4D82 /* Controller */,
+				00FE237B1E6A891B004A4D82 /* Model */,
+				00FE237C1E6A891B004A4D82 /* View */,
+			);
+			path = "login(注册登录)";
+			sourceTree = "<group>";
+		};
+		00FE237A1E6A891B004A4D82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00FE237D1E6A893E004A4D82 /* registerViewController.h */,
+				00FE237E1E6A893E004A4D82 /* registerViewController.m */,
+				00FE23801E6A8965004A4D82 /* loginViewController.h */,
+				00FE23811E6A8965004A4D82 /* loginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00FE237B1E6A891B004A4D82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00FE237C1E6A891B004A4D82 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,17 +576,22 @@
 				00FE235C1E691D60004A4D82 /* UIColor+ISVExtension.m in Sources */,
 				00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */,
 				0085D6CF1E6816AD00BCB29C /* ViewController.m in Sources */,
+				00FE237F1E6A893E004A4D82 /* registerViewController.m in Sources */,
 				00FE236E1E6A7E63004A4D82 /* salesAnalysisViewController.m in Sources */,
 				0085D6CC1E6816AD00BCB29C /* AppDelegate.m in Sources */,
 				00FE23721E6A81BC004A4D82 /* salesAnalysisTableViewCell.m in Sources */,
+				00FE23851E6A89D2004A4D82 /* systemSetupViewController.m in Sources */,
 				00FE22BD1E6877B0004A4D82 /* ISVMeViewController.m in Sources */,
 				00FE236B1E6A7CD0004A4D82 /* collectionSuccessViewController.m in Sources */,
+				00FE23751E6A8788004A4D82 /* addMemberViewController.m in Sources */,
+				00FE23821E6A8965004A4D82 /* loginViewController.m in Sources */,
 				00FE22C61E69009F004A4D82 /* UIImage+ISVExtension.m in Sources */,
 				00FE22CA1E690F80004A4D82 /* ISVHomeModel.m in Sources */,
 				00FE23681E6A790C004A4D82 /* setAmountViewController.m in Sources */,
 				00FE23651E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m in Sources */,
 				00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */,
 				00FE23621E6A5BDD004A4D82 /* UIButton+ISVExt.m in Sources */,
+				00FE23781E6A8851004A4D82 /* memberManagerViewController.m in Sources */,
 				00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */,
 				00FE235F1E69C6F7004A4D82 /* scanCodeViewController.m in Sources */,
 				0085D6C91E6816AD00BCB29C /* main.m in Sources */,

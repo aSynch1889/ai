@@ -10,6 +10,8 @@
 #import "UIButton+ISVExt.h"
 #import "scanCodeViewController.h"
 #import "salesAnalysisViewController.h"
+#import "addMemberViewController.h"
+#import "memberManagerViewController.h"
 @interface ISVHomeViewController ()
 @property(nonatomic, strong)UIButton *collectionBtn;//收款码
 @property(nonatomic, strong)UIButton *scanBtn;//扫一扫
@@ -44,9 +46,29 @@
     [self .navigationController pushViewController:scanCodeVC animated:YES];
 }
 
+/**
+    智能分析
+ */
 - (void)aiBtnClick {
     salesAnalysisViewController *saVC = [[salesAnalysisViewController alloc]init];
     [self.navigationController pushViewController:saVC animated:YES];
+    
+}
+
+/**
+    新增会员
+ */
+- (void)addMemberBtnClick {
+    addMemberViewController *addMemVC = [[addMemberViewController alloc]init];
+    [self.navigationController pushViewController:addMemVC animated:YES];
+}
+
+/**
+    会员管理
+ */
+- (void)memberManagerBtnClick {
+    memberManagerViewController *memMangerVC = [[memberManagerViewController alloc]init];
+    [self.navigationController pushViewController:memMangerVC animated:YES];
     
 }
 
@@ -125,7 +147,7 @@
     [self.addMemberBtn adjustButtonImageRightAndTitleLeft];
     self.addMemberBtn.showsTouchWhenHighlighted = YES;
     [self.addMemberBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
-
+    [self.addMemberBtn addTarget:self action:@selector(addMemberBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     self.memberManagerBtn = [[UIButton alloc]init];
     [self.view addSubview:self.memberManagerBtn];
@@ -142,7 +164,7 @@
     [self.memberManagerBtn adjustButtonImageRightAndTitleLeft];
     
     [self.memberManagerBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
-    
+    [self.memberManagerBtn addTarget:self action:@selector(memberManagerBtnClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 

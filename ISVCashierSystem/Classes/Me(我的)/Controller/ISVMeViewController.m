@@ -7,7 +7,7 @@
 //
 
 #import "ISVMeViewController.h"
-
+#import "systemSetupViewController.h"
 @interface ISVMeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray* imageArray;
     NSArray* userInfoCenterArr;
@@ -98,23 +98,25 @@
 
     
     __weak typeof(self) weakSelf = self;
-    
-    if (indexPath.row == 0) {
-        
-
-        
-        
-    }else if (indexPath.row == 1){
-        
-
-        
-    }else if (indexPath.row == 2){
-        
-
-        
-    }else if (indexPath.row == 3){
-
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            
+        }else if (indexPath.row == 1){
+            
+            
+            
+        }else if (indexPath.row == 2){
+            
+            
+            
+        }else if (indexPath.row == 3){
+            
+        }
+    }else if (indexPath.section == 2){
+        systemSetupViewController *sysVC = [[systemSetupViewController alloc]init];
+        [self.navigationController pushViewController:sysVC animated:YES];
     }
+
 }
 
 #pragma mark - 懒加载
