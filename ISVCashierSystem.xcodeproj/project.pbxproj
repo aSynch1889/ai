@@ -21,6 +21,9 @@
 		00FE22C61E69009F004A4D82 /* UIImage+ISVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22C51E69009F004A4D82 /* UIImage+ISVExtension.m */; };
 		00FE22CA1E690F80004A4D82 /* ISVHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22C91E690F80004A4D82 /* ISVHomeModel.m */; };
 		00FE235C1E691D60004A4D82 /* UIColor+ISVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE235B1E691D60004A4D82 /* UIColor+ISVExtension.m */; };
+		00FE235F1E69C6F7004A4D82 /* scanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE235E1E69C6F7004A4D82 /* scanCodeViewController.m */; };
+		00FE23621E6A5BDD004A4D82 /* UIButton+ISVExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23611E6A5BDD004A4D82 /* UIButton+ISVExt.m */; };
+		00FE23651E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23641E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,12 @@
 		00FE22C91E690F80004A4D82 /* ISVHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVHomeModel.m; sourceTree = "<group>"; };
 		00FE235A1E691D60004A4D82 /* UIColor+ISVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ISVExtension.h"; sourceTree = "<group>"; };
 		00FE235B1E691D60004A4D82 /* UIColor+ISVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ISVExtension.m"; sourceTree = "<group>"; };
+		00FE235D1E69C6F7004A4D82 /* scanCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanCodeViewController.h; sourceTree = "<group>"; };
+		00FE235E1E69C6F7004A4D82 /* scanCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanCodeViewController.m; sourceTree = "<group>"; };
+		00FE23601E6A5BDD004A4D82 /* UIButton+ISVExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ISVExt.h"; sourceTree = "<group>"; };
+		00FE23611E6A5BDD004A4D82 /* UIButton+ISVExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ISVExt.m"; sourceTree = "<group>"; };
+		00FE23631E6A6A69004A4D82 /* UIView+ISVRoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ISVRoundedCorners.h"; sourceTree = "<group>"; };
+		00FE23641E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ISVRoundedCorners.m"; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +223,8 @@
 			children = (
 				00FE22B81E68779F004A4D82 /* ISVHomeViewController.h */,
 				00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */,
+				00FE235D1E69C6F7004A4D82 /* scanCodeViewController.h */,
+				00FE235E1E69C6F7004A4D82 /* scanCodeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +271,10 @@
 				00FE22C51E69009F004A4D82 /* UIImage+ISVExtension.m */,
 				00FE235A1E691D60004A4D82 /* UIColor+ISVExtension.h */,
 				00FE235B1E691D60004A4D82 /* UIColor+ISVExtension.m */,
+				00FE23601E6A5BDD004A4D82 /* UIButton+ISVExt.h */,
+				00FE23611E6A5BDD004A4D82 /* UIButton+ISVExt.m */,
+				00FE23631E6A6A69004A4D82 /* UIView+ISVRoundedCorners.h */,
+				00FE23641E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -480,8 +495,11 @@
 				00FE22BD1E6877B0004A4D82 /* ISVMeViewController.m in Sources */,
 				00FE22C61E69009F004A4D82 /* UIImage+ISVExtension.m in Sources */,
 				00FE22CA1E690F80004A4D82 /* ISVHomeModel.m in Sources */,
+				00FE23651E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m in Sources */,
 				00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */,
+				00FE23621E6A5BDD004A4D82 /* UIButton+ISVExt.m in Sources */,
 				00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */,
+				00FE235F1E69C6F7004A4D82 /* scanCodeViewController.m in Sources */,
 				0085D6C91E6816AD00BCB29C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

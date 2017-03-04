@@ -71,8 +71,10 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     if (indexPath.section == 0) {
-
+//        cell.UITableViewCellStyle = UITableViewCellStyleSubtitle;
+        
     }else if (indexPath.section == 1){
         cell.textLabel.text = userInfoCenterArr[indexPath.row];
         [cell.imageView setImage:[UIImage imageNamed:imageArray[indexPath.row]]];
@@ -80,6 +82,11 @@
         cell.textLabel.text = userInfoCenterArr.lastObject;
         [cell.imageView setImage:[UIImage imageNamed:imageArray.lastObject]];
         
+    }else if (indexPath.section == 3){
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.textLabel.text = @"退出登录";
+        cell.textLabel.textAlignment = NSTextAlignmentCenter;
+        cell.textLabel.textColor = ISVMainlColor;
     }
 
     
