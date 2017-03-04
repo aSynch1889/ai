@@ -22,6 +22,18 @@
     self.title = @"收款成功";
     
     
+    
+    
+}
+
+- (void)setUpUI {
+    self.titleImgView = [[UIImageView alloc]init];
+    [self.view addSubview:self.titleImgView];
+    [self.titleImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.view.mas_top).offset(20);
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

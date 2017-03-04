@@ -49,7 +49,7 @@
         make.height.mas_equalTo(@64);
     }];
     [titleBtn setTitle:@"我要收款" forState:UIControlStateNormal];
-//    [titleBtn setImage:[UIImage imageNamed:@"titleBtn"] forState:UIControlStateNormal];
+    [titleBtn setImage:[UIImage imageNamed:@"titleBtn"] forState:UIControlStateNormal];
     [titleBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
     titleBtn.backgroundColor = ISVBackgroundColor;
     
