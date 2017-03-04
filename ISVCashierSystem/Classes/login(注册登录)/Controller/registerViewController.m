@@ -25,6 +25,14 @@
     
     
     [self.view addSubview:_aView];
+    
+    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [_aView.phoneField resignFirstResponder];
+    [_aView.pwdField resignFirstResponder];
+    [_aView.verField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -35,6 +35,8 @@
 		00FE23851E6A89D2004A4D82 /* systemSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23841E6A89D2004A4D82 /* systemSetupViewController.m */; };
 		00FE23881E6A8C72004A4D82 /* registerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23871E6A8C72004A4D82 /* registerView.m */; };
 		00FE238B1E6A92BC004A4D82 /* loginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE238A1E6A92BC004A4D82 /* loginView.m */; };
+		00FE238E1E6B0F95004A4D82 /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE238D1E6B0F95004A4D82 /* homeView.m */; };
+		00FE23911E6B11EB004A4D82 /* scanCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23901E6B11EB004A4D82 /* scanCodeView.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +118,10 @@
 		00FE23871E6A8C72004A4D82 /* registerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerView.m; sourceTree = "<group>"; };
 		00FE23891E6A92BC004A4D82 /* loginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginView.h; sourceTree = "<group>"; };
 		00FE238A1E6A92BC004A4D82 /* loginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginView.m; sourceTree = "<group>"; };
+		00FE238C1E6B0F95004A4D82 /* homeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeView.h; sourceTree = "<group>"; };
+		00FE238D1E6B0F95004A4D82 /* homeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeView.m; sourceTree = "<group>"; };
+		00FE238F1E6B11EB004A4D82 /* scanCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanCodeView.h; sourceTree = "<group>"; };
+		00FE23901E6B11EB004A4D82 /* scanCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanCodeView.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -340,6 +346,10 @@
 			children = (
 				00FE23701E6A81BC004A4D82 /* salesAnalysisTableViewCell.h */,
 				00FE23711E6A81BC004A4D82 /* salesAnalysisTableViewCell.m */,
+				00FE238C1E6B0F95004A4D82 /* homeView.h */,
+				00FE238D1E6B0F95004A4D82 /* homeView.m */,
+				00FE238F1E6B11EB004A4D82 /* scanCodeView.h */,
+				00FE23901E6B11EB004A4D82 /* scanCodeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -583,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FE23911E6B11EB004A4D82 /* scanCodeView.m in Sources */,
 				00FE235C1E691D60004A4D82 /* UIColor+ISVExtension.m in Sources */,
 				00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */,
 				0085D6CF1E6816AD00BCB29C /* ViewController.m in Sources */,
@@ -601,6 +612,7 @@
 				00FE22CA1E690F80004A4D82 /* ISVHomeModel.m in Sources */,
 				00FE23681E6A790C004A4D82 /* setAmountViewController.m in Sources */,
 				00FE23651E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m in Sources */,
+				00FE238E1E6B0F95004A4D82 /* homeView.m in Sources */,
 				00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */,
 				00FE23621E6A5BDD004A4D82 /* UIButton+ISVExt.m in Sources */,
 				00FE23781E6A8851004A4D82 /* memberManagerViewController.m in Sources */,
