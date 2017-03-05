@@ -27,7 +27,7 @@
     _phoneField.keyboardType = UIKeyboardTypeASCIICapable;
     _phoneField.delegate = self;
     
-    [_phoneField setLeftViewWithImage:@"pwd"];
+    [_phoneField setLeftViewWithImage:@"phone"];
     
     _verField = [[ISVTextField alloc]init];
     [self addSubview:_verField];

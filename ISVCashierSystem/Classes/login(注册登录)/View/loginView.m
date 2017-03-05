@@ -15,13 +15,14 @@
     [self addSubview:_iconView];
     [_iconView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(kNavBarHeight + 10);
-        make.left.mas_equalTo(@0);
-        make.right.mas_equalTo(@0);
-        make.height.mas_equalTo(@44);
+        make.centerX.mas_equalTo(self.mas_centerX);
+        make.width.mas_equalTo(@88);
+        make.height.mas_equalTo(@88);
     }];
-    [_iconView setImage:[UIImage imageNamed:@"ai"]];
+    [_iconView setImage:[UIImage imageNamed:@"userIcon"]];
     
-    _phoneField = [[UITextField alloc]init];
+    
+    _phoneField = [[ISVTextField alloc]init];
     [self addSubview:_phoneField];
     [_phoneField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_iconView.mas_bottom).offset(10);
@@ -34,6 +35,7 @@
     _phoneField.keyboardType = UIKeyboardTypeASCIICapable;
     _phoneField.returnKeyType = UIReturnKeyNext;
     _phoneField.font = ISVFontSize(14);
+    [_phoneField setLeftViewWithImage:@"phone"];
     
     UIView *lineView = [[UIView alloc]init];
     [_phoneField addSubview:lineView];
@@ -45,7 +47,7 @@
     }];
     lineView.backgroundColor = kDefaultLineColor;
     
-    _pwdField = [[UITextField alloc]init];
+    _pwdField = [[ISVTextField alloc]init];
     [self addSubview:_pwdField];
     [_pwdField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_phoneField.mas_bottom).offset(10);
@@ -58,6 +60,7 @@
     _pwdField.keyboardType = UIKeyboardTypeASCIICapable;
     _pwdField.returnKeyType = UIReturnKeyDone;
     _pwdField.font = ISVFontSize(14);
+    [_pwdField setLeftViewWithImage:@"pwd"];
     
     UIView *lineView2 = [[UIView alloc]init];
     [_pwdField addSubview:lineView2];
@@ -108,7 +111,7 @@
     _forgetPwdBtn.titleLabel.font = ISVFontSize(12);
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+- (BOOL)textFieldShouldReturn:(ISVTextField *)textField{
     if (textField == _phoneField) {
         [_phoneField resignFirstResponder];
         [_pwdField becomeFirstResponder];

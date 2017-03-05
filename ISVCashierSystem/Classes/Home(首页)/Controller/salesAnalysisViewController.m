@@ -78,6 +78,11 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    NSLog(@"%ld",(long)indexPath.row);
+}
+
 #pragma mark - 懒加载
 - (UITableView *)dataTableView{
     if (_dataTableView == nil) {
