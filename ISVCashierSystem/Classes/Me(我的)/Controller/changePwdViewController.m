@@ -24,7 +24,7 @@
     
     [_aView viewInit];
     [self.view addSubview:_aView];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"confirmPwd"] style:0 target:self action:@selector(rightClick)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"checked"] style:0 target:self action:@selector(rightClick)];
 }
 
 /**

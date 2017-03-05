@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface retrievePwdView : UIView
-@property (nonatomic, strong)UITextField *phoneField;//!<  手机号码输入框
-@property (nonatomic, strong)UITextField *verField;//!<  验证码输入框
+#import "ISVTextField.h"
+@interface retrievePwdView : UIView<UITextFieldDelegate>
+@property (nonatomic, strong)ISVTextField *phoneField;//!<  手机号码输入框
+@property (nonatomic, strong)ISVTextField *verField;//!<  验证码输入框
 @property (nonatomic, strong)UIButton  *verBtn;//!< 验证码获取
-@property (nonatomic, strong)UITextField *pwdField;//!< 密码输入框
-@property (nonatomic, strong)UITextField *confirmPwdField;//!< 再次输入密码
+@property (nonatomic, strong)ISVTextField *pwdField;//!< 密码输入框
+@property (nonatomic, strong)ISVTextField *confirmPwdField;//!< 再次输入密码
 
 - (void)viewInit;
 

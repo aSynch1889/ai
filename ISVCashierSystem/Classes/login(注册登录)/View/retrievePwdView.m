@@ -11,7 +11,7 @@
 @implementation retrievePwdView
 
 - (void)viewInit {
-    _phoneField = [[UITextField alloc]init];
+    _phoneField = [[ISVTextField alloc]init];
     [self addSubview:_phoneField];
     [_phoneField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(kNavBarHeight + 10);
@@ -23,16 +23,13 @@
     _phoneField.backgroundColor = [UIColor whiteColor];
     _phoneField.layer.cornerRadius = 4;
     _phoneField.layer.masksToBounds = YES;
+    _phoneField.returnKeyType = UIReturnKeyNext;
+    _phoneField.keyboardType = UIKeyboardTypeASCIICapable;
+    _phoneField.delegate = self;
     
-    UIImageView *leftImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
-    leftImageView.contentMode = UIViewContentModeScaleAspectFit;
-    [leftImageView setImage:[UIImage imageNamed:@"pwd"]];
-    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [leftView addSubview:leftImageView];
-    _phoneField.leftView = leftView;
-    _phoneField.leftViewMode = UITextFieldViewModeAlways;
+    [_phoneField setLeftViewWithImage:@"pwd"];
     
-    _verField = [[UITextField alloc]init];
+    _verField = [[ISVTextField alloc]init];
     [self addSubview:_verField];
     [_verField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_phoneField.mas_bottom).offset(10);
@@ -44,6 +41,10 @@
     _verField.backgroundColor = [UIColor whiteColor];
     _verField.layer.cornerRadius = 4;
     _verField.layer.masksToBounds = YES;
+    _verField.returnKeyType = UIReturnKeyNext;
+    _verField.keyboardType = UIKeyboardTypeASCIICapable;
+    _verField.delegate = self;
+    [_verField setLeftViewWithImage:@"pwd"];
     
     _verBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _verBtn.frame = CGRectMake(0, 0, 88, 30);
@@ -58,7 +59,7 @@
     _verField.rightViewMode = UITextFieldViewModeAlways;
 
     
-    _pwdField = [[UITextField alloc]init];
+    _pwdField = [[ISVTextField alloc]init];
     [self addSubview:_pwdField];
     [_pwdField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_verField.mas_bottom).offset(10);
@@ -70,8 +71,12 @@
     _pwdField.backgroundColor = [UIColor whiteColor];
     _pwdField.layer.cornerRadius = 4;
     _pwdField.layer.masksToBounds = YES;
+    _pwdField.returnKeyType = UIReturnKeyNext;
+    _pwdField.keyboardType = UIKeyboardTypeASCIICapable;
+    _pwdField.delegate = self;
+    [_pwdField setLeftViewWithImage:@"pwd"];
     
-    _confirmPwdField = [[UITextField alloc]init];
+    _confirmPwdField = [[ISVTextField alloc]init];
     [self addSubview:_confirmPwdField];
     [_confirmPwdField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_pwdField.mas_bottom).offset(10);
@@ -83,6 +88,28 @@
     _confirmPwdField.backgroundColor = [UIColor whiteColor];
     _confirmPwdField.layer.cornerRadius = 4;
     _confirmPwdField.layer.masksToBounds = YES;
+    _confirmPwdField.returnKeyType = UIReturnKeyDone;
+    _confirmPwdField.keyboardType = UIKeyboardTypeASCIICapable;
+    _confirmPwdField.delegate = self;
+    [_confirmPwdField setLeftViewWithImage:@"confirmPwd"];
+
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    if (textField == _phoneField) {
+        [_phoneField resignFirstResponder];
+        [_verField becomeFirstResponder];
+    }else if (textField == _verField){
+        [_verField resignFirstResponder];
+        [_pwdField becomeFirstResponder];
+    }else if (textField == _pwdField){
+        [_pwdField resignFirstResponder];
+        [_confirmPwdField becomeFirstResponder];
+    }else if (textField == _confirmPwdField){
+        [_confirmPwdField resignFirstResponder];
+        
+    }
+    return YES;
 }
 
 @end

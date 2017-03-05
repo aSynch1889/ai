@@ -124,14 +124,24 @@ static NSString * const kPlacerholderColorKeyPath = @"_placeholderLabel.textColo
     [self setNeedsLayout];
 }
 
--(CGRect)textRectForBounds:(CGRect)bounds{
-    return CGRectInset(bounds, 10, 0);
-    
+- (void)setLeftViewWithImage:(NSString *)imgName{
+    UIImageView *leftImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    leftImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [leftImageView setImage:[UIImage imageNamed:imgName]];
+    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [leftView addSubview:leftImageView];
+    self.leftView = leftView;
+    self.leftViewMode = UITextFieldViewModeAlways;
 }
 
--(CGRect)editingRectForBounds:(CGRect)bounds{
-    return CGRectInset(bounds, 10, 0);
-    
-}
+//-(CGRect)textRectForBounds:(CGRect)bounds{
+//    return CGRectInset(bounds, 10, 0);
+//    
+//}
+//
+//-(CGRect)editingRectForBounds:(CGRect)bounds{
+//    return CGRectInset(bounds, 10, 0);
+//    
+//}
 
 @end

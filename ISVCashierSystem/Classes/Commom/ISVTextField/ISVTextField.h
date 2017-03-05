@@ -19,5 +19,5 @@ typedef void(^overflowBlock)(ISVTextField *textField, NSString *toString);
 
 // 保持一定字符个数
 - (void)keepToLength:(NSInteger)length inputBlock:(inputBlock)inputBlock overflowBlock:(overflowBlock)overflowBlock;
-
+- (void)setLeftViewWithImage:(NSString *)imgName;
 @end

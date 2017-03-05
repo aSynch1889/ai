@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ISVTextField.h"
 @interface changePwdView : UIView<UITextFieldDelegate>
 
-@property(nonatomic, strong)UITextField *oldPwdField;//!<  旧密码
-@property(nonatomic, strong)UITextField *pwdField;//!<  新密码
-@property(nonatomic, strong)UITextField *confirmPwdField;//!<  再次输入新密码
+@property(nonatomic, strong)ISVTextField *oldPwdField;//!<  旧密码
+@property(nonatomic, strong)ISVTextField *pwdField;//!<  新密码
+@property(nonatomic, strong)ISVTextField *confirmPwdField;//!<  再次输入新密码
 
 - (void)viewInit;
 
