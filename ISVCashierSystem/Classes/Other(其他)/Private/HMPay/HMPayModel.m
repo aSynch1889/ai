@@ -143,14 +143,16 @@
 - (id)initWithCoder:(NSCoder *)decoder
 {
     if (self = [super init]) {
-        [self decode:decoder];
+#warning decode
+//        [self decode:decoder];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
-    [self encode:encoder];
+#warning decode
+    //    [self encode:encoder];
 }
 
 

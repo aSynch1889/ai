@@ -16,6 +16,10 @@ pod 'Aspects'
 
 pod 'OpenSSL'
 
+pod 'SVProgressHUD'
+
+pod 'JTSImageViewController'
+
 end
 
 

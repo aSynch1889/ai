@@ -12,6 +12,7 @@
 #ifdef __OBJC__
     #import "Constant.h"
     #import "UIView+HMExtension.h"
+    #import "UIControl+HMPreventRepeatClick.h"
 #endif
 
 #endif /* ISV_pch */

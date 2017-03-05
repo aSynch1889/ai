@@ -17,7 +17,6 @@
 #import "Base64.h"
 #import "HMNetworking+UserCenter.h"
 #import "HMHUD.h"
-#import "HMRuleTool.h"
 
 static NSString * const publicKeyStr = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAIinxzq7wEx9fEKjQ1xez0U/5\n8l7ebLntaVHOdkNhhwFjOTZBozmomKLf8G5oTL+BjM+DiHVjxbxKs1uES2SSKNTx\n59qw5UGsowbRPcI6XzcHMsbLD3CvFdStQ+ilj4zALK+Nwgs1510bRvQE9PYX2+pa\nmAmgMhuNZ2C8oMabaQIDAQAB\n-----END PUBLIC KEY-----\n";
 
@@ -64,15 +63,7 @@ static NSString * const publicKeyStr = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSq
     __weak typeof(viewController) weakVC = viewController;
     [self showScanControllWithViewController:viewController completeBlock:^(HMQRCodeToolRule foromRule, NSString *value) {
         
-        if (foromRule == HMQRCodeToolRuleAddFriend) {// 添加好友
-            [HMRuleTool ruleForAddFriendWithViewController:weakVC userID:value];
-        }else if(foromRule == HMQRCodeToolRuleJoinTribe){// 加入群
-            [HMRuleTool ruleForJoinTribeWithViewController:weakVC userID:value];
-        }else if(foromRule == HMQRCodeToolRuleWeb){// 浏览器(加密)
-            [HMRuleTool ruleForWebWithViewController:weakVC urlString:value];
-        }else if(foromRule == HMQRCodeToolRuleOther){// 浏览器(未加密)
-            [HMRuleTool ruleForOtherWithViewController:weakVC urlString:value];
-        }
+
     }];
 }
 

@@ -44,16 +44,6 @@
 		00FE23A11E6BAA0A004A4D82 /* setAmoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23A01E6BAA0A004A4D82 /* setAmoutView.m */; };
 		00FE25971E6BB8C0004A4D82 /* libmtasdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE23C11E6BB8C0004A4D82 /* libmtasdk.a */; };
 		00FE25981E6BB8C0004A4D82 /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23C71E6BB8C0004A4D82 /* pinyin.m */; };
-		00FE25991E6BB8C0004A4D82 /* NSArray+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23CB1E6BB8C0004A4D82 /* NSArray+SQL.m */; };
-		00FE259A1E6BB8C0004A4D82 /* NSDate+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23CD1E6BB8C0004A4D82 /* NSDate+SQL.m */; };
-		00FE259B1E6BB8C0004A4D82 /* NSDictionary+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23CF1E6BB8C0004A4D82 /* NSDictionary+SQL.m */; };
-		00FE259C1E6BB8C0004A4D82 /* NSNumber+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23D11E6BB8C0004A4D82 /* NSNumber+SQL.m */; };
-		00FE259D1E6BB8C0004A4D82 /* NSString+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23D31E6BB8C0004A4D82 /* NSString+SQL.m */; };
-		00FE259E1E6BB8C0004A4D82 /* NSValue+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23D51E6BB8C0004A4D82 /* NSValue+SQL.m */; };
-		00FE259F1E6BB8C0004A4D82 /* NSObject+PPSqliteORM.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23D71E6BB8C0004A4D82 /* NSObject+PPSqliteORM.m */; };
-		00FE25A01E6BB8C0004A4D82 /* PPSqliteORMError.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23DA1E6BB8C0004A4D82 /* PPSqliteORMError.m */; };
-		00FE25A11E6BB8C0004A4D82 /* PPSqliteORMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23DC1E6BB8C0004A4D82 /* PPSqliteORMManager.m */; };
-		00FE25A21E6BB8C0004A4D82 /* PPSqliteORMSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23DF1E6BB8C0004A4D82 /* PPSqliteORMSQL.m */; };
 		00FE25A31E6BB8C0004A4D82 /* TaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23E31E6BB8C0004A4D82 /* TaskManager.m */; };
 		00FE25A41E6BB8C0004A4D82 /* libTXYUploader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE23E81E6BB8C0004A4D82 /* libTXYUploader.a */; };
 		00FE25A51E6BB8C0004A4D82 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23EB1E6BB8C0004A4D82 /* Base64.m */; };
@@ -332,11 +322,6 @@
 		00FE281F1E6BBA5C004A4D82 /* HMSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27671E6BBA5B004A4D82 /* HMSegmentedView.m */; };
 		00FE28201E6BBA5C004A4D82 /* HMItemServerBuuton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE276A1E6BBA5B004A4D82 /* HMItemServerBuuton.m */; };
 		00FE28211E6BBA5C004A4D82 /* HMServeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE276C1E6BBA5B004A4D82 /* HMServeView.m */; };
-		00FE28221E6BBA5C004A4D82 /* HMEasyHitBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE276F1E6BBA5B004A4D82 /* HMEasyHitBtn.m */; };
-		00FE28231E6BBA5C004A4D82 /* HMHollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27711E6BBA5B004A4D82 /* HMHollowButton.m */; };
-		00FE28241E6BBA5C004A4D82 /* HMItemChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27731E6BBA5B004A4D82 /* HMItemChooseView.m */; };
-		00FE28251E6BBA5C004A4D82 /* HMSortBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27751E6BBA5B004A4D82 /* HMSortBarCell.m */; };
-		00FE28261E6BBA5C004A4D82 /* HMSortChooseBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27771E6BBA5B004A4D82 /* HMSortChooseBar.m */; };
 		00FE28271E6BBA5C004A4D82 /* HMStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE277A1E6BBA5B004A4D82 /* HMStarRatingView.m */; };
 		00FE282A1E6BBA5C004A4D82 /* HMStretchableTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27821E6BBA5B004A4D82 /* HMStretchableTableHeaderView.m */; };
 		00FE282B1E6BBA5C004A4D82 /* HMSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27851E6BBA5B004A4D82 /* HMSwitch.m */; };
@@ -345,11 +330,6 @@
 		00FE282E1E6BBA5C004A4D82 /* HMTabBarForUpActiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FE278C1E6BBA5B004A4D82 /* HMTabBarForUpActiveTab.png */; };
 		00FE282F1E6BBA5C004A4D82 /* HMTabBarForUpInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FE278D1E6BBA5B004A4D82 /* HMTabBarForUpInactiveTab.png */; };
 		00FE28301E6BBA5C004A4D82 /* HMTabBarForUpIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FE278E1E6BBA5B004A4D82 /* HMTabBarForUpIndicator.png */; };
-		00FE28311E6BBA5C004A4D82 /* HMCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27921E6BBA5B004A4D82 /* HMCheck.m */; };
-		00FE28321E6BBA5C004A4D82 /* HMCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27941E6BBA5B004A4D82 /* HMCheckCell.m */; };
-		00FE28331E6BBA5C004A4D82 /* HMCheckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00FE27951E6BBA5B004A4D82 /* HMCheckCell.xib */; };
-		00FE28341E6BBA5C004A4D82 /* HMCheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27981E6BBA5B004A4D82 /* HMCheckView.m */; };
-		00FE28351E6BBA5C004A4D82 /* HMCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE279A1E6BBA5B004A4D82 /* HMCheckViewController.m */; };
 		00FE28361E6BBA5C004A4D82 /* HMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE279D1E6BBA5B004A4D82 /* HMTextField.m */; };
 		00FE28371E6BBA5C004A4D82 /* HMVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27A01E6BBA5B004A4D82 /* HMVerticalView.m */; };
 		00FE28391E6BBA5C004A4D82 /* HMPayWayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27A61E6BBA5B004A4D82 /* HMPayWayModel.m */; };
@@ -412,15 +392,11 @@
 		00FE29091E6BC4CB004A4D82 /* HMFormVerifyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28EC1E6BC4CB004A4D82 /* HMFormVerifyTool.m */; };
 		00FE290A1E6BC4CB004A4D82 /* HMKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28EE1E6BC4CB004A4D82 /* HMKeyChain.m */; };
 		00FE290C1E6BC4CB004A4D82 /* HMPlaySoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28F21E6BC4CB004A4D82 /* HMPlaySoundTool.m */; };
-		00FE290D1E6BC4CB004A4D82 /* HMRuleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28F41E6BC4CB004A4D82 /* HMRuleTool.m */; };
-		00FE290E1E6BC4CB004A4D82 /* HMShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28F61E6BC4CB004A4D82 /* HMShareTool.m */; };
 		00FE290F1E6BC4CB004A4D82 /* HMSystemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28F81E6BC4CB004A4D82 /* HMSystemTool.m */; };
-		00FE29101E6BC4CB004A4D82 /* HMUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28FA1E6BC4CB004A4D82 /* HMUrlManager.m */; };
 		00FE29111E6BC4CB004A4D82 /* HMUserDefaultTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28FC1E6BC4CB004A4D82 /* HMUserDefaultTool.m */; };
 		00FE29121E6BC4CB004A4D82 /* HMUserInterfaceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28FE1E6BC4CB004A4D82 /* HMUserInterfaceTool.m */; };
 		00FE29131E6BC4CB004A4D82 /* HMUserTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE29001E6BC4CB004A4D82 /* HMUserTokenManager.m */; };
 		00FE29161E6BC4CB004A4D82 /* PlaySoundUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE29061E6BC4CB004A4D82 /* PlaySoundUtil.m */; };
-		00FE291E1E6BC573004A4D82 /* HMPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE29191E6BC573004A4D82 /* HMPay.m */; };
 		00FE291F1E6BC573004A4D82 /* HMPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE291B1E6BC573004A4D82 /* HMPayModel.m */; };
 		00FE29201E6BC573004A4D82 /* HMPayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE291D1E6BC573004A4D82 /* HMPayResult.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
@@ -524,28 +500,6 @@
 		00FE23C41E6BB8C0004A4D82 /* MTAFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAFeedback.h; sourceTree = "<group>"; };
 		00FE23C61E6BB8C0004A4D82 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		00FE23C71E6BB8C0004A4D82 /* pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinyin.m; sourceTree = "<group>"; };
-		00FE23CA1E6BB8C0004A4D82 /* NSArray+SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SQL.h"; sourceTree = "<group>"; };
-		00FE23CB1E6BB8C0004A4D82 /* NSArray+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SQL.m"; sourceTree = "<group>"; };
-		00FE23CC1E6BB8C0004A4D82 /* NSDate+SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SQL.h"; sourceTree = "<group>"; };
-		00FE23CD1E6BB8C0004A4D82 /* NSDate+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SQL.m"; sourceTree = "<group>"; };
-		00FE23CE1E6BB8C0004A4D82 /* NSDictionary+SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SQL.h"; sourceTree = "<group>"; };
-		00FE23CF1E6BB8C0004A4D82 /* NSDictionary+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SQL.m"; sourceTree = "<group>"; };
-		00FE23D01E6BB8C0004A4D82 /* NSNumber+SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SQL.h"; sourceTree = "<group>"; };
-		00FE23D11E6BB8C0004A4D82 /* NSNumber+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SQL.m"; sourceTree = "<group>"; };
-		00FE23D21E6BB8C0004A4D82 /* NSString+SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SQL.h"; sourceTree = "<group>"; };
-		00FE23D31E6BB8C0004A4D82 /* NSString+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SQL.m"; sourceTree = "<group>"; };
-		00FE23D41E6BB8C0004A4D82 /* NSValue+SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+SQL.h"; sourceTree = "<group>"; };
-		00FE23D51E6BB8C0004A4D82 /* NSValue+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+SQL.m"; sourceTree = "<group>"; };
-		00FE23D61E6BB8C0004A4D82 /* NSObject+PPSqliteORM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PPSqliteORM.h"; sourceTree = "<group>"; };
-		00FE23D71E6BB8C0004A4D82 /* NSObject+PPSqliteORM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PPSqliteORM.m"; sourceTree = "<group>"; };
-		00FE23D81E6BB8C0004A4D82 /* PPSqliteORM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSqliteORM.h; sourceTree = "<group>"; };
-		00FE23D91E6BB8C0004A4D82 /* PPSqliteORMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSqliteORMError.h; sourceTree = "<group>"; };
-		00FE23DA1E6BB8C0004A4D82 /* PPSqliteORMError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSqliteORMError.m; sourceTree = "<group>"; };
-		00FE23DB1E6BB8C0004A4D82 /* PPSqliteORMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSqliteORMManager.h; sourceTree = "<group>"; };
-		00FE23DC1E6BB8C0004A4D82 /* PPSqliteORMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSqliteORMManager.m; sourceTree = "<group>"; };
-		00FE23DD1E6BB8C0004A4D82 /* PPSqliteORMProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSqliteORMProtocol.h; sourceTree = "<group>"; };
-		00FE23DE1E6BB8C0004A4D82 /* PPSqliteORMSQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSqliteORMSQL.h; sourceTree = "<group>"; };
-		00FE23DF1E6BB8C0004A4D82 /* PPSqliteORMSQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSqliteORMSQL.m; sourceTree = "<group>"; };
 		00FE23E21E6BB8C0004A4D82 /* TaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskManager.h; sourceTree = "<group>"; };
 		00FE23E31E6BB8C0004A4D82 /* TaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskManager.m; sourceTree = "<group>"; };
 		00FE23E61E6BB8C0004A4D82 /* TXYBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXYBase.h; sourceTree = "<group>"; };
@@ -1097,16 +1051,6 @@
 		00FE276A1E6BBA5B004A4D82 /* HMItemServerBuuton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMItemServerBuuton.m; sourceTree = "<group>"; };
 		00FE276B1E6BBA5B004A4D82 /* HMServeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMServeView.h; sourceTree = "<group>"; };
 		00FE276C1E6BBA5B004A4D82 /* HMServeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMServeView.m; sourceTree = "<group>"; };
-		00FE276E1E6BBA5B004A4D82 /* HMEasyHitBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMEasyHitBtn.h; sourceTree = "<group>"; };
-		00FE276F1E6BBA5B004A4D82 /* HMEasyHitBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMEasyHitBtn.m; sourceTree = "<group>"; };
-		00FE27701E6BBA5B004A4D82 /* HMHollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMHollowButton.h; sourceTree = "<group>"; };
-		00FE27711E6BBA5B004A4D82 /* HMHollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMHollowButton.m; sourceTree = "<group>"; };
-		00FE27721E6BBA5B004A4D82 /* HMItemChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMItemChooseView.h; sourceTree = "<group>"; };
-		00FE27731E6BBA5B004A4D82 /* HMItemChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMItemChooseView.m; sourceTree = "<group>"; };
-		00FE27741E6BBA5B004A4D82 /* HMSortBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSortBarCell.h; sourceTree = "<group>"; };
-		00FE27751E6BBA5B004A4D82 /* HMSortBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSortBarCell.m; sourceTree = "<group>"; };
-		00FE27761E6BBA5B004A4D82 /* HMSortChooseBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSortChooseBar.h; sourceTree = "<group>"; };
-		00FE27771E6BBA5B004A4D82 /* HMSortChooseBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSortChooseBar.m; sourceTree = "<group>"; };
 		00FE27791E6BBA5B004A4D82 /* HMStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStarRatingView.h; sourceTree = "<group>"; };
 		00FE277A1E6BBA5B004A4D82 /* HMStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStarRatingView.m; sourceTree = "<group>"; };
 		00FE27811E6BBA5B004A4D82 /* HMStretchableTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStretchableTableHeaderView.h; sourceTree = "<group>"; };
@@ -1120,16 +1064,6 @@
 		00FE278C1E6BBA5B004A4D82 /* HMTabBarForUpActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HMTabBarForUpActiveTab.png; sourceTree = "<group>"; };
 		00FE278D1E6BBA5B004A4D82 /* HMTabBarForUpInactiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HMTabBarForUpInactiveTab.png; sourceTree = "<group>"; };
 		00FE278E1E6BBA5B004A4D82 /* HMTabBarForUpIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HMTabBarForUpIndicator.png; sourceTree = "<group>"; };
-		00FE27911E6BBA5B004A4D82 /* HMCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCheck.h; sourceTree = "<group>"; };
-		00FE27921E6BBA5B004A4D82 /* HMCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCheck.m; sourceTree = "<group>"; };
-		00FE27931E6BBA5B004A4D82 /* HMCheckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCheckCell.h; sourceTree = "<group>"; };
-		00FE27941E6BBA5B004A4D82 /* HMCheckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCheckCell.m; sourceTree = "<group>"; };
-		00FE27951E6BBA5B004A4D82 /* HMCheckCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMCheckCell.xib; sourceTree = "<group>"; };
-		00FE27961E6BBA5B004A4D82 /* HMCheckPotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCheckPotocol.h; sourceTree = "<group>"; };
-		00FE27971E6BBA5B004A4D82 /* HMCheckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCheckView.h; sourceTree = "<group>"; };
-		00FE27981E6BBA5B004A4D82 /* HMCheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCheckView.m; sourceTree = "<group>"; };
-		00FE27991E6BBA5B004A4D82 /* HMCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCheckViewController.h; sourceTree = "<group>"; };
-		00FE279A1E6BBA5B004A4D82 /* HMCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCheckViewController.m; sourceTree = "<group>"; };
 		00FE279C1E6BBA5B004A4D82 /* HMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTextField.h; sourceTree = "<group>"; };
 		00FE279D1E6BBA5B004A4D82 /* HMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTextField.m; sourceTree = "<group>"; };
 		00FE279F1E6BBA5B004A4D82 /* HMVerticalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMVerticalView.h; sourceTree = "<group>"; };
@@ -1256,14 +1190,8 @@
 		00FE28EE1E6BC4CB004A4D82 /* HMKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMKeyChain.m; sourceTree = "<group>"; };
 		00FE28F11E6BC4CB004A4D82 /* HMPlaySoundTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPlaySoundTool.h; sourceTree = "<group>"; };
 		00FE28F21E6BC4CB004A4D82 /* HMPlaySoundTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPlaySoundTool.m; sourceTree = "<group>"; };
-		00FE28F31E6BC4CB004A4D82 /* HMRuleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMRuleTool.h; sourceTree = "<group>"; };
-		00FE28F41E6BC4CB004A4D82 /* HMRuleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMRuleTool.m; sourceTree = "<group>"; };
-		00FE28F51E6BC4CB004A4D82 /* HMShareTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMShareTool.h; sourceTree = "<group>"; };
-		00FE28F61E6BC4CB004A4D82 /* HMShareTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMShareTool.m; sourceTree = "<group>"; };
 		00FE28F71E6BC4CB004A4D82 /* HMSystemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSystemTool.h; sourceTree = "<group>"; };
 		00FE28F81E6BC4CB004A4D82 /* HMSystemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSystemTool.m; sourceTree = "<group>"; };
-		00FE28F91E6BC4CB004A4D82 /* HMUrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMUrlManager.h; sourceTree = "<group>"; };
-		00FE28FA1E6BC4CB004A4D82 /* HMUrlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMUrlManager.m; sourceTree = "<group>"; };
 		00FE28FB1E6BC4CB004A4D82 /* HMUserDefaultTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMUserDefaultTool.h; sourceTree = "<group>"; };
 		00FE28FC1E6BC4CB004A4D82 /* HMUserDefaultTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMUserDefaultTool.m; sourceTree = "<group>"; };
 		00FE28FD1E6BC4CB004A4D82 /* HMUserInterfaceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMUserInterfaceTool.h; sourceTree = "<group>"; };
@@ -1272,8 +1200,6 @@
 		00FE29001E6BC4CB004A4D82 /* HMUserTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMUserTokenManager.m; sourceTree = "<group>"; };
 		00FE29051E6BC4CB004A4D82 /* PlaySoundUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySoundUtil.h; sourceTree = "<group>"; };
 		00FE29061E6BC4CB004A4D82 /* PlaySoundUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySoundUtil.m; sourceTree = "<group>"; };
-		00FE29181E6BC573004A4D82 /* HMPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPay.h; sourceTree = "<group>"; };
-		00FE29191E6BC573004A4D82 /* HMPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPay.m; sourceTree = "<group>"; };
 		00FE291A1E6BC573004A4D82 /* HMPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPayModel.h; sourceTree = "<group>"; };
 		00FE291B1E6BC573004A4D82 /* HMPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPayModel.m; sourceTree = "<group>"; };
 		00FE291C1E6BC573004A4D82 /* HMPayResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPayResult.h; sourceTree = "<group>"; };
@@ -1670,14 +1596,8 @@
 				00FE28EE1E6BC4CB004A4D82 /* HMKeyChain.m */,
 				00FE28F11E6BC4CB004A4D82 /* HMPlaySoundTool.h */,
 				00FE28F21E6BC4CB004A4D82 /* HMPlaySoundTool.m */,
-				00FE28F31E6BC4CB004A4D82 /* HMRuleTool.h */,
-				00FE28F41E6BC4CB004A4D82 /* HMRuleTool.m */,
-				00FE28F51E6BC4CB004A4D82 /* HMShareTool.h */,
-				00FE28F61E6BC4CB004A4D82 /* HMShareTool.m */,
 				00FE28F71E6BC4CB004A4D82 /* HMSystemTool.h */,
 				00FE28F81E6BC4CB004A4D82 /* HMSystemTool.m */,
-				00FE28F91E6BC4CB004A4D82 /* HMUrlManager.h */,
-				00FE28FA1E6BC4CB004A4D82 /* HMUrlManager.m */,
 				00FE28FB1E6BC4CB004A4D82 /* HMUserDefaultTool.h */,
 				00FE28FC1E6BC4CB004A4D82 /* HMUserDefaultTool.m */,
 				00FE28FD1E6BC4CB004A4D82 /* HMUserInterfaceTool.h */,
@@ -1705,7 +1625,6 @@
 				00FE283C1E6BBAFF004A4D82 /* ISVPush */,
 				00FE23C01E6BB8C0004A4D82 /* MTA-1.4.10 */,
 				00FE23C51E6BB8C0004A4D82 /* pinYin */,
-				00FE23C81E6BB8C0004A4D82 /* PPSqliteORM */,
 				00FE23E01E6BB8C0004A4D82 /* QCloudSDK-v1.1.3 */,
 				00FE23E91E6BB8C0004A4D82 /* RSA */,
 				00FE23F21E6BB8C0004A4D82 /* UMSAgent */,
@@ -1734,43 +1653,6 @@
 				00FE23C71E6BB8C0004A4D82 /* pinyin.m */,
 			);
 			path = pinYin;
-			sourceTree = "<group>";
-		};
-		00FE23C81E6BB8C0004A4D82 /* PPSqliteORM */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23C91E6BB8C0004A4D82 /* Mappings */,
-				00FE23D61E6BB8C0004A4D82 /* NSObject+PPSqliteORM.h */,
-				00FE23D71E6BB8C0004A4D82 /* NSObject+PPSqliteORM.m */,
-				00FE23D81E6BB8C0004A4D82 /* PPSqliteORM.h */,
-				00FE23D91E6BB8C0004A4D82 /* PPSqliteORMError.h */,
-				00FE23DA1E6BB8C0004A4D82 /* PPSqliteORMError.m */,
-				00FE23DB1E6BB8C0004A4D82 /* PPSqliteORMManager.h */,
-				00FE23DC1E6BB8C0004A4D82 /* PPSqliteORMManager.m */,
-				00FE23DD1E6BB8C0004A4D82 /* PPSqliteORMProtocol.h */,
-				00FE23DE1E6BB8C0004A4D82 /* PPSqliteORMSQL.h */,
-				00FE23DF1E6BB8C0004A4D82 /* PPSqliteORMSQL.m */,
-			);
-			path = PPSqliteORM;
-			sourceTree = "<group>";
-		};
-		00FE23C91E6BB8C0004A4D82 /* Mappings */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23CA1E6BB8C0004A4D82 /* NSArray+SQL.h */,
-				00FE23CB1E6BB8C0004A4D82 /* NSArray+SQL.m */,
-				00FE23CC1E6BB8C0004A4D82 /* NSDate+SQL.h */,
-				00FE23CD1E6BB8C0004A4D82 /* NSDate+SQL.m */,
-				00FE23CE1E6BB8C0004A4D82 /* NSDictionary+SQL.h */,
-				00FE23CF1E6BB8C0004A4D82 /* NSDictionary+SQL.m */,
-				00FE23D01E6BB8C0004A4D82 /* NSNumber+SQL.h */,
-				00FE23D11E6BB8C0004A4D82 /* NSNumber+SQL.m */,
-				00FE23D21E6BB8C0004A4D82 /* NSString+SQL.h */,
-				00FE23D31E6BB8C0004A4D82 /* NSString+SQL.m */,
-				00FE23D41E6BB8C0004A4D82 /* NSValue+SQL.h */,
-				00FE23D51E6BB8C0004A4D82 /* NSValue+SQL.m */,
-			);
-			path = Mappings;
 			sourceTree = "<group>";
 		};
 		00FE23E01E6BB8C0004A4D82 /* QCloudSDK-v1.1.3 */ = {
@@ -2462,12 +2344,10 @@
 				00FE27621E6BBA5B004A4D82 /* ISVSearchBar */,
 				00FE27651E6BBA5B004A4D82 /* ISVSegmentedView */,
 				00FE27681E6BBA5B004A4D82 /* ISVServeView */,
-				00FE276D1E6BBA5B004A4D82 /* ISVSortChooseBar */,
 				00FE27781E6BBA5B004A4D82 /* ISVStarRatingView */,
 				00FE27801E6BBA5B004A4D82 /* ISVStretchableTableHeaderView */,
 				00FE27831E6BBA5B004A4D82 /* ISVSwitchView */,
 				00FE27881E6BBA5B004A4D82 /* ISVTabBarForUpViewController */,
-				00FE278F1E6BBA5B004A4D82 /* ISVTableView */,
 				00FE279B1E6BBA5B004A4D82 /* ISVTextField */,
 				00FE279E1E6BBA5B004A4D82 /* ISVVerticalView */,
 				00FE27A41E6BBA5B004A4D82 /* PayWayPanelView(支付方式) */,
@@ -2845,23 +2725,6 @@
 			path = ISVServeView;
 			sourceTree = "<group>";
 		};
-		00FE276D1E6BBA5B004A4D82 /* ISVSortChooseBar */ = {
-			isa = PBXGroup;
-			children = (
-				00FE276E1E6BBA5B004A4D82 /* HMEasyHitBtn.h */,
-				00FE276F1E6BBA5B004A4D82 /* HMEasyHitBtn.m */,
-				00FE27701E6BBA5B004A4D82 /* HMHollowButton.h */,
-				00FE27711E6BBA5B004A4D82 /* HMHollowButton.m */,
-				00FE27721E6BBA5B004A4D82 /* HMItemChooseView.h */,
-				00FE27731E6BBA5B004A4D82 /* HMItemChooseView.m */,
-				00FE27741E6BBA5B004A4D82 /* HMSortBarCell.h */,
-				00FE27751E6BBA5B004A4D82 /* HMSortBarCell.m */,
-				00FE27761E6BBA5B004A4D82 /* HMSortChooseBar.h */,
-				00FE27771E6BBA5B004A4D82 /* HMSortChooseBar.m */,
-			);
-			path = ISVSortChooseBar;
-			sourceTree = "<group>";
-		};
 		00FE27781E6BBA5B004A4D82 /* ISVStarRatingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2909,31 +2772,6 @@
 				00FE278E1E6BBA5B004A4D82 /* HMTabBarForUpIndicator.png */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		00FE278F1E6BBA5B004A4D82 /* ISVTableView */ = {
-			isa = PBXGroup;
-			children = (
-				00FE27901E6BBA5B004A4D82 /* HMCheckView */,
-			);
-			path = ISVTableView;
-			sourceTree = "<group>";
-		};
-		00FE27901E6BBA5B004A4D82 /* HMCheckView */ = {
-			isa = PBXGroup;
-			children = (
-				00FE27911E6BBA5B004A4D82 /* HMCheck.h */,
-				00FE27921E6BBA5B004A4D82 /* HMCheck.m */,
-				00FE27931E6BBA5B004A4D82 /* HMCheckCell.h */,
-				00FE27941E6BBA5B004A4D82 /* HMCheckCell.m */,
-				00FE27951E6BBA5B004A4D82 /* HMCheckCell.xib */,
-				00FE27961E6BBA5B004A4D82 /* HMCheckPotocol.h */,
-				00FE27971E6BBA5B004A4D82 /* HMCheckView.h */,
-				00FE27981E6BBA5B004A4D82 /* HMCheckView.m */,
-				00FE27991E6BBA5B004A4D82 /* HMCheckViewController.h */,
-				00FE279A1E6BBA5B004A4D82 /* HMCheckViewController.m */,
-			);
-			path = HMCheckView;
 			sourceTree = "<group>";
 		};
 		00FE279B1E6BBA5B004A4D82 /* ISVTextField */ = {
@@ -3053,8 +2891,6 @@
 		00FE29171E6BC573004A4D82 /* HMPay */ = {
 			isa = PBXGroup;
 			children = (
-				00FE29181E6BC573004A4D82 /* HMPay.h */,
-				00FE29191E6BC573004A4D82 /* HMPay.m */,
 				00FE291A1E6BC573004A4D82 /* HMPayModel.h */,
 				00FE291B1E6BC573004A4D82 /* HMPayModel.m */,
 				00FE291C1E6BC573004A4D82 /* HMPayResult.h */,
@@ -3222,7 +3058,6 @@
 				00FE27D11E6BBA5B004A4D82 /* HUD_loading_hole@2x.png in Resources */,
 				00FE28091E6BBA5B004A4D82 /* HMPopover_Line@2x.png in Resources */,
 				00FE27CF1E6BBA5B004A4D82 /* HUD_loading_cat@2x.png in Resources */,
-				00FE28331E6BBA5C004A4D82 /* HMCheckCell.xib in Resources */,
 				00FE28071E6BBA5B004A4D82 /* HMPopover_item_bg@2x.png in Resources */,
 				00FE27D61E6BBA5B004A4D82 /* HUD_NonConnect@3x.png in Resources */,
 				00FE282E1E6BBA5C004A4D82 /* HMTabBarForUpActiveTab.png in Resources */,
@@ -3310,8 +3145,6 @@
 				00FE25C81E6BB8C1004A4D82 /* ZXURIParsedResult.m in Sources */,
 				00FE26221E6BB8C1004A4D82 /* ZXRSSExpandedFieldParser.m in Sources */,
 				00FE27F41E6BBA5B004A4D82 /* HMFormLabel.m in Sources */,
-				00FE28231E6BBA5C004A4D82 /* HMHollowButton.m in Sources */,
-				00FE259E1E6BB8C0004A4D82 /* NSValue+SQL.m in Sources */,
 				00FE28BA1E6BC00A004A4D82 /* UITabBarController+HMLandscape.m in Sources */,
 				00FE25D71E6BB8C1004A4D82 /* ZXGenericGF.m in Sources */,
 				00FE28391E6BBA5C004A4D82 /* HMPayWayModel.m in Sources */,
@@ -3328,9 +3161,6 @@
 				00FE25F61E6BB8C1004A4D82 /* ZXRGBLuminanceSource.m in Sources */,
 				00FE28B51E6BC00A004A4D82 /* UIImage+ISVExtension.m in Sources */,
 				00FE28E11E6BC47A004A4D82 /* HMNetworking+Coach.m in Sources */,
-				00FE28241E6BBA5C004A4D82 /* HMItemChooseView.m in Sources */,
-				00FE28341E6BBA5C004A4D82 /* HMCheckView.m in Sources */,
-				00FE28321E6BBA5C004A4D82 /* HMCheckCell.m in Sources */,
 				00FE25EC1E6BB8C1004A4D82 /* ZXByteMatrix.m in Sources */,
 				00FE25B91E6BB8C1004A4D82 /* ZXGeoParsedResult.m in Sources */,
 				00FE26021E6BB8C1004A4D82 /* ZXDataMatrixEncoderContext.m in Sources */,
@@ -3376,7 +3206,6 @@
 				0085D6CC1E6816AD00BCB29C /* AppDelegate.m in Sources */,
 				00FE25B41E6BB8C0004A4D82 /* ZXEmailAddressParsedResult.m in Sources */,
 				00FE25D91E6BB8C1004A4D82 /* ZXReedSolomonDecoder.m in Sources */,
-				00FE28251E6BBA5C004A4D82 /* HMSortBarCell.m in Sources */,
 				00FE289B1E6BC00A004A4D82 /* NSData+AES256.m in Sources */,
 				00FE26291E6BB8C1004A4D82 /* ZXRSS14Reader.m in Sources */,
 				00FE26201E6BB8C1004A4D82 /* ZXRSSExpandedDecodedNumeric.m in Sources */,
@@ -3413,7 +3242,6 @@
 				00FE25C01E6BB8C1004A4D82 /* ZXResultParser.m in Sources */,
 				00FE26481E6BB8C1004A4D82 /* ZXQRCodeBitMatrixParser.m in Sources */,
 				00FE25E81E6BB8C1004A4D82 /* ZXPerspectiveTransform.m in Sources */,
-				00FE25991E6BB8C0004A4D82 /* NSArray+SQL.m in Sources */,
 				00FE29201E6BC573004A4D82 /* HMPayResult.m in Sources */,
 				00FE28AC1E6BC00A004A4D82 /* UIColor+HMExtension.m in Sources */,
 				00FE239E1E6B995E004A4D82 /* retrievePwdView.m in Sources */,
@@ -3428,7 +3256,6 @@
 				00FE26331E6BB8C1004A4D82 /* ZXCode39Writer.m in Sources */,
 				00FE29091E6BC4CB004A4D82 /* HMFormVerifyTool.m in Sources */,
 				00FE28B71E6BC00A004A4D82 /* UILabel+HMExtension.m in Sources */,
-				00FE259A1E6BB8C0004A4D82 /* NSDate+SQL.m in Sources */,
 				00FE283B1E6BBA5C004A4D82 /* HMPayWayPanelView.m in Sources */,
 				00FE281A1E6BBA5B004A4D82 /* HMSearchCell.m in Sources */,
 				00FE25BB1E6BB8C1004A4D82 /* ZXISBNParsedResult.m in Sources */,
@@ -3445,7 +3272,6 @@
 				00FE281E1E6BBA5C004A4D82 /* HMSearchBar.m in Sources */,
 				00FE25FA1E6BB8C1004A4D82 /* ZXDataMatrixDecoder.m in Sources */,
 				00FE28A71E6BC00A004A4D82 /* NSString+HMPath.m in Sources */,
-				00FE259D1E6BB8C0004A4D82 /* NSString+SQL.m in Sources */,
 				00FE25F81E6BB8C1004A4D82 /* ZXDataMatrixDataBlock.m in Sources */,
 				00FE28481E6BBAFF004A4D82 /* PushMessageDAO.m in Sources */,
 				00FE26431E6BB8C1004A4D82 /* ZXUPCEANExtension5Support.m in Sources */,
@@ -3475,7 +3301,6 @@
 				00FE26011E6BB8C1004A4D82 /* ZXDataMatrixEdifactEncoder.m in Sources */,
 				00FE28191E6BBA5B004A4D82 /* HMScoreView.m in Sources */,
 				00FE27BC1E6BBA5B004A4D82 /* HMDropDownListView.m in Sources */,
-				00FE259B1E6BB8C0004A4D82 /* NSDictionary+SQL.m in Sources */,
 				00FE25EF1E6BB8C1004A4D82 /* ZXEncodeHints.m in Sources */,
 				00FE264C1E6BB8C1004A4D82 /* ZXQRCodeDecoder.m in Sources */,
 				00FE26281E6BB8C1004A4D82 /* ZXAbstractRSSReader.m in Sources */,
@@ -3487,7 +3312,6 @@
 				00FE26241E6BB8C1004A4D82 /* ZXBitArrayBuilder.m in Sources */,
 				00FE25B31E6BB8C0004A4D82 /* ZXCalendarParsedResult.m in Sources */,
 				00FE26271E6BB8C1004A4D82 /* ZXRSSExpandedRow.m in Sources */,
-				00FE291E1E6BC573004A4D82 /* HMPay.m in Sources */,
 				00FE28BB1E6BC00A004A4D82 /* UITextView+APSUIControlTargetAction.m in Sources */,
 				00FE28B61E6BC00A004A4D82 /* UIImageView+HMUser.m in Sources */,
 				00FE22BD1E6877B0004A4D82 /* ISVMeViewController.m in Sources */,
@@ -3505,11 +3329,9 @@
 				00FE238B1E6A92BC004A4D82 /* loginView.m in Sources */,
 				00FE28E41E6BC47A004A4D82 /* HMNetworking+UserCenter.m in Sources */,
 				00FE26001E6BB8C1004A4D82 /* ZXDataMatrixDefaultPlacement.m in Sources */,
-				00FE25A01E6BB8C0004A4D82 /* PPSqliteORMError.m in Sources */,
 				00FE23881E6A8C72004A4D82 /* registerView.m in Sources */,
 				00FE26531E6BB8C1004A4D82 /* ZXQRCodeAlignmentPatternFinder.m in Sources */,
 				00FE28A01E6BC00A004A4D82 /* NSNull+Description.m in Sources */,
-				00FE259C1E6BB8C0004A4D82 /* NSNumber+SQL.m in Sources */,
 				00FE25D31E6BB8C1004A4D82 /* ZXImage.m in Sources */,
 				00FE27B61E6BBA5B004A4D82 /* HMNoHighlightButton.m in Sources */,
 				00FE25DE1E6BB8C1004A4D82 /* ZXBoolArray.m in Sources */,
@@ -3521,11 +3343,9 @@
 				00FE23941E6B1B4F004A4D82 /* changePwdViewController.m in Sources */,
 				00FE25D21E6BB8C1004A4D82 /* ZXCGImageLuminanceSource.m in Sources */,
 				00FE26231E6BB8C1004A4D82 /* ZXRSSExpandedGeneralAppIdDecoder.m in Sources */,
-				00FE28221E6BBA5C004A4D82 /* HMEasyHitBtn.m in Sources */,
 				00FE27E31E6BBA5B004A4D82 /* JSQMessagesComposerTextView.m in Sources */,
 				00FE27AF1E6BBA5B004A4D82 /* HMBannerView.m in Sources */,
 				00FE28AD1E6BC00A004A4D82 /* UIColor+ISVExtension.m in Sources */,
-				00FE28261E6BBA5C004A4D82 /* HMSortChooseBar.m in Sources */,
 				00FE262A1E6BB8C1004A4D82 /* ZXRSSDataCharacter.m in Sources */,
 				00FE26211E6BB8C1004A4D82 /* ZXRSSExpandedDecodedObject.m in Sources */,
 				00FE25FC1E6BB8C1004A4D82 /* ZXDataMatrixDetector.m in Sources */,
@@ -3534,7 +3354,6 @@
 				00FE23751E6A8788004A4D82 /* addMemberViewController.m in Sources */,
 				00FE28011E6BBA5B004A4D82 /* HMOrderHeaderInfoModel.m in Sources */,
 				00FE27F51E6BBA5B004A4D82 /* HMHighlightedLabel.m in Sources */,
-				00FE290D1E6BC4CB004A4D82 /* HMRuleTool.m in Sources */,
 				00FE26031E6BB8C1004A4D82 /* ZXDataMatrixErrorCorrection.m in Sources */,
 				00FE27FC1E6BBA5B004A4D82 /* HMMenuCell.m in Sources */,
 				00FE28021E6BBA5B004A4D82 /* HMOrderHeaderInfoView.m in Sources */,
@@ -3553,7 +3372,6 @@
 				00FE26191E6BB8C1004A4D82 /* ZXAI01decoder.m in Sources */,
 				00FE26081E6BB8C1004A4D82 /* ZXDataMatrixX12Encoder.m in Sources */,
 				00FE25A31E6BB8C0004A4D82 /* TaskManager.m in Sources */,
-				00FE28311E6BBA5C004A4D82 /* HMCheck.m in Sources */,
 				00FE25BA1E6BB8C1004A4D82 /* ZXGeoResultParser.m in Sources */,
 				00FE283A1E6BBA5C004A4D82 /* HMPayWayPanelCell.m in Sources */,
 				00FE26111E6BB8C1004A4D82 /* ZXAbstractExpandedDecoder.m in Sources */,
@@ -3561,7 +3379,6 @@
 				00FE29121E6BC4CB004A4D82 /* HMUserInterfaceTool.m in Sources */,
 				00FE264A1E6BB8C1004A4D82 /* ZXQRCodeDataMask.m in Sources */,
 				00FE25D41E6BB8C1004A4D82 /* ZXMathUtils.m in Sources */,
-				00FE290E1E6BC4CB004A4D82 /* HMShareTool.m in Sources */,
 				00FE27AD1E6BBA5B004A4D82 /* HMAlertView+HMStyle.m in Sources */,
 				00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */,
 				00FE25F31E6BB8C1004A4D82 /* ZXPlanarYUVLuminanceSource.m in Sources */,
@@ -3570,15 +3387,12 @@
 				00FE28D41E6BC3E7004A4D82 /* HMErrorModel.m in Sources */,
 				00FE25CB1E6BB8C1004A4D82 /* ZXVCardResultParser.m in Sources */,
 				00FE25C71E6BB8C1004A4D82 /* ZXTextParsedResult.m in Sources */,
-				00FE25A21E6BB8C0004A4D82 /* PPSqliteORMSQL.m in Sources */,
 				00FE27AE1E6BBA5B004A4D82 /* HMAlertView.m in Sources */,
 				00FE262C1E6BB8C1004A4D82 /* ZXRSSPair.m in Sources */,
 				00FE25B71E6BB8C1004A4D82 /* ZXExpandedProductParsedResult.m in Sources */,
 				00FE25F41E6BB8C1004A4D82 /* ZXResult.m in Sources */,
-				00FE259F1E6BB8C0004A4D82 /* NSObject+PPSqliteORM.m in Sources */,
 				00FE22CA1E690F80004A4D82 /* ISVHomeModel.m in Sources */,
 				00FE25C91E6BB8C1004A4D82 /* ZXURIResultParser.m in Sources */,
-				00FE28351E6BBA5C004A4D82 /* HMCheckViewController.m in Sources */,
 				00FE23681E6A790C004A4D82 /* setAmountViewController.m in Sources */,
 				00FE23651E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m in Sources */,
 				00FE25DD1E6BB8C1004A4D82 /* ZXBitSource.m in Sources */,
@@ -3604,7 +3418,6 @@
 				00FE29081E6BC4CB004A4D82 /* HMFileTool.m in Sources */,
 				00FE25E71E6BB8C1004A4D82 /* ZXIntArray.m in Sources */,
 				00FE25FD1E6BB8C1004A4D82 /* ZXDataMatrixASCIIEncoder.m in Sources */,
-				00FE29101E6BC4CB004A4D82 /* HMUrlManager.m in Sources */,
 				00FE25AC1E6BB8C0004A4D82 /* WCAlertView.m in Sources */,
 				00FE265B1E6BB8C1004A4D82 /* ZXQRCodeMaskUtil.m in Sources */,
 				00FE27E41E6BBA5B004A4D82 /* JSQMessagesInputToolbar.m in Sources */,
@@ -3630,7 +3443,6 @@
 				00FE25FB1E6BB8C1004A4D82 /* ZXDataMatrixVersion.m in Sources */,
 				00FE28031E6BBA5B004A4D82 /* HMPlaceholderTextView.m in Sources */,
 				00FE28201E6BBA5C004A4D82 /* HMItemServerBuuton.m in Sources */,
-				00FE25A11E6BB8C0004A4D82 /* PPSqliteORMManager.m in Sources */,
 				00FE27DE1E6BBA5B004A4D82 /* HMImageViewContainerListView.m in Sources */,
 				00FE28361E6BBA5C004A4D82 /* HMTextField.m in Sources */,
 				00FE26581E6BB8C1004A4D82 /* ZXQRCode.m in Sources */,

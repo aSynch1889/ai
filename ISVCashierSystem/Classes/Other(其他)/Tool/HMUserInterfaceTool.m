@@ -7,9 +7,7 @@
 //
 
 #import "HMUserInterfaceTool.h"
-#import "HMManagementViewController.h"
 #import "AppDelegate.h"
-#import "HMStatusBarWidow.h"
 
 @implementation HMUserInterfaceTool
 
@@ -49,25 +47,7 @@
 // 跳转到首页
 + (void)showHomePage
 {
-    AppDelegate *app = [UIApplication sharedApplication].delegate;
-    app.isFullScreen = NO;
- 
-    [HMStatusBarWidow show];
-    
-    UITabBarController *tabbarVC = [self tabBarController];
-    
-    UIViewController *topVC = [HMUserInterfaceTool topViewController];
-    [topVC dismissViewControllerAnimated:YES completion:nil];
-    
-    for (UINavigationController *navVc in tabbarVC.childViewControllers) {
-        [navVc popToRootViewControllerAnimated:YES];
-    }
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (tabbarVC) {
-            tabbarVC.selectedIndex = 0;
-        }
-    });
+
     
 }
 
@@ -76,15 +56,7 @@
  */
 + (void)popToMannagerPage
 {
-    UINavigationController *meNav = [[HMUserInterfaceTool tabBarController].childViewControllers lastObject];
-    
-    if (meNav.childViewControllers.count > 1) {
-        HMManagementViewController *managerVC = (HMManagementViewController *)meNav.childViewControllers[1];
-        if ([managerVC isKindOfClass:[HMManagementViewController class]]) {
-            [managerVC reloadData];
-            [meNav popToViewController:managerVC animated:YES];
-        }
-    }
+
 }
 
 @end
