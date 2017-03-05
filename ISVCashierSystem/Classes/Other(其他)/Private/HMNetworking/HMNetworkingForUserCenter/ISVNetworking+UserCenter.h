@@ -70,8 +70,8 @@
  * height:身高
  * weight:体重
  * signature:个性签名
- * teaching:私教可授课项目
- * courseCost:私教课程费用
+ * teaching:便可授课项目
+ * courseCost:便课程费用
  */
 + (void)userModifyWithAge:(NSUInteger )age
                      city:(NSString *)city
@@ -121,7 +121,7 @@
 /**
  *  获取订单列表
  *
- *  @param type    type=user，用户看自己的订单列表(ps：私教看自己约私教的订单也是这个)；type=trainer，私教看用户约自己的订单列表
+ *  @param type    type=user，用户看自己的订单列表(ps：便看自己约便的订单也是这个)；type=trainer，便看用户约自己的订单列表
  *  @param page    第几页
  *  @param count   每页显示数量
  *  @param success 成功
@@ -324,7 +324,7 @@
 #pragma mark 用户下单
 /**
  * `用户下单`
- * coachID:私教Id
+ * coachID:便Id
  * serverProgram:服务项目
  * serverTime:服务时段(例如:"9:00-10:00,20:00-21:00" -> @[@"9", @"20"];)
  * serverDate:服务日期
@@ -349,7 +349,7 @@
 
 
 /**
- *  用户给私教评分
+ *  用户给便评分
  *
  *  @param score   分数值
  *  @param content 评价内容

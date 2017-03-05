@@ -49,7 +49,7 @@
 #pragma mark - 商城
 
 #define URL_SHOP_ProductManager @"/product/pt_product_list/?"   // 小屋动力商城管理
-#define URL_SHOP_ProductMore @"/product/product_list/?"         // 更多私教的商品
+#define URL_SHOP_ProductMore @"/product/product_list/?"         // 更多便的商品
 #define URL_Shop_ProductList @"/jkmajax/GetProduct/?"  // 商品列表
 
 

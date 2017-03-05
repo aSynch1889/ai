@@ -10,9 +10,9 @@
 
 @interface NSString (ISVOrderStatus)
 /**
- *  养生馆订单状态处理(场馆和养生馆订单通用)
+ *  钱xx订单状态处理(掌柜和钱xx订单通用)
  *
- *  @param status 养生馆订单状态
+ *  @param status 钱xx订单状态
  *
  *  @return 返回的状态字符串
  */

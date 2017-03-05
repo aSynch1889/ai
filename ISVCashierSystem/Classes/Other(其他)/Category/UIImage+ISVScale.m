@@ -2,7 +2,7 @@
 //  UIImage+ISVScale.m
 //  ISV
 //
-//  Created by aaaa on 15/11/6.
+//  Created by aaaa on 17/3/5.
 //  Copyright © 2017年 ISV. All rights reserved.
 //
 

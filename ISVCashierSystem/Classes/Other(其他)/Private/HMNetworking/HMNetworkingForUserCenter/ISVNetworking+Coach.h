@@ -13,28 +13,28 @@
 #define kImgOrVedioManagerTypeADD @"ADD"
 #define kImgOrVedioManagerTypeDEL @"DEL"
 
-// 私教接口类
+// 便接口类
 @interface ISVNetworking (Coach)
 
 #pragma mark -
-#pragma mark - 私教信息
+#pragma mark - 便信息
 /**
  * `获取资质列表`
  */
 + (void)coachQualificationWithSuccess:(RespondBlock)success failure:(ErrorBlock)failure;
 
 /**
- * `根据邀请码获取私教名称`
+ * `根据邀请码获取便名称`
  */
 + (void)coachNameByInviteCode:(NSString *)inviteCode success:(RespondBlock)success failure:(ErrorBlock)failure;
 
 /**
- * `获取私教信息`
+ * `获取便信息`
  */
 + (void)coachInfoWithUserID:(NSString *)userID success:(RespondBlock)success failure:(ErrorBlock)failure;
 
 /**
- * `私教注册`(team和college至少选一个, 其他参数不可为空)
+ * `便注册`(team和college至少选一个, 其他参数不可为空)
  * name:姓名
  * card:身份证号
  * education:学历
@@ -73,16 +73,16 @@
 
 
 /**
- * `私教信息修改`
+ * `便信息修改`
  * Education:学历
- * CourseCost(可选):私教课程费用
+ * CourseCost(可选):便课程费用
  * Province:省份
  * City:城市
  * TeachingSite:教学场地
  * Introduction:个人简介
  * Team(可选):专业队
  * College(可选):毕业学校
- * TeachingProgram(可选):私教授课项目
+ * TeachingProgram(可选):便授课项目
  */
 + (void)coachModifyWithEducation:(NSUInteger)education
                             team:(NSString *)team
@@ -109,9 +109,9 @@
 #pragma mark -
 #pragma mark - 小屋管理
 
-// 私教订单
+// 便订单
 /**
- * `私教开启接单模式`
+ * `便开启接单模式`
  * orderDuration:接单时段
  * 例如:"9:00-10:00,20:00-21:00" -> @[@"9", @"20"];
  */
@@ -120,7 +120,7 @@
 //                                failure:(ErrorBlock)failure;
 
 /**
- * `私教操作订单`
+ * `便操作订单`
  * orderId:订单号
  * isReceive:接受或者取消
  */
@@ -130,7 +130,7 @@
                           failure:(ErrorBlock)failure;
 
 /**
- *  `私教获取私教被约订单`
+ *  `便获取便被约订单`
  *
  *  @param orderId 订单号（为空时获取订单列表）
  *  @param page    页码
@@ -147,7 +147,7 @@
 
 
 /**
- *  `142.私教小屋图片和视频管理`
+ *  `142.便小屋图片和视频管理`
  *
  *  @param Id      IMG：图片，VIDEO：视频  (请使用宏)
  *  @param type    ADD：添加 DEL：删除     (请使用宏)
@@ -181,7 +181,7 @@
                              failure:(ErrorBlock)failure;
 
 /**
- *  `119.私教小屋顶部背景图片管理`
+ *  `119.便小屋顶部背景图片管理`
  *
  *  @param code    图片标识
  */
@@ -190,12 +190,12 @@
                          failure:(ErrorBlock)failure;
 
 /**
- *  私教团队
+ *  便团队
  */
 + (void)coashTeamWithPage:(NSUInteger)page count:(NSUInteger)count success:(RespondBlock)success failure:(ErrorBlock)failure;
 
 /**
- *  私教看用户约自己的订单列表时：
+ *  便看用户约自己的订单列表时：
  */
 + (void)coachCourseOrderListWithPage:(NSInteger)page count:(NSInteger)count courseID:(NSString *)courseID type:(NSString *)type success:(RespondBlock)success failure:(ErrorBlock)failure;
 

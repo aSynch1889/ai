@@ -22,11 +22,11 @@ extern NSString *const POST_URL;
 #pragma mark - 公共接口:
 #pragma mark >项目类型(约动友)
 extern NSString *const COMMON_PROJECTLIST_AskFriend;
-#pragma mark >项目类型(约私教)
+#pragma mark >项目类型(约便)
 extern NSString *const COMMON_PROJECTLIST_AskCoach;
-#pragma mark >项目类型(场馆)
+#pragma mark >项目类型(掌柜)
 extern NSString *const COMMON_PROJECTLIST_Place;
-#pragma mark >项目类型(养生馆)
+#pragma mark >项目类型(钱xx)
 extern NSString *const COMMON_PROJECTLIST_Regimen;
 #pragma mark >获取所有城市列表
 extern NSString *const COMMON_CITY_LIST;
@@ -87,33 +87,33 @@ extern NSString *const USER_GETBALANCE;
 extern NSString *const POSITION;
 
 #pragma mark -
-#pragma mark - 私教
+#pragma mark - 便
 
-/// 私教注册
+/// 便注册
 extern NSString *const COACH_APPLY;
-/// 私教信息修改
+/// 便信息修改
 extern NSString *const COACH_MODIFY;
-/// 私教资质
+/// 便资质
 extern NSString *const COACH_QUALIFICATION;
-#pragma mark >根据邀请码获取私教名字
+#pragma mark >根据邀请码获取便名字
 extern NSString *const COACH_NameByInviteCode;
-#pragma mark >获取私教信息
+#pragma mark >获取便信息
 extern NSString *const COACH_INFO;
-/// 私教开启接单模式
+/// 便开启接单模式
 extern NSString *const START_ORDER_MODE;
-/// 私教订单（私教端）
+/// 便订单（便端）
 extern NSString *const COACH_ORDER;
-/// 私教操作订单（私教端）
+/// 便操作订单（便端）
 extern NSString *const COACH_OPERATEORDER_PT;
-/// 私教图片或视频管理
+/// 便图片或视频管理
 extern NSString *const COACH_PTWOODMANAGE;
-/// 获取私教图片或视频
+/// 获取便图片或视频
 extern NSString *const COACH_MOREWOODINFO;
-/// 私教上传封面图片
+/// 便上传封面图片
 extern NSString *const COACH_PTWOODTOPIMG;
-/// 获取私教团购课程列表+排序+筛选+分页
+/// 获取便团购课程列表+排序+筛选+分页
 extern NSString *const HOME_COURSE_LIST;
-/// 获取私教团队
+/// 获取便团队
 extern NSString *const COASH_TEAM;
 /// 获取课程订单详情
 extern NSString *const COACH_CourseOrderDetail;
@@ -123,7 +123,7 @@ extern NSString *const COACH_CourseOrderDetail;
 /// 首页标签
 extern NSString *const HOME_TAG;
 extern NSString *const COURSE_DETAIL_INFO;
-#pragma mark >获取私教发布的课程列表
+#pragma mark >获取便发布的课程列表
 extern NSString *const HOME_COURSE_ALL;
 #pragma mark >获取用户咨询列表
 extern NSString *const HOME_CONSULT;
@@ -131,7 +131,7 @@ extern NSString *const HOME_CONSULT;
 extern NSString *const HOME_COURSE_SIGN_PERSON;
 #pragma mark >获取团购点赞用户列表
 extern NSString *const HOME_COURSE_PRAISE_LIST;
-#pragma mark >每周之星或者私教推荐列表
+#pragma mark >每周之星或者便推荐列表
 extern NSString *const HOME_WEEKSTARS_COACH_PUT;
 
 #pragma mark - 约动友
@@ -173,19 +173,19 @@ extern NSString *const PROJEST_LIST;
 /// 健康小屋
 extern NSString *const CABIN_INFO;
 
-#pragma mark - 获取私教团队
+#pragma mark - 获取便团队
 extern NSString *const COASH_TEAM;
 
 
 
-#pragma mark -----------养生馆接口
-//筛选养生馆
+#pragma mark -----------钱xx接口
+//筛选钱xx
 extern NSString *const CARE_OCCASION;
 //店铺详情
 extern NSString *const STORE_DETAILS;
 
-#pragma mark----------------约场馆接口
-///约场馆筛选
+#pragma mark----------------约掌柜接口
+///约掌柜筛选
 extern NSString *const INVIT_LIST;
 
 //我的粉丝
@@ -196,7 +196,7 @@ extern NSString *const getUserConcerned;
 
 
 /*
- ///   12.私教操作订单
+ ///   12.便操作订单
  extern NSString *const
  ///   13.验证验证码
  extern NSString *const
@@ -214,7 +214,7 @@ extern NSString *const getUserConcerned;
  extern NSString *const
  ///   20.提现申请通过
  extern NSString *const
- ///   21.用户给私教评分
+ ///   21.用户给便评分
  extern NSString *const POST_URL;
  ///   22.发送好友申请
  extern NSString *const
@@ -228,79 +228,79 @@ extern NSString *const getUserConcerned;
  extern NSString *const
  */
 
-//************************养生馆相关************************//
-///筛选养生馆
+//************************钱xx相关************************//
+///筛选钱xx
 extern NSString *const getRegimenListForFilter;
-///搜索养生馆
+///搜索钱xx
 extern NSString *const getRegimenListForSearch;
-///获取养生馆详情信息
+///获取钱xx详情信息
 extern NSString *const getRegimenDetailInfo;
 
-///获取养生馆订单详情
+///获取钱xx订单详情
 extern NSString *const getRegimenOrderDetailInfo;
 
-///根据年月日养生馆ID、获取用户订单
+///根据年月日钱xxID、获取用户订单
 extern NSString *const getPavilionorderList;
 
-#pragma mark - 138.获取养生馆评价列表
+#pragma mark - 138.获取钱xx评价列表
 extern NSString *const ScoreDetailsForClub;
-#pragma mark - 获取用户对私教的评论列表
+#pragma mark - 获取用户对便的评论列表
 extern NSString *const ScoreDetailsForCoach;
-#pragma mark - 获取场馆评价列表
+#pragma mark - 获取掌柜评价列表
 extern NSString *const ScoreDetailsForPlace;
 
-// 141.获取我的养生馆列表
+// 141.获取我的钱xx列表
 extern NSString *const userGetOwnRegimenList;
 
-// 152.获取养生馆详情（只能获取属于自己的养生馆用于养生馆修改)
+// 152.获取钱xx详情（只能获取属于自己的钱xx用于钱xx修改)
 extern NSString *const userGetOwnRegimenDetailInfo;
-//  获取养生馆团队
+//  获取钱xx团队
 extern NSString *const Regimen_Team;
-//************************养生馆相关************************//
+//************************钱xx相关************************//
 
-//************************场馆相关************************//
+//************************掌柜相关************************//
 
 #pragma mark - 搜索接口:
-#pragma mark >根据名字搜索私教列表
+#pragma mark >根据名字搜索便列表
 extern NSString *const SearchForCoach;
 #pragma mark >根据名字搜索团购课程列表
 extern NSString *const SearchForCourse;
-#pragma mark >搜索场馆
+#pragma mark >搜索掌柜
 extern NSString *const SearchForPlace;
 
 
 
-#pragma mark - 103.获取场馆详情
+#pragma mark - 103.获取掌柜详情
 extern NSString *const getPlaceModelInfo;
 
-#pragma mark - 104.获取场馆项目列表
+#pragma mark - 104.获取掌柜项目列表
 extern NSString *const getPlaceItemList;
 
-#pragma mark - 105.根据项目ID查询场馆列表
+#pragma mark - 105.根据项目ID查询掌柜列表
 extern NSString *const getPlaceListforitem;
 
-#pragma mark - 获取场馆订单详情
+#pragma mark - 获取掌柜订单详情
 extern NSString *const getPlaceOrderDetailInfo;
 
-#pragma mark -  根据年月日场馆ID、获取用户订单
+#pragma mark -  根据年月日掌柜ID、获取用户订单
 extern NSString *const getPlaceOrderList;
 
-#pragma mark -  137.获取场馆评价列表
+#pragma mark -  137.获取掌柜评价列表
 extern NSString *const getVenueCommentList;
 
-#pragma mark -   140.获取我的场馆列表
+#pragma mark -   140.获取我的掌柜列表
 extern NSString *const userGetOwnPlaceList;
 
-#pragma mark -   151.获取场馆详情（只能获取属于自己的场馆用于场馆修改)
+#pragma mark -   151.获取掌柜详情（只能获取属于自己的掌柜用于掌柜修改)
 extern NSString *const userGetOwnPlaceDetailInfo;
 
-#pragma mark - 获取养生馆团队
+#pragma mark - 获取钱xx团队
 extern NSString *const Place_Team;
-//************************场馆相关************************//
+//************************掌柜相关************************//
 
 
 //************************团购相关************************//
-#pragma mark -  92.获取用户订单列表(私教团购课程订单)
+#pragma mark -  92.获取用户订单列表(便团购课程订单)
 extern NSString *const getCourseOrderList;
 
 #pragma mark -  142.获取订单详情

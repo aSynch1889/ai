@@ -22,30 +22,30 @@
 
 @interface ISVNetworking (Place)
 
-#pragma mark 约场馆
+#pragma mark 约掌柜
 /**
- *  100.场馆入驻（申请或信息修改）
+ *  100.掌柜入驻（申请或信息修改）
  *
- *  @param placeId                场馆ID(添加时不用传)
+ *  @param placeId                掌柜ID(添加时不用传)
  *  @param placeLicenceno         营业执照注册号
  *  @param placeLeagalIdcard      身份证号
  *  @param placeLegalName         法人或代理人姓名
- *  @param placeInvitecode        私教提供的邀请码
+ *  @param placeInvitecode        便提供的邀请码
  *  @param placeCertificateimages 相关证件图片(LicenceNo：证件照片，IDCard：身份证，ClientScans:委托人照片，ClientIDCard：委托人身份证)
- *  @param placeImages            场馆图片
- *  @param placeName              场馆名称
+ *  @param placeImages            掌柜图片
+ *  @param placeName              掌柜名称
  *  @param placeOpentime          营业开始时间
  *  @param placeClosetime         营业结束时间
- *  @param placeCoordinate        场馆坐标
- *  @param placeAddress           场馆地址
- *  @param placePhone             场馆电话 二选一
- *  @param placeMobile            场馆手机
- *  @param placeIntroduction      场馆简介
- *  @param placeType              1：社区场馆，2：非社区场馆，暂定两个，要改的时候再加，然后这个字段只需要后台查看
+ *  @param placeCoordinate        掌柜坐标
+ *  @param placeAddress           掌柜地址
+ *  @param placePhone             掌柜电话 二选一
+ *  @param placeMobile            掌柜手机
+ *  @param placeIntroduction      掌柜简介
+ *  @param placeType              1：社区掌柜，2：非社区掌柜，暂定两个，要改的时候再加，然后这个字段只需要后台查看
  *  @param placeSpecialServices   特色服务
- *  @param placeProgramContent    场馆项目信息json
+ *  @param placeProgramContent    掌柜项目信息json
  （
- venue_id：场馆ID添加时传-1，
+ venue_id：掌柜ID添加时传-1，
  venueprogram_id：项目ID，
  ISV_vpc_workdayprice：工作日价格，
  ISV_vpc_weekendprice：周未价格，
@@ -78,7 +78,7 @@
                           failure:(ErrorBlock)failure;
 
 /**
- *  约场馆(场馆筛选)
+ *  约掌柜(掌柜筛选)
  *
  *  @param page    页码
  *  @param count   条数
@@ -88,27 +88,27 @@
 + (void)invitListWithPage:(NSUInteger)page count:(NSUInteger)count type:(NSString *)type sort:(NSString *)sort itemId:(NSString *)itemId sortType:(NSString *)sortType success:(RespondBlock)success failure:(ErrorBlock)failure;
 
 
-#pragma mark 获取场馆详情
+#pragma mark 获取掌柜详情
 /**
- *  103.获取场馆详情
+ *  103.获取掌柜详情
  *
- *  @param venueId 场馆ID
+ *  @param venueId 掌柜ID
  *  @param success 成功
  *  @param failure 失败
  */
 + (void)getPlaceDetailInfoWithVenueId:(NSString *)venueId
                               success:(RespondBlock)success
                               failure:(ErrorBlock)failure;
-#pragma mark 获取场馆项目列表
+#pragma mark 获取掌柜项目列表
 /**
- *  104.获取场馆项目列表
+ *  104.获取掌柜项目列表
  */
 + (void)getPlaceItemListSuccess:(RespondBlock)success failure:(ErrorBlock)failure;
 
 
-#pragma mark 根据项目ID查询场馆列表
+#pragma mark 根据项目ID查询掌柜列表
 /**
- *  105.根据项目ID查询场馆列表
+ *  105.根据项目ID查询掌柜列表
  *
  *  @param venueId 项目ID
  *  @param page    当前页
@@ -122,11 +122,11 @@
                                success:(RespondBlock)success
                                failure:(ErrorBlock)failure;
 
-#pragma mark 获取场馆订单详情
+#pragma mark 获取掌柜订单详情
 /**
- *  获取场馆订单详情
+ *  获取掌柜订单详情
  *
- *  @param venueOrderId 场馆订单ID
+ *  @param venueOrderId 掌柜订单ID
  *  @param status       订单状态
  *  @param success      成功
  *  @param failure      失败
@@ -135,11 +135,11 @@
                                         success:(RespondBlock)success
                                         failure:(ErrorBlock)failure;
 
-#pragma mark 根据年月日场馆ID、获取用户订单  //网址：(场馆馆主获取自己场馆的订单)
+#pragma mark 根据年月日掌柜ID、获取用户订单  //网址：(掌柜馆主获取自己掌柜的订单)
 /**
- *   112.根据年月日场馆ID、获取用户订单 网址：(场馆馆主获取自己场馆的订单)
+ *   112.根据年月日掌柜ID、获取用户订单 网址：(掌柜馆主获取自己掌柜的订单)
  *
- *  @param venueID 场馆ID
+ *  @param venueID 掌柜ID
  *  @param page    当前页
  *  @param count   每页显示数量
  *  @param year    年份
@@ -156,10 +156,10 @@
                                 type:(NSString *)type
                              success:(RespondBlock)success
                              failure:(ErrorBlock)failure;
-#pragma mark  网址：(用户获取场馆订单列表)
+#pragma mark  网址：(用户获取掌柜订单列表)
 
 /**
- *  用户获取场馆订单列表
+ *  用户获取掌柜订单列表
  *
  *  @param page    当前页
  *  @param count   每页显示数量
@@ -173,11 +173,11 @@
                               success:(RespondBlock)success
                               failure:(ErrorBlock)failure;
 
-#pragma mark 场馆订单核销
+#pragma mark 掌柜订单核销
 /**
- *    113.场馆订单核销
+ *    113.掌柜订单核销
  *
- *  @param venueorderId 场馆订单ID
+ *  @param venueorderId 掌柜订单ID
  *  @param verifycode   验证码
  *  @param success      成功
  *  @param failure      失败
@@ -189,9 +189,9 @@
 
 
 /**
- *  // 135.评价场馆
+ *  // 135.评价掌柜
  *
- *  @param venue_id       场馆id
+ *  @param venue_id       掌柜id
  *  @param venueorder_id  订单id
  *  @param ISV_voc_content 评价内容
  *  @param ISV_voc_score   评分
@@ -209,7 +209,7 @@
 
 
 /**
- *  140.获取我的场馆列表
+ *  140.获取我的掌柜列表
  *
  *  @param page    当前页
  *  @param count   每页记录数
@@ -221,9 +221,9 @@
                             success:(RespondBlock)success
                             failure:(ErrorBlock)failure;
 /**
- *  151.获取场馆详情（只能获取属于自己的场馆用于场馆修改)
+ *  151.获取掌柜详情（只能获取属于自己的掌柜用于掌柜修改)
  *
- *  @param venue_id 场馆ID
+ *  @param venue_id 掌柜ID
  *  @param success  成功
  *  @param failure  失败
  */
@@ -231,9 +231,9 @@
                                      success:(RespondBlock)success
                                      failure:(ErrorBlock)failure;
 
-#pragma mark - 场馆预约(即下单)
+#pragma mark - 掌柜预约(即下单)
 /**
- * `场馆预约(即下单)`
+ * `掌柜预约(即下单)`
  *
  */
 + (void)placeOrderWithPlaceID:(NSString *)placeID
@@ -250,7 +250,7 @@
                       failure:(ErrorBlock)failure;
 
 /**
- *  场馆团队
+ *  掌柜团队
  */
 + (void)placeTeamWithPage:(NSUInteger)page count:(NSUInteger)count success:(RespondBlock)success failure:(ErrorBlock)failure;
 @end

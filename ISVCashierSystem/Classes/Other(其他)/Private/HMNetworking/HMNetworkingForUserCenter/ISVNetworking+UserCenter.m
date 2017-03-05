@@ -234,7 +234,7 @@
 
 
 /*
- 4.用户信息添加或者修改(私教课时费和授课项目在这儿修改)
+ 4.用户信息添加或者修改(便课时费和授课项目在这儿修改)
  网址：http://192.168.1.238:5000/Post
  类型：post
  数据类型：Content-Type: application/json
@@ -278,8 +278,8 @@
  model.ISV_UI_Height	否	身高
  model.ISV_UI_Weight	否	体重
  model.ISV_UI_Signature	否	个性签名
- model.ISV_PT_TeachingProgram	否	私教可授课项目
- model.ISV_PT_CourseCost	否	私教课程费用
+ model.ISV_PT_TeachingProgram	否	便可授课项目
+ model.ISV_PT_CourseCost	否	便课程费用
  whichFunc	是	决定调用哪个接口
  说明：
  返回说明Json：
@@ -529,18 +529,18 @@
  参数说明：
  参数	是否必须	说明
  key	是	用户登录后返回的token
- type	是	是否把私教信息一起取出来的条件；type=user，只取用户信息，type=trainer，且用户是私教，取用户和私教信息
+ type	是	是否把便信息一起取出来的条件；type=user，只取用户信息，type=trainer，且用户是便，取用户和便信息
 
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	true，用户实体获取成功false，用户实体获取失败
  errmsg	操作完成后返回信息	用户实体获取失败 = 10034,
  用户实体获取成功 = 10035,
- 该用户不是私教 = 10248
+ 该用户不是便 = 10248
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse.ISV_U_NickName	昵称	例子在此表下
  valuse.UserModel	用户实体	例子在此表下
- valuse.PTrainerModel	私教实体	例子在此表下
+ valuse.PTrainerModel	便实体	例子在此表下
  {
  "errmsg": 10035,
  "succeed": true,
@@ -558,10 +558,10 @@
  "ISV_UI_Height": 0,   --身高
  "ISV_UI_Weight": 0,   --体重
  "ISV_UI_Signature": null,   --个性签名
- "ISV_UI_TrainerStatus": 1   --私教状态
+ "ISV_UI_TrainerStatus": 1   --便状态
  },
  "PTrainerModel": {
- "User_Id": "25055247",   --私教id
+ "User_Id": "25055247",   --便id
  "ISV_PT_Name": "lhc",   --姓名
  "ISV_PT_IDCard": "430525",   --身份证号
  "ISV_PT_Education": 1,   --学历
@@ -576,7 +576,7 @@
  "ISV_PT_TeachingSite": "天河",   --授课地点
  "ISV_PT_Introduction": "逍遥不羁",   --简介
  "ISV_PT_InviteCode": "100000",   --邀请码
- "ISV_PT_Level": 1,   --私教等级
+ "ISV_PT_Level": 1,   --便等级
  "ISV_PT_Inviter": "99999999",   --邀请人
  "ISV_PT_ApplicationDate":"2015-10-06T12:34:52.309892",   --申请时间
  "ISV_PT_PassDate": "0001-01-01T00:00:00"   --审核通过时间
@@ -651,7 +651,7 @@
  "ISV_UI_Height": 170,   --身高
  "ISV_UI_Weight": 60,   --体重
  "ISV_UI_Signature": "良辰必有重谢",   --个性签名
- "ISV_UI_TrainerStatus": 0,   --私教状态，0：不是私教，1：申请中，2：申请成功，3：申请失败
+ "ISV_UI_TrainerStatus": 0,   --便状态，0：不是便，1：申请中，2：申请成功，3：申请失败
  "distance": 11443.5458362365   --双方距离
  "headImageUser":    --用户头像
  "http://192.168.1.238:83/photos/69EE6F864F065B1E73FB501D78C5CA68"
@@ -789,7 +789,7 @@
  参数	是否必须	描述
  key	是	用户登录后返回的token
  model	是	传入实体名称
- model.ISV_PTrainerId	是	私教Id
+ model.ISV_PTrainerId	是	便Id
  model.ISV_ServerProgram	是	服务项目
  model.ISV_ServerTime	是	服务时段
  model.ISV_ServerLocation	是	服务地址
@@ -815,7 +815,7 @@
  errmsg	操作完成后返回信息	用户下单失败 = 10040,
  用户下单成功 = 10039,
  用户下单异常 = 10041,
- 您选择的服务时段已被占用或私教该时段无服务 = 10471,
+ 您选择的服务时段已被占用或便该时段无服务 = 10471,
  用户下单成功但锁定服务时段失败 = 10472,
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse.orderId	订单号	201510101720393305623
@@ -859,12 +859,12 @@
 
 
 /*
- 14.获取订单(约私教订单)
+ 14.获取订单(约便订单)
  网址：
  订单详情：http://192.168.1.238:5000/trainer/trainerorder?key=&orderId=201510101720393305623
- 用户看自己的订单列表(ps：私教看自己约私教的订单也是这个)：
+ 用户看自己的订单列表(ps：便看自己约便的订单也是这个)：
  http://192.168.1.238:5000/trainer/trainerorder?key=&page=1&count=10&type=user
- 私教看用户约自己的订单列表：
+ 便看用户约自己的订单列表：
  http://192.168.1.238:5000/trainer/trainerorder?key=&year=2015&month=11&page=1&count=10&type=trainer
  类型：get
  数据类型：Content-Type: application/json
@@ -877,7 +877,7 @@
  month	是(查询订单订单详情或type=user时：否)	月份，无此参数或者输入0为不按该条件搜索
  page	是(查询订单订单详情时：否)	第几页
  count	是(查询订单订单详情时：否)	每页显示数量
- type	是(查询订单订单详情时：否)	type=user，用户看自己的订单列表(ps：私教看自己约私教的订单也是这个)；type=trainer，私教看用户约自己的订单列表
+ type	是(查询订单订单详情时：否)	type=user，用户看自己的订单列表(ps：便看自己约便的订单也是这个)；type=trainer，便看用户约自己的订单列表
 
  返回说明Json：
  {
@@ -888,7 +888,7 @@
  {
  "ISV_OrderId": "201510101135379026590",   --订单号
  "User_Id": "25055247",   --用户id
- "ISV_PTrainerId": "46646777",   --私教id
+ "ISV_PTrainerId": "46646777",   --便id
  "ISV_ServerProgram": "八卦掌",   --服务项目
  "ISV_OrderDate": "2015-10-10T11:35:37.902861",   --订单日期
  "ISV_ServerTime": [
@@ -906,10 +906,10 @@
  "ISV_SystemRemark": null,   --系统备注
  "ISV_UnitPrice": 100,   --系统单价
  "usernick": "大虾",   --用户昵称
- "trainernick": "可以哦"   --私教昵称
+ "trainernick": "可以哦"   --便昵称
  "headImageUser":    --用户头像
  "http://192.168.1.238:83/photos/69EE6F864F065B1E73FB501D78C5CA68"
- "headImageTrainer":    --私教头像
+ "headImageTrainer":    --便头像
  "http://192.168.1.238:83/photos/EB2EEBB7A705652B4049BF3B46367195"
  },
  {
@@ -997,10 +997,10 @@
  参数	是否必须	描述	数据类型
  key	是	用户登录后返回的token	string
  orderbiaoshi	是	订单标示：
- (venueorder:场馆订单)
- (pavilionorder:养生馆订单)
+ (venueorder:掌柜订单)
+ (pavilionorder:钱xx订单)
  (grouporder:团购订单)
- (privateorder:私教订单)	string
+ (privateorder:便订单)	string
  operationbiaoshi	是	操作标示：
  （cancel：取消）
  （del：删除）	string
@@ -1043,10 +1043,10 @@ order_id success:(RespondBlock)success failure:(ErrorBlock)failure{
 
 /*
  15-21钱包--逻辑分析：
- 1.私教第一次点击钱包，系统给他创建一个新钱包，此时密码为空；点击钱包时，系统会判断该钱包是否有密码，存在则打开钱包，显示钱包信息，否则，弹出设置密码框，设置好后，显示钱包信息；
+ 1.便第一次点击钱包，系统给他创建一个新钱包，此时密码为空；点击钱包时，系统会判断该钱包是否有密码，存在则打开钱包，显示钱包信息，否则，弹出设置密码框，设置好后，显示钱包信息；
  2.验证钱包密码跟用户登录差不多，用户传入签名（用户密码，时间戳和随机数经过排序加密得到的一长串字符），时间戳，随机数和用户id，系统验证密码是否正确；
- 3.私教提出提现申请，会在提现申请表，支出记录和支出记录备份表中各插入一条记录，如果该申请通过，则该私教钱包金额减少申请提现的金额，提现状态改变，并且在提现结果表中保存该提现记录；
- 4.用户评价完订单后，会修改下单状态和已接受订单的状态，在收入记录和收入记录备份表中各插入一条记录，订单上私教的钱包金额加上订单金额。
+ 3.便提出提现申请，会在提现申请表，支出记录和支出记录备份表中各插入一条记录，如果该申请通过，则该便钱包金额减少申请提现的金额，提现状态改变，并且在提现结果表中保存该提现记录；
+ 4.用户评价完订单后，会修改下单状态和已接受订单的状态，在收入记录和收入记录备份表中各插入一条记录，订单上便的钱包金额加上订单金额。
 
  15.点击钱包事件
  网址：http://192.168.1.238:5000/wallet/key
@@ -1446,7 +1446,7 @@ order_id success:(RespondBlock)success failure:(ErrorBlock)failure{
 
 
 /*
- 21.用户给私教评分
+ 21.用户给便评分
  网址：http://192.168.1.238:5000/Post
  类型：Post
  数据类型：Content-Type: application/json
@@ -1479,9 +1479,9 @@ order_id success:(RespondBlock)success failure:(ErrorBlock)failure{
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	true，评论成功，false，评论失败
- errmsg	操作完成后返回信息	私教评论操作异常=10092,
- 私教评论成功=10093,
- 私教该订单已经评论=10094
+ errmsg	操作完成后返回信息	便评论操作异常=10092,
+ 便评论成功=10093,
+ 便该订单已经评论=10094
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse	无	null
  */
@@ -1886,7 +1886,7 @@ order_id success:(RespondBlock)success failure:(ErrorBlock)failure{
 }
 
 /*
- 75.获取所有项目列表（约私教）
+ 75.获取所有项目列表（约便）
  网址：
  http://192.168.1.238:5000/user/Education/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMjEyNjYyNyIsImlhdCI6MTQ0ODA3NTkxOSwianRpIjpmYWxzZX0.Ic8vBtUD_08cpxYtYUAeBS_MosT4dCNKMnNPhSJZRi4?type=getproprogramlist
  类型：get
@@ -1960,9 +1960,9 @@ order_id success:(RespondBlock)success failure:(ErrorBlock)failure{
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取私教项目列表成功= 10361,
- 获取私教项目列表失败 = 10362,
- 获取私教项目列表异常 = 10363，
+ errmsg	操作完成后返回信息	获取便项目列表成功= 10361,
+ 获取便项目列表失败 = 10362,
+ 获取便项目列表异常 = 10363，
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse	表示项目列表的json数组	如上面参数所示

@@ -21,7 +21,7 @@
 @property (nonatomic, assign) NSInteger ISV_OrderPrice;	// 订单价格 (支付宝的保留两位小数)
 @property (nonatomic, copy) NSString *ISV_OrderTime; 	// 订单时间
 @property (nonatomic, assign) ISVPayWay ISV_PayWay;		// 支付方式 enum (支付宝、微信支付、快钱支付)
-@property (nonatomic, assign) ISVOrderType ISV_OrderType; // 订单类型 enum (私教、课程、场馆、养生馆)
+@property (nonatomic, assign) ISVOrderType ISV_OrderType; // 订单类型 enum (便、课程、掌柜、钱xx)
 /* ================== end 公共(需要手动传值) =================== */
 
 
@@ -50,7 +50,7 @@
 @property (nonatomic, assign) NSInteger ISV_BillPay_OrderRealPrice;	//订单真实价格(快钱支付时需要，后台传的)
 @property (nonatomic, copy) NSString *ISV_BillPay_PostUrl;	// 请求支付地址
 @property (nonatomic, copy) NSString *ISV_BillPay_CallBackUrl;// 回调服务器地址
-@property (nonatomic, copy) NSString *ISV_BillPay_ext1;      // 扩展字段1，便掌柜用于区分订单类型  约场馆订单 = 0 ， 课程团购订单 = 1， 约私教订单 = 2 ， 动力产品订单 = 3 ， 体验店订单 = 4；
+@property (nonatomic, copy) NSString *ISV_BillPay_ext1;      // 扩展字段1，便掌柜用于区分订单类型  约掌柜订单 = 0 ， 课程团购订单 = 1， 约便订单 = 2 ， 动力产品订单 = 3 ， 体验店订单 = 4；
 @property (nonatomic, copy) NSString *ISV_BillPay_MerchantAcctId; // 人民币网关账号
 @property (nonatomic, copy) NSString *ISV_BillPay_inputCharset;	// 字符编码
 @property (nonatomic, copy) NSString *ISV_BillPay_Version;	// 网关版本，固定值：v2.0,该参数必填。

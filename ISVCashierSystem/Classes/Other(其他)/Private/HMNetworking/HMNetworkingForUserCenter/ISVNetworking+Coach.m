@@ -27,7 +27,7 @@
 }
 
 /**
- * `根据邀请码获取私教名称`
+ * `根据邀请码获取便名称`
  */
 + (void)coachNameByInviteCode:(NSString *)inviteCode success:(RespondBlock)success failure:(ErrorBlock)failure
 {
@@ -41,7 +41,7 @@
     }];
 }
 /**
- * `获取私教信息`
+ * `获取便信息`
  */
 + (void)coachInfoWithUserID:(NSString *)userID success:(RespondBlock)success failure:(ErrorBlock)failure
 {
@@ -55,7 +55,7 @@
     }];
 }
 /*
- 3.私教注册
+ 3.便注册
  网址：http://192.168.1.238:5000/trainer/OperatePersonalTrainer/key
  类型：post
  数据类型：Content-Type: text/json
@@ -104,18 +104,18 @@
  
  参数说明：
  参数	说明	值
- succeed	操作完成后返回状态	true，私教注册成功，false，私教注册失败
- errmsg	操作完成后返回信息	私教申请失败 = 10018,
- 私教申请成功 = 10019,
+ succeed	操作完成后返回状态	true，便注册成功，false，便注册失败
+ errmsg	操作完成后返回信息	便申请失败 = 10018,
+ 便申请成功 = 10019,
  您的申请正在审核中 = 10020,
  邀请码不存在 = 10021,
  会员信息不一致 = 10022,
- 私教注册异常 = 10023,
+ 便注册异常 = 10023,
  专业队和毕业学校必选其一 = 10096
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse	无	null
  */
-#pragma - 私教注册
+#pragma - 便注册
 + (void)coachApplyWithName:(NSString *)ISV_PT_Name
                       card:(NSString *)ISV_PT_IDCard
                  education:(NSString *)ISV_PT_Education
@@ -172,7 +172,7 @@
 
 
 /*
- 4.私教信息修改
+ 4.便信息修改
  网址：http://192.168.1.238:5000/trainer/OperatePersonalTrainer/key
  类型：post
  数据类型：Content-Type: text/json
@@ -192,14 +192,14 @@
  参数	是否必须	描述
  key	是	用户登录后返回的token
  ISV_PT_Education	是	学历
- ISV_PT_CourseCost	否	私教课程费用
+ ISV_PT_CourseCost	否	便课程费用
  ISV_PT_Province	是	省份
  ISV_PT_City	是	城市
  ISV_PT_TeachingSite	是	教学场地
  ISV_PT_Introduction	是	个人简介
  ISV_PT_Team	否	专业队
  ISV_PT_College	否	毕业学校
- ISV_PT_TeachingProgram	否	私教授课项目
+ ISV_PT_TeachingProgram	否	便授课项目
  
  返回说明Json：
  {
@@ -210,14 +210,14 @@
  }
  参数说明：
  参数	说明	值
- succeed	操作完成后返回状态	true，私教修改成功，false，私教修改失败
- errmsg	操作完成后返回信息	私教信息修改失败 = 10024,
- 私教信息修改成功 = 10025,
- 私教信息修改异常 = 10026
+ succeed	操作完成后返回状态	true，便修改成功，false，便修改失败
+ errmsg	操作完成后返回信息	便信息修改失败 = 10024,
+ 便信息修改成功 = 10025,
+ 便信息修改异常 = 10026
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse	无	null
  */
-#pragma - 私教信息修改
+#pragma - 便信息修改
 + (void)coachModifyWithEducation:(NSUInteger)education
                             team:(NSString *)ISV_PT_Team
                          college:(NSString *)ISV_PT_College
@@ -284,7 +284,7 @@
 
 
 /*
- 5.私教开启接单模式
+ 5.便开启接单模式
  网址：http://192.168.1.238:5000/trainer/StartOrderMode/key
  类型：post
  数据类型：Content-Type: text/json
@@ -298,8 +298,8 @@
  参数	是否必须	描述
  key	是	用户登录后返回的token
  ISV_OSM_OrderDuration	是	接单时段
- ISV_OSM_Longitude	是	私教经度
- ISV_OSM_Latitude	是	私教纬度
+ ISV_OSM_Longitude	是	便经度
+ ISV_OSM_Latitude	是	便纬度
  
  返回说明Json：
  {
@@ -317,7 +317,7 @@
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse	无	null
  */
-//#pragma mark - 私教开启接单模式
+//#pragma mark - 便开启接单模式
 //+ (void)startOrderModeWithOrderDuration:(NSArray *)ISV_OSM_OrderDuration success:(RespondBlock)success failure:(ErrorBlock)failure
 //{
 //#warning 需从定位模块获取
@@ -335,7 +335,7 @@
 //}
 
 /*
- 12.私教操作订单
+ 12.便操作订单
  网址：http://192.168.1.238:5000/trainer/trainerorder?key=&orderId=&isReceive=true
  类型：post
  参数说明：
@@ -357,11 +357,11 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	true，用户实体获取成功false，用户实体获取失败
- errmsg	操作完成后返回信息	APP端私教接受订单成功提醒用户付款 = 10048,
- WAP端私教接受订单成功 = 10049,
- APP端私教取消订单成功 = 10050,
- WAP端私教取消订单成功申请退款 = 10051,
- 私教操作订单异常 = 10052,
+ errmsg	操作完成后返回信息	APP端便接受订单成功提醒用户付款 = 10048,
+ WAP端便接受订单成功 = 10049,
+ APP端便取消订单成功 = 10050,
+ WAP端便取消订单成功申请退款 = 10051,
+ 便操作订单异常 = 10052,
  预定项目不能为空 = 10053,
  预定时间不能为空 = 10054,
  手机号不能为空 = 10055,
@@ -370,7 +370,7 @@
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse.orderId	订单号	201510101720393305623
  */
-#pragma mark - 私教操作订单
+#pragma mark - 便操作订单
 + (void)coachDealOrderWithOrderId:(NSString *)ID yesOrNot:(BOOL)yOrN success:(RespondBlock)success failure:(ErrorBlock)failure
 {
     NSString *key = [self token];
@@ -386,7 +386,7 @@
 }
 
 /**
- *  `私教获取私教被约订单`
+ *  `便获取便被约订单`
  */
 + (void)coachOrderByAppointWithOrderId:(NSString *)orderId
                                   page:(NSUInteger)page
@@ -408,7 +408,7 @@
 }
 
 /**
- *  `私教小屋图片和视频管理`
+ *  `便小屋图片和视频管理`
  */
 + (void)coachImgOrVedioManagerWithId:(NSString *)Id
                                 type:(NSString *)type
@@ -452,7 +452,7 @@
 }
 
 /**
- *  `119.私教小屋顶部背景图片管理`
+ *  `119.便小屋顶部背景图片管理`
  */
 + (void)coachCoverUploadWithCode:(NSString *)Id
                          success:(RespondBlock)success
@@ -471,7 +471,7 @@
 
 
 /**
- *  私教团队
+ *  便团队
  */
 + (void)coashTeamWithPage:(NSUInteger)page count:(NSUInteger)count success:(RespondBlock)success failure:(ErrorBlock)failure
 {
@@ -484,7 +484,7 @@
 }
 
 /**
- *  私教看用户约自己的订单列表时：
+ *  便看用户约自己的订单列表时：
  */
 + (void)coachCourseOrderListWithPage:(NSInteger)page count:(NSInteger)count courseID:(NSString *)courseID type:(NSString *)type success:(RespondBlock)success failure:(ErrorBlock)failure
 {
@@ -518,7 +518,7 @@
 
 /*
  23-26拉取商品--逻辑分析
- 1.按照不同条件获取商品，type=ALL时，获取商品分类cid下所有商品，type=ALLWITHOUTPT时，获取商品分类cid下，滤过私教已选取的商品，type=PT时，获取私教选取的商品，type=SEARCH时，按商品名称模糊搜索商品；
+ 1.按照不同条件获取商品，type=ALL时，获取商品分类cid下所有商品，type=ALLWITHOUTPT时，获取商品分类cid下，滤过便已选取的商品，type=PT时，获取便选取的商品，type=SEARCH时，按商品名称模糊搜索商品；
  2.这四种条件下获取的商品包括淘宝商品和便掌柜商品，它们分页显示，page为第几页，count为每页商品数量；
  3.
  4.由于新旧版匹配问题，验证用户登录的key目前暂时用于传用户id这个参数。
@@ -605,7 +605,7 @@
 
 
 /*
- 24.获取cid下，滤过私教已经选取的商品
+ 24.获取cid下，滤过便已经选取的商品
  网址：http://192.168.1.238:5000/total/TotalProduct?key=&cid=&type=ALLWITHOUTPT&page=&count=
  类型：get
  数据类型：Content-Type: application/json
@@ -687,7 +687,7 @@
 
 
 /*
- 25获取私教选取商品
+ 25获取便选取商品
  网址：http://192.168.1.238:5000/total/TotalProduct?key=&cid=&type=PT&page=&count=
  类型：get
  数据类型：Content-Type: application/json
@@ -826,14 +826,14 @@
 
 
 /*
- 4.2.2 点击更多跳转该私教的商品列表
+ 4.2.2 点击更多跳转该便的商品列表
  功能实现要求：列表app调用接口返回数据，实现商品列表展示。点击某个商品，进入商品详情页面（web）。
  
  http://shop.hdshl.com/product/product_list/?educationID=123456
  
  参数说明：
  输入参数	说明	必填	类型
- educationID	私教ID 	是	String
+ educationID	便ID 	是	String
  
  */
 

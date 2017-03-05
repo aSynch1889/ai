@@ -39,9 +39,9 @@
 	<key>10017</key>
 	<string>用户详情修改异常</string>
 	<key>10018</key>
-	<string>私教申请失败</string>
+	<string>便申请失败</string>
 	<key>10019</key>
-	<string>私教申请成功</string>
+	<string>便申请成功</string>
 	<key>10020</key>
 	<string>您的申请正在审核中</string>
 	<key>10021</key>
@@ -49,13 +49,13 @@
 	<key>10022</key>
 	<string>用户信息不一致</string>
 	<key>10023</key>
-	<string>私教注册异常</string>
+	<string>便注册异常</string>
 	<key>10024</key>
-	<string>私教信息修改失败</string>
+	<string>便信息修改失败</string>
 	<key>10025</key>
-	<string>私教信息修改成功</string>
+	<string>便信息修改成功</string>
 	<key>10026</key>
-	<string>私教信息修改异常</string>
+	<string>便信息修改异常</string>
 	<key>10027</key>
 	<string>接单模式开启失败</string>
 	<key>10028</key>
@@ -75,11 +75,11 @@
 	<key>10035</key>
 	<string>用户实体获取成功</string>
 	<key>10036</key>
-	<string>私教拉取失败</string>
+	<string>便拉取失败</string>
 	<key>10037</key>
-	<string>私教拉取成功</string>
+	<string>便拉取成功</string>
 	<key>10038</key>
-	<string>私教拉取异常</string>
+	<string>便拉取异常</string>
 	<key>10039</key>
 	<string>用户下单成功</string>
 	<key>10040</key>
@@ -99,15 +99,15 @@
 	<key>10047</key>
 	<string>用户拉取异常</string>
 	<key>10048</key>
-	<string>私教接受订单成功</string>
+	<string>便接受订单成功</string>
 	<key>10049</key>
-	<string>私教接受订单失败</string>
+	<string>便接受订单失败</string>
 	<key>10050</key>
-	<string>私教取消订单成功</string>
+	<string>便取消订单成功</string>
 	<key>10051</key>
-	<string>私教取消订单失败</string>
+	<string>便取消订单失败</string>
 	<key>10052</key>
-	<string>私教操作订单异常</string>
+	<string>便操作订单异常</string>
 	<key>10053</key>
 	<string>预定项目不能为空</string>
 	<key>10054</key>
@@ -183,11 +183,11 @@
 	<key>10092</key>
 	<string>该提现已通过审核请勿重复审核</string>
 	<key>10093</key>
-	<string>私教评论操作异常</string>
+	<string>便评论操作异常</string>
 	<key>10094</key>
-	<string>私教评论成功</string>
+	<string>便评论成功</string>
 	<key>10095</key>
-	<string>私教该订单已经评论</string>
+	<string>便该订单已经评论</string>
 	<key>10096</key>
 	<string>专业队和毕业学校必选其一</string>
 	<key>10097</key>
@@ -233,11 +233,11 @@
 	<key>10117</key>
 	<string>产品分类拉取异常</string>
 	<key>10118</key>
-	<string>拉取私教产品成功</string>
+	<string>拉取便产品成功</string>
 	<key>10119</key>
-	<string>该私教无产品</string>
+	<string>该便无产品</string>
 	<key>10120</key>
-	<string>私教产品拉取异常</string>
+	<string>便产品拉取异常</string>
 	<key>10121</key>
 	<string>发送验证码验证失败</string>
 	<key>10122</key>
@@ -253,13 +253,13 @@
 	<key>10127</key>
 	<string>银行卡保存异常</string>
 	<key>10128</key>
-	<string>私教产品保存成功</string>
+	<string>便产品保存成功</string>
 	<key>10129</key>
-	<string>私教产品保存失败</string>
+	<string>便产品保存失败</string>
 	<key>10130</key>
-	<string>私教保存产品异常</string>
+	<string>便保存产品异常</string>
 	<key>10131</key>
-	<string>请勿尝试非私教操作</string>
+	<string>请勿尝试非便操作</string>
 	<key>10132</key>
 	<string>春晚报名失败</string>
 	<key>10133</key>
@@ -315,13 +315,13 @@
 	<key>10158</key>
 	<string>商品上下架操作异常</string>
 	<key>10159</key>
-	<string>私教订单记录添加成功</string>
+	<string>便订单记录添加成功</string>
 	<key>10160</key>
-	<string>私教订单记录添加失败</string>
+	<string>便订单记录添加失败</string>
 	<key>10161</key>
-	<string>私教订单记录添加异常</string>
+	<string>便订单记录添加异常</string>
 	<key>10162</key>
-	<string>该私教不存在</string>
+	<string>该便不存在</string>
 	<key>10163</key>
 	<string>该订单号已存在</string>
 	<key>10164</key>
@@ -423,9 +423,9 @@
 	<key>10215</key>
 	<string>获取订单异常</string>
 	<key>10216</key>
-	<string>请输入私教姓名</string>
+	<string>请输入便姓名</string>
 	<key>10217</key>
-	<string>私教姓名不能超过8个汉字</string>
+	<string>便姓名不能超过8个汉字</string>
 	<key>10218</key>
 	<string>身份证格式不合法</string>
 	<key>10219</key>
@@ -487,15 +487,15 @@
 	<key>10247</key>
 	<string>微信会员id绑定失败</string>
 	<key>10248</key>
-	<string>用户不是私教</string>
+	<string>用户不是便</string>
 	<key>10249</key>
-	<string>用户不是私教</string>
+	<string>用户不是便</string>
 	<key>10250</key>
-	<string>获取私教信息成功</string>
+	<string>获取便信息成功</string>
 	<key>10251</key>
-	<string>获取私教信息失败</string>
+	<string>获取便信息失败</string>
 	<key>10252</key>
-	<string>获取私教信息异常</string>
+	<string>获取便信息异常</string>
 	<key>10253</key>
 	<string>游客登陆成功</string>
 	<key>10254</key>
@@ -713,11 +713,11 @@
 	<key>10360</key>
 	<string>获取学历列表异常</string>
 	<key>10361</key>
-	<string>获取私教项目列表成功</string>
+	<string>获取便项目列表成功</string>
 	<key>10362</key>
-	<string>获取私教项目列表失败</string>
+	<string>获取便项目列表失败</string>
 	<key>10363</key>
-	<string>获取私教项目列表异常</string>
+	<string>获取便项目列表异常</string>
 	<key>10364</key>
 	<string>获取用户银行卡信息成功</string>
 	<key>10365</key>
@@ -755,11 +755,11 @@
 	<key>10381</key>
 	<string>获取已付款用户头像列表异常</string>
 	<key>10382</key>
-	<string>获取私教发布课程列表成功</string>
+	<string>获取便发布课程列表成功</string>
 	<key>10383</key>
-	<string>获取私教发布课程列表失败</string>
+	<string>获取便发布课程列表失败</string>
 	<key>10384</key>
-	<string>获取私教发布课程列表异常</string>
+	<string>获取便发布课程列表异常</string>
 	<key>10385</key>
 	<string>获取课程详情成功</string>
 	<key>10386</key>
@@ -851,9 +851,9 @@
 	<key>10429</key>
 	<string>改变订单状态或者支付状态异常</string>
 	<key>10430</key>
-	<string>私教回复成功</string>
+	<string>便回复成功</string>
 	<key>10431</key>
-	<string>私教回复失败</string>
+	<string>便回复失败</string>
 	<key>10432</key>
 	<string>用户评论失败</string>
 	<key>10433</key>
@@ -867,11 +867,11 @@
 	<key>10437</key>
 	<string>团购退款申请异常</string>
 	<key>10438</key>
-	<string>获取私教团购课程列表成功</string>
+	<string>获取便团购课程列表成功</string>
 	<key>10439</key>
-	<string>获取私教团购课程列表失败</string>
+	<string>获取便团购课程列表失败</string>
 	<key>10440</key>
-	<string>获取私教团购课程列表异常</string>
+	<string>获取便团购课程列表异常</string>
 	<key>10441</key>
 	<string>用户评论异常</string>
 	<key>10442</key>
@@ -901,7 +901,7 @@
 	<key>10454</key>
 	<string>您已报名</string>
 	<key>10455</key>
-	<string>私教不能报名自己的课程</string>
+	<string>便不能报名自己的课程</string>
 	<key>10456</key>
 	<string>未操作订单或操作失败</string>
 	<key>10457</key>
@@ -911,7 +911,7 @@
 	<key>10459</key>
 	<string>每个用户对同一课程只能评论一次</string>
 	<key>10460</key>
-	<string>不是发布该课程的私教</string>
+	<string>不是发布该课程的便</string>
 	<key>10461</key>
 	<string>获取用户咨询列表成功</string>
 	<key>10462</key>
@@ -919,17 +919,17 @@
 	<key>10463</key>
 	<string>获取用户咨询列表异常</string>
 	<key>10464</key>
-	<string>获取私教团队成功</string>
+	<string>获取便团队成功</string>
 	<key>10465</key>
-	<string>获取私教团队失败</string>
+	<string>获取便团队失败</string>
 	<key>10466</key>
-	<string>获取私教团队异常</string>
+	<string>获取便团队异常</string>
 	<key>10467</key>
-	<string>获取私教小屋信息成功</string>
+	<string>获取便小屋信息成功</string>
 	<key>10468</key>
-	<string>获取私教小屋信息失败</string>
+	<string>获取便小屋信息失败</string>
 	<key>10469</key>
-	<string>获取私教小屋信息异常</string>
+	<string>获取便小屋信息异常</string>
 	<key>10470</key>
 	<string>未付款用户不能评论</string>
 	<key>10471</key>
@@ -955,7 +955,7 @@
 	<key>10481</key>
 	<string>传入的user_id错误</string>
 	<key>10482</key>
-	<string>私教申请成功但接单默认时段修改标识插入失败</string>
+	<string>便申请成功但接单默认时段修改标识插入失败</string>
 	<key>10483</key>
 	<string>获取品牌列表异常</string>
 	<key>10484</key>
@@ -981,7 +981,7 @@
 	<key>10494</key>
 	<string>每日请求次数不能超过10次不发送短信提示</string>
 	<key>10495</key>
-	<string>私教信息修改成功但接单默认时段修改标识插入失败</string>
+	<string>便信息修改成功但接单默认时段修改标识插入失败</string>
 	<key>10496</key>
 	<string>请勿重复报名邀约</string>
 	<key>10497</key>
@@ -1001,11 +1001,11 @@
 	<key>10504</key>
 	<string>获取提现审核记录成功</string>
 	<key>10505</key>
-	<string>场馆入驻申请成功</string>
+	<string>掌柜入驻申请成功</string>
 	<key>10506</key>
-	<string>场馆信息保存失败</string>
+	<string>掌柜信息保存失败</string>
 	<key>10507</key>
-	<string>场馆入驻申请异常</string>
+	<string>掌柜入驻申请异常</string>
 	<key>10508</key>
 	<string>营业执照注册号只能输入数字</string>
 	<key>10510</key>
@@ -1015,71 +1015,71 @@
 	<key>10512</key>
 	<string>结束时间必须大于开始时间</string>
 	<key>10513</key>
-	<string>场馆名称不能超过40个字符</string>
+	<string>掌柜名称不能超过40个字符</string>
 	<key>10514</key>
-	<string>场馆电话或场馆手机格式不正确</string>
+	<string>掌柜电话或掌柜手机格式不正确</string>
 	<key>10515</key>
-	<string>场馆简介不超过600个字符</string>
+	<string>掌柜简介不超过600个字符</string>
 	<key>10516</key>
 	<string>入驻申请请码不正确</string>
 	<key>10517</key>
-	<string>场馆信息修改成功</string>
+	<string>掌柜信息修改成功</string>
 	<key>10518</key>
-	<string>筛选场馆列表成功</string>
+	<string>筛选掌柜列表成功</string>
 	<key>10519</key>
-	<string>筛选场馆列表异常</string>
+	<string>筛选掌柜列表异常</string>
 	<key>10520</key>
-	<string>搜索场馆成功</string>
+	<string>搜索掌柜成功</string>
 	<key>10521</key>
-	<string>搜索场馆异常</string>
+	<string>搜索掌柜异常</string>
 	<key>10522</key>
 	<string>获取城市列表成功</string>
 	<key>10523</key>
 	<string>获取城市列表异常</string>
 	<key>10524</key>
-	<string>获取场馆信息成功</string>
+	<string>获取掌柜信息成功</string>
 	<key>10525</key>
-	<string>获取场馆信息异常</string>
+	<string>获取掌柜信息异常</string>
 	<key>10526</key>
-	<string>筛选养生馆列表成功</string>
+	<string>筛选钱xx列表成功</string>
 	<key>10527</key>
-	<string>筛选养生馆列表异常</string>
+	<string>筛选钱xx列表异常</string>
 	<key>10528</key>
-	<string>搜索养生馆成功</string>
+	<string>搜索钱xx成功</string>
 	<key>10529</key>
-	<string>搜索养生馆异常</string>
+	<string>搜索钱xx异常</string>
 	<key>10530</key>
-	<string>获取场馆项目列表成功</string>
+	<string>获取掌柜项目列表成功</string>
 	<key>10531</key>
-	<string>获取场馆项目列表异常</string>
+	<string>获取掌柜项目列表异常</string>
 	<key>10532</key>
-	<string>获取场馆列表成功</string>
+	<string>获取掌柜列表成功</string>
 	<key>10533</key>
-	<string>获取场馆列表异常</string>
+	<string>获取掌柜列表异常</string>
 	<key>10534</key>
-	<string>养生馆入驻申请成功</string>
+	<string>钱xx入驻申请成功</string>
 	<key>10535</key>
-	<string>养生馆信息修改成功</string>
+	<string>钱xx信息修改成功</string>
 	<key>10536</key>
-	<string>养生馆信息保存失败</string>
+	<string>钱xx信息保存失败</string>
 	<key>10537</key>
 	<string>邀请码不正确</string>
 	<key>10538</key>
-	<string>养生馆入驻申请异常</string>
+	<string>钱xx入驻申请异常</string>
 	<key>10539</key>
 	<string>申请审核中不能修改信息</string>
 	<key>10540</key>
-	<string>获取养生馆详情成功</string>
+	<string>获取钱xx详情成功</string>
 	<key>10541</key>
-	<string>获取养生馆详情异常</string>
+	<string>获取钱xx详情异常</string>
 	<key>10542</key>
-	<string>请勿非场馆主操作</string>
+	<string>请勿非掌柜主操作</string>
 	<key>10543</key>
-	<string>场馆下单成功</string>
+	<string>掌柜下单成功</string>
 	<key>10544</key>
-	<string>场馆下单失败</string>
+	<string>掌柜下单失败</string>
 	<key>10545</key>
-	<string>场馆下单异常</string>
+	<string>掌柜下单异常</string>
 	<key>10546</key>
 	<string>发表说说成功</string>
 	<key>10547</key>
@@ -1139,45 +1139,45 @@
 	<key>10574</key>
 	<string>获取提现审核记录异常</string>
 	<key>10575</key>
-	<string>获取场馆订单成功</string>
+	<string>获取掌柜订单成功</string>
 	<key>10576</key>
-	<string>获取场馆订单异常</string>
+	<string>获取掌柜订单异常</string>
 	<key>10577</key>
-	<string>获取场馆订单详情成功</string>
+	<string>获取掌柜订单详情成功</string>
 	<key>10578</key>
-	<string>获取场馆订单详情异常</string>
+	<string>获取掌柜订单详情异常</string>
 	<key>10579</key>
 	<string>已补贴的订单不能查看</string>
 	<key>10580</key>
-	<string>养生馆下单成功</string>
+	<string>钱xx下单成功</string>
 	<key>10581</key>
-	<string>养生馆下单失败</string>
+	<string>钱xx下单失败</string>
 	<key>10582</key>
-	<string>养生馆下单异常</string>
+	<string>钱xx下单异常</string>
 	<key>10583</key>
-	<string>获取养生馆订单成功</string>
+	<string>获取钱xx订单成功</string>
 	<key>10584</key>
-	<string>获取养生馆订单异常</string>
+	<string>获取钱xx订单异常</string>
 	<key>10585</key>
-	<string>获取养生馆订单详情成功</string>
+	<string>获取钱xx订单详情成功</string>
 	<key>10586</key>
-	<string>获取养生馆订单详情异常</string>
+	<string>获取钱xx订单详情异常</string>
 	<key>10587</key>
-	<string>养生馆订单核销成功</string>
+	<string>钱xx订单核销成功</string>
 	<key>10588</key>
-	<string>养生馆订单核销失败</string>
+	<string>钱xx订单核销失败</string>
 	<key>10589</key>
-	<string>养生馆订单核销异常</string>
+	<string>钱xx订单核销异常</string>
 	<key>10590</key>
-	<string>养生馆验证码不正确</string>
+	<string>钱xx验证码不正确</string>
 	<key>10591</key>
-	<string>场馆订单核销成功</string>
+	<string>掌柜订单核销成功</string>
 	<key>10592</key>
-	<string>场馆订单核销失败</string>
+	<string>掌柜订单核销失败</string>
 	<key>10593</key>
-	<string>场馆订单核销异常</string>
+	<string>掌柜订单核销异常</string>
 	<key>10594</key>
-	<string>场馆验证码不正确</string>
+	<string>掌柜验证码不正确</string>
 	<key>10595</key>
 	<string>小屋管理操作成功</string>
 	<key>10596</key>
@@ -1251,9 +1251,9 @@
 	<key>10630</key>
 	<string>获取粉丝关注的用户列表异常</string>
 	<key>10631</key>
-	<string>获取养生馆项目成功</string>
+	<string>获取钱xx项目成功</string>
 	<key>10632</key>
-	<string>获取养生馆项目异常</string>
+	<string>获取钱xx项目异常</string>
 	<key>10662</key>
 	<string>无此好友申请记录</string>
 	<key>10663</key>
@@ -1287,7 +1287,7 @@
 	<key>10677</key>
 	<string>获取二维码信息异常</string>
 	<key>10678</key>
-	<string>不能关注非私教用户</string>
+	<string>不能关注非便用户</string>
 	<key>10679</key>
 	<string>自己不能报名自己的邀约</string>
 	<key>10680</key>
@@ -1309,7 +1309,7 @@
 	<key>10688</key>
 	<string>手续费计算错误</string>
 	<key>10689</key>
-	<string>请输入场馆名称</string>
+	<string>请输入掌柜名称</string>
 	<key>10690</key>
 	<string>价格计算错误</string>
 	<key>10691</key>
@@ -1319,7 +1319,7 @@
 	<key>10693</key>
 	<string>价格计算错误</string>
 	<key>10694</key>
-	<string>私教该订单失败</string>
+	<string>便该订单失败</string>
 	<key>10695</key>
 	<string>非该订单用户不能评价</string>
 	<key>10696</key>
@@ -1333,67 +1333,67 @@
 	<key>10700</key>
 	<string>不是发问人操作</string>
 	<key>10701</key>
-	<string>根据邀请码获取私教真名成功</string>
+	<string>根据邀请码获取便真名成功</string>
 	<key>10702</key>
-	<string>根据邀请码获取私教真名异常</string>
+	<string>根据邀请码获取便真名异常</string>
 	<key>10703</key>
 	<string>问题不存在或已删除</string>
 	<key>10704</key>
 	<string>非本人操作</string>
 	<key>10705</key>
-	<string>只能关注私教</string>
+	<string>只能关注便</string>
 	<key>10706</key>
 	<string>用户咨询成功</string>
 	<key>10707</key>
 	<string>用户咨询失败</string>
 	<key>10708</key>
-	<string>请输入养生馆名称</string>
+	<string>请输入钱xx名称</string>
 	<key>10709</key>
-	<string>养生馆名称不能超过40个字符</string>
+	<string>钱xx名称不能超过40个字符</string>
 	<key>10710</key>
-	<string>养生馆电话或手机格式不正确</string>
+	<string>钱xx电话或手机格式不正确</string>
 	<key>10711</key>
-	<string>养生馆简介不超过600个字符</string>
+	<string>钱xx简介不超过600个字符</string>
 	<key>10712</key>
-	<string>场馆评价成功</string>
+	<string>掌柜评价成功</string>
 	<key>10713</key>
 	<string>用户对一个订单只能评价一次</string>
 	<key>10714</key>
 	<string>不是下单人不能评价</string>
 	<key>10715</key>
-	<string>场馆评价失败</string>
+	<string>掌柜评价失败</string>
 	<key>10716</key>
-	<string>场馆评价异常</string>
+	<string>掌柜评价异常</string>
 	<key>10717</key>
-	<string>养生馆评价成功</string>
+	<string>钱xx评价成功</string>
 	<key>10718</key>
 	<string>用户对一个订单只能评价一次</string>
 	<key>10719</key>
 	<string>不是下单人不能评价</string>
 	<key>10720</key>
-	<string>养生馆评价失败</string>
+	<string>钱xx评价失败</string>
 	<key>10721</key>
-	<string>养生馆评价异常</string>
+	<string>钱xx评价异常</string>
 	<key>10722</key>
-	<string>获取场馆评论列表成功</string>
+	<string>获取掌柜评论列表成功</string>
 	<key>10723</key>
-	<string>获取场馆评论列表异常</string>
+	<string>获取掌柜评论列表异常</string>
 	<key>10724</key>
-	<string>获取养生馆评论列表成功</string>
+	<string>获取钱xx评论列表成功</string>
 	<key>10725</key>
-	<string>获取养生馆评论列表异常</string>
+	<string>获取钱xx评论列表异常</string>
 	<key>10726</key>
-	<string>获取我的场馆列表成功</string>
+	<string>获取我的掌柜列表成功</string>
 	<key>10727</key>
-	<string>获取我的场馆列表异常</string>
+	<string>获取我的掌柜列表异常</string>
 	<key>10728</key>
-	<string>获取我的养生馆列表成功</string>
+	<string>获取我的钱xx列表成功</string>
 	<key>10729</key>
-	<string>获取我的养生馆列表异常</string>
+	<string>获取我的钱xx列表异常</string>
 	<key>10730</key>
 	<string>此订单无法取消</string>
 	<key>10731</key>
-	<string>团购课程和私教不匹配</string>
+	<string>团购课程和便不匹配</string>
 	<key>10732</key>
 	<string>您已报名但未支付</string>
 	<key>10733</key>
@@ -1407,13 +1407,13 @@
 	<key>10737</key>
 	<string>app用户添加优惠券异常</string>
 	<key>10738</key>
-	<string>获取私教全部图片或者视频成功</string>
+	<string>获取便全部图片或者视频成功</string>
 	<key>10739</key>
-	<string>获取私教全部图片或者视频异常</string>
+	<string>获取便全部图片或者视频异常</string>
 	<key>10740</key>
-	<string>根据姓名搜索私教成功</string>
+	<string>根据姓名搜索便成功</string>
 	<key>10741</key>
-	<string>根据姓名搜索私教异常</string>
+	<string>根据姓名搜索便异常</string>
 	<key>10742</key>
 	<string>获取活动列表成功</string>
 	<key>10743</key>
@@ -1447,31 +1447,31 @@
 	<key>10757</key>
 	<string>订单不是已付款状态</string>
 	<key>10758</key>
-	<string>多个私教拥有同一个验证码</string>
+	<string>多个便拥有同一个验证码</string>
 	<key>10759</key>
 	<string>该验证码不存在</string>
 	<key>10760</key>
-	<string>获取私教评论列表成功</string>
+	<string>获取便评论列表成功</string>
 	<key>10761</key>
-	<string>获取私教评论列表异常</string>
+	<string>获取便评论列表异常</string>
 	<key>10762</key>
-	<string>获取养生馆团队成功</string>
+	<string>获取钱xx团队成功</string>
 	<key>10763</key>
-	<string>获取养生馆团队异常</string>
+	<string>获取钱xx团队异常</string>
 	<key>10764</key>
-	<string>获取场馆团队成功</string>
+	<string>获取掌柜团队成功</string>
 	<key>10765</key>
-	<string>获取场馆团队异常</string>
+	<string>获取掌柜团队异常</string>
 	<key>10766</key>
 	<string>获取支付配置信息成功</string>
 	<key>10767</key>
 	<string>获取支付配置信息异常</string>
 	<key>10768</key>
-	<string>推荐私教或者每周之星获取成功</string>
+	<string>推荐便或者每周之星获取成功</string>
 	<key>10769</key>
-	<string>推荐私教或者每周之星获取异常</string>
+	<string>推荐便或者每周之星获取异常</string>
 	<key>10770</key>
-	<string>私教拒绝接单</string>
+	<string>便拒绝接单</string>
 	<key>10771</key>
 	<string>用户没有注册</string>
 	<key>10772</key>
@@ -1489,7 +1489,7 @@
 	<key>10778</key>
 	<string>搜索团购课程列表异常</string>
 	<key>10779</key>
-	<string>不是私教本人不能查看私教所有信息</string>
+	<string>不是便本人不能查看便所有信息</string>
 	<key>10816</key>
 	<string>该订单不存在</string>
 	<key>10817</key>
@@ -1503,9 +1503,9 @@
 	<key>10821</key>
 	<string>获取小屋分享信息异常</string>
 	<key>10822</key>
-	<string>获取场馆分享信息成功</string>
+	<string>获取掌柜分享信息成功</string>
 	<key>10823</key>
-	<string>获取场馆分享信息异常</string>
+	<string>获取掌柜分享信息异常</string>
 	<key>10824</key>
 	<string>获取邀请好友分享信息成功</string>
 	<key>10825</key>
@@ -1557,15 +1557,15 @@
 	<key>10848</key>
 	<string>重复支付已申请退款</string>
 	<key>10849</key>
-	<string>私教订单退款申请成功</string>
+	<string>便订单退款申请成功</string>
 	<key>10850</key>
-	<string>私教订单退款申请失败</string>
+	<string>便订单退款申请失败</string>
 	<key>10851</key>
-	<string>私教订单退款申请异常</string>
+	<string>便订单退款申请异常</string>
 	<key>10852</key>
-	<string>获取养生馆分享信息成功</string>
+	<string>获取钱xx分享信息成功</string>
 	<key>10853</key>
-	<string>获取养生馆分享信息异常</string>
+	<string>获取钱xx分享信息异常</string>
 	<key>10854</key>
 	<string>该订单状态不正确</string>
 	<key>10855</key>

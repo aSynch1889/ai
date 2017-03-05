@@ -2,7 +2,7 @@
 //  ISVGlobalEnum.h
 //  ISV
 //
-//  Created by aaaa on 15/11/3.
+//  Created by aaaa on 17/3/5.
 //  Copyright © 2017年 ISV. All rights reserved.
 //
 
@@ -22,12 +22,12 @@ typedef enum : NSUInteger {
 // 项目类型
 typedef enum : NSUInteger {
     ISVProjectTypeAskFriend = 0, // 约动友
-    ISVProjectTypeAskCoach = 1,  // 约私教
-    ISVProjectTypePlace = 2,     // 场馆
-    ISVProjectTypeRegimen = 3,   // 养生馆
+    ISVProjectTypeAskCoach = 1,  // 约便
+    ISVProjectTypePlace = 2,     // 掌柜
+    ISVProjectTypeRegimen = 3,   // 钱xx
 } ISVProjectType;
 
-// 私教、场馆、养生馆 申请状态
+// 便、掌柜、钱xx 申请状态
 typedef enum : NSInteger {
     ISVStatusNotApply   = -1,    // 用户完善资料后
     ISVStatusApplying   = 1,    // 申请私中
@@ -36,7 +36,7 @@ typedef enum : NSInteger {
 
 } ISVStatusApply;
 
-//--场馆状态（-2，已冻结，-1，未通过，0：审核中，1：通过 ）
+//--掌柜状态（-2，已冻结，-1，未通过，0：审核中，1：通过 ）
 //--核审状态，暂定0：审核中，-1，未通过，1：通过
 typedef NS_ENUM(NSInteger, ISVAuditStatus) {
     ISVAuditStatusFrozen   = -2,//已冻结
@@ -80,7 +80,7 @@ typedef enum : NSUInteger {
     
 } ISVQRCodeToolRule;
 
-// 私教被约的订单类型（私教端）
+// 便被约的订单类型（便端）
 typedef enum : NSUInteger {
     ISVCoachOrderStatusWaitCheck = 1,// 待确认1
     ISVCoachOrderStatusWaitPay = 2,      // 待支付2
@@ -95,7 +95,7 @@ typedef enum : NSUInteger {
     ISVCoachOrderStatusDel = 11,  // 已删除11
 } ISVCoachOrderStatus;
 
-// 私教被约的订单类型的描述
+// 便被约的订单类型的描述
 #define ISVCoachOrderStatusDesc \
         @{\
         @(ISVCoachOrderStatusWaitCheck):@"待确认",\
@@ -111,7 +111,7 @@ typedef enum : NSUInteger {
         @(ISVCoachOrderStatusDel):@"已删除"\
 }
 
-// 场馆订单及养生馆订单状态
+// 掌柜订单及钱xx订单状态
 // --订单状态（1：待确认、2：未支付、3：已取消、4：已完成、5：已付款、6处理中、7：已补贴、8：待核销、9：未评价、已10关闭、11：删除）（关闭：是在退款完成后的状态）
 typedef enum : NSUInteger{
     ISVOrderStatusToBeConfirm        = 1,//1：待确认
@@ -127,34 +127,34 @@ typedef enum : NSUInteger{
     ISVOrderStatusDel                = 11,//11：删除
 } ISVOrderStatus;
 
-//收支项目，0：提现，1：私教订单费用，2：私教订单补贴，3：私教团购费用，4：私教团购补贴，5：场馆费用，6：场馆补贴，7：养生馆费用，8：养生馆补贴，9：初始金额
+//收支项目，0：提现，1：便订单费用，2：便订单补贴，3：便团购费用，4：便团购补贴，5：掌柜费用，6：掌柜补贴，7：钱xx费用，8：钱xx补贴，9：初始金额
 typedef NS_ENUM(NSInteger, ISVInOrOutStatus) {
     ISVInOrOutStatusWithdraw          = 0,//提现
-    ISVInOrOutStatusCoachOrderFee     = 1,//私教订单费用
-    ISVInOrOutStatusCoachOrderSubsidy = 2,//私教订单补贴
-    ISVInOrOutStatusCourseFee         = 3,//私教团购费用
-    ISVInOrOutStatusCourseSubsidy     = 4,//私教团购补贴
-    ISVInOrOutStatusPlaceFee          = 5,//场馆费用
-    ISVInOrOutStatusPlaceSubsidy      = 6,//场馆补贴
-    ISVInOrOutStatusRegimenFee        = 7,//养生馆费用
-    ISVInOrOutStatusRegimenSubsidy    = 8,//养生馆补贴
+    ISVInOrOutStatusCoachOrderFee     = 1,//便订单费用
+    ISVInOrOutStatusCoachOrderSubsidy = 2,//便订单补贴
+    ISVInOrOutStatusCourseFee         = 3,//便团购费用
+    ISVInOrOutStatusCourseSubsidy     = 4,//便团购补贴
+    ISVInOrOutStatusPlaceFee          = 5,//掌柜费用
+    ISVInOrOutStatusPlaceSubsidy      = 6,//掌柜补贴
+    ISVInOrOutStatusRegimenFee        = 7,//钱xx费用
+    ISVInOrOutStatusRegimenSubsidy    = 8,//钱xx补贴
     ISVInOrOutStatusInitialAmount     = 9,//初始金额
 };
 
-//1：超时确认、 2：私教拒绝 3：超时支付 4：自行取消
+//1：超时确认、 2：便拒绝 3：超时支付 4：自行取消
 typedef NS_ENUM(NSUInteger, ISVOrderCancelStatus) {
     ISVOrderTimeOutConfirm = 1,//1：超时确认
-    ISVOrderReject         = 2,//2：私教拒绝
+    ISVOrderReject         = 2,//2：便拒绝
     ISVOrderTimeOutPay     = 3,//3：超时支付
     ISVOrderUserCancel     = 4//4：自行取消
 };
 
 // 不同类型的订单的评价
 typedef NS_ENUM(NSUInteger, ISVEvaluateOrderType) {
-    ISVEvaluateOrderCoach   = 1,//私教订单评价
+    ISVEvaluateOrderCoach   = 1,//便订单评价
     ISVEvaluateOrderCourse  = 2,//团购课程评价
-    ISVEvaluateOrderRegimen = 3,//养生馆订单评价
-    ISVEvaluateOrderPlace   = 4//场馆订单评价
+    ISVEvaluateOrderRegimen = 3,//钱xx订单评价
+    ISVEvaluateOrderPlace   = 4//掌柜订单评价
 };
 
 // 下单者和被下单者区分 用于普通用户和拥有者订单查看
@@ -174,10 +174,10 @@ typedef enum : NSUInteger {
 
 // 订单类型
 typedef enum : NSUInteger {
-    ISVOrderTypeCoach,       // 约私教订单
+    ISVOrderTypeCoach,       // 约便订单
     ISVOrderTypeCoachgroup,  // 课程团购订单
-    ISVOrderTypePlace,       // 约场馆订单
-    ISVOrderTypeRegimen,     // 养生馆订单
+    ISVOrderTypePlace,       // 约掌柜订单
+    ISVOrderTypeRegimen,     // 钱xx订单
     ISVOrderTypeShop,        // 商城
 } ISVOrderType;
 

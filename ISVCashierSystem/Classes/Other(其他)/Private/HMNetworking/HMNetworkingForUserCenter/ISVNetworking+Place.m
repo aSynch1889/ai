@@ -12,8 +12,8 @@
 
 
 /*
- 场馆相关↓
- 100.场馆入驻（申请或信息修改）
+ 掌柜相关↓
+ 100.掌柜入驻（申请或信息修改）
  网址：http://192.168.1.238:5000/Post
  类型：post
  数据类型：Content-Type: application/json
@@ -46,26 +46,26 @@
  参数说明：
  参数	是否必须	描述
  key	是	用户登录后返回的token
- venue_id	否	场馆ID(添加时不用传)
+ venue_id	否	掌柜ID(添加时不用传)
  ISV_vi_licenceno	是	营业执照注册号
  ISV_vi_idcard	是	身份证号
  ISV_vi_name	是	法人或代理人姓名
- ISV_vi_invitecode	是	私教提供的邀请码
+ ISV_vi_invitecode	是	便提供的邀请码
  ISV_vi_certificateimages	是	相关证件图片(LicenceNo：证件照片，IDCard：身份证，ClientScans:委托人照片，ClientIDCard：委托人身份证)
 
- ISV_vi_venueimages	是	场馆图片
- ISV_vi_venuename	是	场馆名称
+ ISV_vi_venueimages	是	掌柜图片
+ ISV_vi_venuename	是	掌柜名称
  ISV_vi_opentime	是	营业开始时间
  ISV_vi_closetime	是	营业结束时间
- ISV_vi_coordinate	是	场馆坐标
- ISV_vi_address	是	场馆地址
- ISV_vi_phone	二选一	场馆电话
- ISV_vi_mobile		场馆手机
- ISV_vi_introduction	否	场馆简介
- ISV_vi_venuetype	是	1：社区场馆，2：非社区场馆，暂定两个，要改的时候再加，然后这个字段只需要后台查看
+ ISV_vi_coordinate	是	掌柜坐标
+ ISV_vi_address	是	掌柜地址
+ ISV_vi_phone	二选一	掌柜电话
+ ISV_vi_mobile		掌柜手机
+ ISV_vi_introduction	否	掌柜简介
+ ISV_vi_venuetype	是	1：社区掌柜，2：非社区掌柜，暂定两个，要改的时候再加，然后这个字段只需要后台查看
 
  ISV_vi_specialservices	否	特色服务
- ISV_venue_programcontent	是	场馆项目信息json（venue_id：场馆ID添加时传-1，venueprogram_id：项目ID，ISV_vpc_workdayprice：工作日价格，ISV_vpc_weekendprice：周未价格，ISV_vpc_bookabletime：可预订时间段价格{"childVenueNo1:场地1：{"1":星期一{"6":6点：100.00：价格}}"}）
+ ISV_venue_programcontent	是	掌柜项目信息json（venue_id：掌柜ID添加时传-1，venueprogram_id：项目ID，ISV_vpc_workdayprice：工作日价格，ISV_vpc_weekendprice：周未价格，ISV_vpc_bookabletime：可预订时间段价格{"childVenueNo1:场地1：{"1":星期一{"6":6点：100.00：价格}}"}）
  whichFunc	是	决定调哪一个接口
 
  返回说明Json：
@@ -78,12 +78,12 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	true，操作成功，false，成功失败
- errmsg	操作完成后返回信息	场馆信息保存失败 = 10506,
- 场馆入驻申请成功 = 10505,
+ errmsg	操作完成后返回信息	掌柜信息保存失败 = 10506,
+ 掌柜入驻申请成功 = 10505,
  入驻申请请码不正确 = 10516，
- 场馆信息修改成功=10517，
+ 掌柜信息修改成功=10517，
  申请审核中不能修改信息=10539，
- 请勿非场馆主操作=10542，
+ 请勿非掌柜主操作=10542，
  游客无操作权限=10263，
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-12-08T01:45:27.2748213+08:00
@@ -159,7 +159,7 @@
 }
 
 /*
- 101.场馆列表筛选+排序+分页
+ 101.掌柜列表筛选+排序+分页
  网址：
  http://192.168.1.238:5000/Venue/GetListforscreen?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTczNDE2MyIsImlhdCI6MTQ1MDE1MTY2OSwianRpIjpmYWxzZX0.WxnlFUZklSUkcCRbwLEunz6_vVoP0iOgb0EReIi81Bg&page=1&count=10&type=nothot&sort=synthesize&itemid=4&desc=desc
  类型：get
@@ -180,17 +180,17 @@
  "MsgTime": "2015-12-12T16:16:27.6708935+08:00",
  "valuse": [
  {
- "venue_id": "V888888888",--场馆ID
+ "venue_id": "V888888888",--掌柜ID
  "ISV_vi_licenceno": null,
  "ISV_vi_idcard": null,
  "ISV_vi_name": null,
  "ISV_vi_invitecode": null,
  "ISV_vi_certificateimages": null,
- "ISV_vi_venueimages": ["img1", "img2", "img3", "img4", "img5", "img6"],--场馆图片
- "ISV_vi_venuename": "科技之都",--场馆名称
+ "ISV_vi_venueimages": ["img1", "img2", "img3", "img4", "img5", "img6"],--掌柜图片
+ "ISV_vi_venuename": "科技之都",--掌柜名称
  "ISV_vi_opentime": "0001-01-01T00:00:00",
  "ISV_vi_closetime": "0001-01-01T00:00:00",
- "ISV_vi_coordinate": {"ISV_venue_lat": 33, "ISV_venue_lng": 33},--场馆座标
+ "ISV_vi_coordinate": {"ISV_venue_lat": 33, "ISV_venue_lng": 33},--掌柜座标
  "ISV_vi_address": null,
  "ISV_vi_phone": null,
  "ISV_vi_mobile": null,
@@ -202,10 +202,10 @@
  "ISV_vi_auditdate": "0001-01-01T00:00:00",
  "ISV_vi_score": 0,--评分
  "ISV_vi_reservecount": 0,--预订数
- "ISV_vi_isrecommend": true,--是否推荐场馆
+ "ISV_vi_isrecommend": true,--是否推荐掌柜
  "ISV_venue_programcontent": null,
  "distance": 9086.56785131583,--距离km
- "venueprogram_ids": ["2","6","4"],--场馆项目
+ "venueprogram_ids": ["2","6","4"],--掌柜项目
  "ISV_vi_programcontent": [{"venueprogram_id":2,"ISV_vpc_workdayprice":100.00,"ISV_vpc_weekendprice":200.00},{"venueprogram_id":6,"ISV_vpc_workdayprice":200.00,"ISV_vpc_weekendprice":300.00},{"venueprogram_id":4,"ISV_vpc_workdayprice":100.00,"ISV_vpc_weekendprice":200.00}],
  --项目内容  venueprogram_id--项目ID  ISV_vpc_workdayprice--工作日价格  ISV_vpc_weekendprice--平日价格
  "ISV_vi_maxprice": "300",--最大价格
@@ -216,14 +216,14 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	筛选场馆列表成功=10518,
- 筛选场馆列表异常=10519,
+ errmsg	操作完成后返回信息	筛选掌柜列表成功=10518,
+ 筛选掌柜列表异常=10519,
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
  valuse	表示支付方式列表的json数组	如上面参数所示
 
  */
-#pragma mark ---------------约场馆，场馆筛选列表
+#pragma mark ---------------约掌柜，掌柜筛选列表
 // 升序 asc
 // 降序 desc
 + (void)invitListWithPage:(NSUInteger)page count:(NSUInteger)count type:(NSString *)type sort:(NSString *)sort itemId:(NSString *)itemId sortType:(NSString *)sortType success:(RespondBlock)success failure:(ErrorBlock)failure
@@ -240,7 +240,7 @@
 }
 
 /*
- 103.获取场馆详情
+ 103.获取掌柜详情
  网址：
  http://192.168.1.238:5000/Venue/GetModelInfo?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTczNDE2MyIsImlhdCI6MTQ1MDE1MTY2OSwianRpIjpmYWxzZX0.WxnlFUZklSUkcCRbwLEunz6_vVoP0iOgb0EReIi81Bg&venue_id=V999999999
  类型：get
@@ -248,7 +248,7 @@
  参数说明：
  参数	是否必须	描述
  key	是	用户登录后返回的token
- venue_id	是	场馆ID
+ venue_id	是	掌柜ID
 
  返回说明Json：
  {
@@ -256,32 +256,32 @@
  "succeed": true,
  "MsgTime": "2015-12-12T18:15:29.5022067+08:00",
  "valuse": {
- "venue_id": "V999999999",--场馆ID
+ "venue_id": "V999999999",--掌柜ID
  "ISV_vi_licenceno": null,
  "ISV_vi_idcard": null,
  "ISV_vi_name": null,
  "ISV_vi_invitecode": null,
  "ISV_vi_certificateimages": null,
- "ISV_vi_venueimages": ["img1", "img2", "img3", "img4", "img5", "img6"],--场馆图片
- "ISV_vi_venuename": "科技之都",--场馆名称
+ "ISV_vi_venueimages": ["img1", "img2", "img3", "img4", "img5", "img6"],--掌柜图片
+ "ISV_vi_venuename": "科技之都",--掌柜名称
  "ISV_vi_opentime": "08:00:00",
  "ISV_vi_closetime": "22:00:00",
- "ISV_vi_coordinate": {"ISV_venue_lat": 22, "ISV_venue_lng": 22},--场馆座标
- "ISV_vi_address": "广东省广州市天河体育馆",--场馆地址
- "ISV_vi_phone": "010-88888888",--场馆电话
- "ISV_vi_mobile": "18020909399",--场馆手机
- "ISV_vi_introduction": "科技健身",--场馆简介
- "ISV_vi_venuetype": 0,--1：社区场馆，2：非社区场馆，暂定两个，要改的时候再加，然后这个字段只需要后台查看
+ "ISV_vi_coordinate": {"ISV_venue_lat": 22, "ISV_venue_lng": 22},--掌柜座标
+ "ISV_vi_address": "广东省广州市天河体育馆",--掌柜地址
+ "ISV_vi_phone": "010-88888888",--掌柜电话
+ "ISV_vi_mobile": "18020909399",--掌柜手机
+ "ISV_vi_introduction": "科技健身",--掌柜简介
+ "ISV_vi_venuetype": 0,--1：社区掌柜，2：非社区掌柜，暂定两个，要改的时候再加，然后这个字段只需要后台查看
  "ISV_vi_specialservices": {"POS": true, "Bath": true, "Sale": false, "WIFI": false, "Store": true, "Invoice": true, "Parking": true, "RestArea": true, "SportsShop": false},--特色服务
  "ISV_vi_applydate": "0001-01-01T00:00:00",
  "ISV_vi_auditstatus": 0,
  "ISV_vi_auditdate": "0001-01-01T00:00:00",
  "ISV_vi_score": 0,--评分
  "ISV_vi_reservecount": 0,--预订数
- "ISV_vi_isrecommend": false,--是否推荐场馆
- "ISV_venue_programcontent": null,--场馆项目信息
+ "ISV_vi_isrecommend": false,--是否推荐掌柜
+ "ISV_venue_programcontent": null,--掌柜项目信息
  "distance": 10121.9670705359,--距离
- "venueprogram_ids": ["4","2","3"],--场馆项目
+ "venueprogram_ids": ["4","2","3"],--掌柜项目
  "ISV_vi_programcontent": null,
  "ISV_vi_maxprice": "300",--最大价格
  "ISV_vi_minprice": "4"--最小价格
@@ -291,11 +291,11 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取场馆信息成功=10524,
- 获取场馆信息异常=10525,
+ errmsg	操作完成后返回信息	获取掌柜信息成功=10524,
+ 获取掌柜信息异常=10525,
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆详情的json数组	如上面参数所示
+ valuse	表示掌柜详情的json数组	如上面参数所示
 
  */
 
@@ -312,7 +312,7 @@
 
 /*
 
- 104.获取场馆项目列表
+ 104.获取掌柜项目列表
  网址：
  http://192.168.1.238:5000/Venue/GetItemList?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTczNDE2MyIsImlhdCI6MTQ1MDE1MTY2OSwianRpIjpmYWxzZX0.WxnlFUZklSUkcCRbwLEunz6_vVoP0iOgb0EReIi81Bg
  类型：get
@@ -338,11 +338,11 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取场馆项目列表成功=10530,
- 获取场馆项目列表异常=10531,
+ errmsg	操作完成后返回信息	获取掌柜项目列表成功=10530,
+ 获取掌柜项目列表异常=10531,
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆项目列表的json数组	如上面参数所示
+ valuse	表示掌柜项目列表的json数组	如上面参数所示
 
  */
 
@@ -361,7 +361,7 @@
 
 
 /*
- 105.根据项目ID查询场馆列表
+ 105.根据项目ID查询掌柜列表
  网址：
  http://192.168.1.238:5000/Venue/GetListforitem?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTczNDE2MyIsImlhdCI6MTQ1MDE1MTY2OSwianRpIjpmYWxzZX0.WxnlFUZklSUkcCRbwLEunz6_vVoP0iOgb0EReIi81Bg&venueprogram_id=1&page=1&count=10
  类型：get
@@ -380,17 +380,17 @@
  "MsgTime": "2015-12-15T12:04:17.5970946+08:00",
  "valuse": [
  {
- "venue_id": "V834457183",--场馆ID
+ "venue_id": "V834457183",--掌柜ID
  "ISV_vi_licenceno": null,
  "ISV_vi_idcard": null,
  "ISV_vi_name": null,
  "ISV_vi_invitecode": null,
  "ISV_vi_certificateimages": null,
- "ISV_vi_venueimages":  ["img1", "img2", "img3", "img4", "img5", "img6"],--场馆图片
- "ISV_vi_venuename": "科技之都666",--场馆名称
+ "ISV_vi_venueimages":  ["img1", "img2", "img3", "img4", "img5", "img6"],--掌柜图片
+ "ISV_vi_venuename": "科技之都666",--掌柜名称
  "ISV_vi_opentime": null,
  "ISV_vi_closetime": null,
- "ISV_vi_coordinate": {"ISV_venue_lat": 123, "ISV_venue_lng": 123},--场馆座标
+ "ISV_vi_coordinate": {"ISV_venue_lat": 123, "ISV_venue_lng": 123},--掌柜座标
  "ISV_vi_address": null,
  "ISV_vi_phone": null,
  "ISV_vi_mobile": null,
@@ -402,11 +402,11 @@
  "ISV_vi_auditdate": "0001-01-01T00:00:00",
  "ISV_vi_score": 0,--评分
  "ISV_vi_reservecount": 0,--预订数
- "ISV_vi_isrecommend": true,--是否推荐场馆
+ "ISV_vi_isrecommend": true,--是否推荐掌柜
  "ISV_venue_programcontent": null,
  "ISV_vi_city": 2,--城市ID
  "distance": 13629.5702176737,--距离
- "venueprogram_ids": ["1","2"],--场馆项目
+ "venueprogram_ids": ["1","2"],--掌柜项目
  "ISV_vi_programcontent": [{"venueprogram_id":1,"ISV_vpc_workdayprice":222.00,"ISV_vpc_weekendprice":222.00,"ISV_vpc_bookabletime":{"childVenueNo1": {"1": {"work": 888, "weekend": 888}, "2": {"work": 100, "weekend": 200}, "3": {"work": 100, "weekend": 200}, "4": {"work": 100, "weekend": 200}, "5": {"work": 100, "weekend": 200}}, "childVenueNo2": {"1": {"work": 100, "weekend": 200}, "2": {"work": 100, "weekend": 200}, "3": {"work": 100, "weekend": 200}, "4": {"work": 100, "weekend": 200}, "5": {"work": 100, "weekend": 200}}, "childVenueNo3": {"1": {"work": 100, "weekend": 200}, "2": {"work": 100, "weekend": 200}, "3": {"work": 100, "weekend": 200}, "4": {"work": 100, "weekend": 200}, "5": {"work": 100, "weekend": 200}}}},{"venueprogram_id":2,"ISV_vpc_workdayprice":222.00,"ISV_vpc_weekendprice":222.00,"ISV_vpc_bookabletime":{"childVenueNo1": {"1": {"work": 100, "weekend": 200}, "2": {"work": 100, "weekend": 200}, "3": {"work": 100, "weekend": 200}, "4": {"work": 100, "weekend": 200}, "5": {"work": 100, "weekend": 200}}, "childVenueNo2": {"1": {"work": 100, "weekend": 200}, "2": {"work": 100, "weekend": 200}, "3": {"work": 100, "weekend": 200}, "4": {"work": 100, "weekend": 200}, "5": {"work": 100, "weekend": 200}}, "childVenueNo3": {"1": {"work": 100, "weekend": 200}, "2": {"work": 100, "weekend": 200}, "3": {"work": 100, "weekend": 200}, "4": {"work": 100, "weekend": 200}, "5": {"work": 100, "weekend": 200}}}}],
  --项目内容  venueprogram_id--项目ID  ISV_vpc_workdayprice--工作日价格  ISV_vpc_weekendprice--平日价格
  "ISV_vi_maxprice": "222",--最高价格
@@ -417,11 +417,11 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取场馆列表成功=10532,
- 获取场馆列表异常=10533,
+ errmsg	操作完成后返回信息	获取掌柜列表成功=10532,
+ 获取掌柜列表异常=10533,
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆列表的json数组	如上面参数所示
+ valuse	表示掌柜列表的json数组	如上面参数所示
 
  */
 
@@ -437,7 +437,7 @@
 }
 
 /*
- 106.场馆预约（即下单）
+ 106.掌柜预约（即下单）
  网址：http://192.168.1.238:5000/Post
  类型：post
  数据类型：Content-Type: application/json
@@ -463,7 +463,7 @@
  参数说明：
  参数	是否必须	描述
  key	是	用户登录后返回的token
- model.venue_id	是	场馆ID
+ model.venue_id	是	掌柜ID
  model.ISV_vo_telephone	是	下单用户手机
  model.ISV_vo_price	是	订单金额
  model.ISV_vo_reserve	是	订单预定信息{childVenueNo1：场地 "时间段"：价格}
@@ -487,14 +487,14 @@
  参数	说明	值
  succeed	操作完成后返回状态	true，操作成功，false，成功失败
  errmsg	操作完成后返回信息	游客无操作权限 = 10263,
- 场馆下单成功 = 10543,
- 场馆下单失败 = 10544，
- 场馆下单异常=10545，
+ 掌柜下单成功 = 10543,
+ 掌柜下单失败 = 10544，
+ 掌柜下单异常=10545，
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-12-08T01:45:27.2748213+08:00
  valuse	无	null
  */
-#pragma mark - 场馆预约（即下单）
+#pragma mark - 掌柜预约（即下单）
 + (void)placeOrderWithPlaceID:(NSString *)venue_id
                       sportID:(NSString *)venueprogram_id
                          date:(NSString *)ISV_vo_reservedate
@@ -542,7 +542,7 @@
 
 
 /*
- 111.获取场馆订单详情
+ 111.获取掌柜订单详情
  网址：
  http://192.168.1.238:5000/Venue/GetVenueOrderdetail?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTczNDE2MyIsImlhdCI6MTQ1MDE1MTY2OSwianRpIjpmYWxzZX0.WxnlFUZklSUkcCRbwLEunz6_vVoP0iOgb0EReIi81Bg&venueorder_id=Vo201512162331397956063&Status=3
  类型：get
@@ -606,12 +606,12 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取场馆订单详情成功=10577,
- 获取场馆订单详情异常=10578,
+ errmsg	操作完成后返回信息	获取掌柜订单详情成功=10577,
+ 获取掌柜订单详情异常=10578,
  已补贴的订单不能查看=10579，
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆订单详情的json数组	如上面参数所示
+ valuse	表示掌柜订单详情的json数组	如上面参数所示
 
  */
 
@@ -628,17 +628,17 @@
 
 
 /*
- 112.根据年月日场馆ID、获取用户订单
- 网址：(场馆馆主获取自己场馆的订单)
+ 112.根据年月日掌柜ID、获取用户订单
+ 网址：(掌柜馆主获取自己掌柜的订单)
  http://192.168.1.238:5000/Venue/GetVenueorderList?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIyNTA1NTI0NyIsImlhdCI6MTQ1MDE1MTc1OSwianRpIjpmYWxzZX0.LY9ksgnG6QJPnbsWAbC1AoLvSpmE7Xq_BcROtaDY0PY&venue_id=V999999999&page=1&count=10&year=2015&month=12&type=VENUE
- 网址：(用户获取场馆订单列表)
+ 网址：(用户获取掌柜订单列表)
  http://localhost:18524/Venue/GetVenueorderList?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTczNDE2MyIsImlhdCI6MTQ1MDE1MTY2OSwianRpIjpmYWxzZX0.WxnlFUZklSUkcCRbwLEunz6_vVoP0iOgb0EReIi81Bg&venue_id=V999999999&page=1&count=10&year=2015&month=12&type=else
  类型：get
  数据类型：Content-Type: application/json
  参数说明：
  参数	是否必须	描述
  key	是	用户登录后返回的token
- venue_id	是	场馆ID
+ venue_id	是	掌柜ID
  Page	是	当前页
  Count	是	每页显示数量
  Year	是	年份
@@ -654,8 +654,8 @@
  {
  "venueorder_id": "Vo201512162331397956063",--订单ID
  "user_id": "59734163",--用户ID
- "venue_id": "V999999999",--场馆ID
- "ISV_vo_telephone": null,--场馆电话
+ "venue_id": "V999999999",--掌柜ID
+ "ISV_vo_telephone": null,--掌柜电话
  "ISV_vo_date": "2015-12-16T23:31:39.796736",--下单时间
  "ISV_vo_price": 0,
  "ISV_vo_reserve": [--订单预定信息 childVenueNo1：星期1 childVenueNo2：星期2...
@@ -782,13 +782,13 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取场馆订单成功=10575,
- 获取场馆订单异常=10576,
+ errmsg	操作完成后返回信息	获取掌柜订单成功=10575,
+ 获取掌柜订单异常=10576,
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆订单列表的json数组	如上面参数所示
+ valuse	表示掌柜订单列表的json数组	如上面参数所示
 */
-//网址：(场馆馆主获取自己场馆的订单)
+//网址：(掌柜馆主获取自己掌柜的订单)
 + (void)getVenueOrderListWithVenueID:(NSString *)venueID page:(NSInteger )page count:(NSInteger )count year:(NSString *)year month:(NSString *)month type:(NSString *)type success:(RespondBlock)success failure:(ErrorBlock)failure{
     NSString *key = [self token];
     NSString *url = [NSString stringWithFormat:@"%@?key=%@&venue_id=%@&page=%zd&count=%zd&year=%@&month=%@&type=%@",getPlaceOrderList,key,venueID,page,count,year,month,type];
@@ -800,7 +800,7 @@
     }];
 
 }
-// 网址：(用户获取场馆订单列表)
+// 网址：(用户获取掌柜订单列表)
 + (void)userGetVenueOrderListWithPage:(NSInteger )page count:(NSInteger )count type:(NSString *)type success:(RespondBlock)success failure:(ErrorBlock)failure{
     NSString *key = [self token];
     NSString *url = [NSString stringWithFormat:@"%@?key=%@&page=%zd&count=%zd&type=%@",getPlaceOrderList,key,page,count,type];
@@ -813,7 +813,7 @@
 }
 
 /*
-  113.场馆订单核销
+  113.掌柜订单核销
  网址：http://192.168.1.238:5000/Post
  类型：post
  数据类型：Content-Type: application/json
@@ -843,11 +843,11 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	true，操作成功，false，成功失败
- errmsg	操作完成后返回信息	场馆订单核销成功=10591，
- 场馆订单核销失败=10592，
+ errmsg	操作完成后返回信息	掌柜订单核销成功=10591，
+ 掌柜订单核销失败=10592，
  验证码不正确=10594，
- 场馆订单核销异常=10593，
- 请勿非场馆主操作=10542，
+ 掌柜订单核销异常=10593，
+ 请勿非掌柜主操作=10542，
  游客无操作权限=10263，
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-12-08T01:45:27.2748213+08:00
@@ -867,7 +867,7 @@
 }
 
 /*
- 135.评价场馆
+ 135.评价掌柜
  网址：http://192.168.1.238:5000/Post
  类型：post
  数据类型：Content-Type: application/json
@@ -886,7 +886,7 @@
  参数说明：
  参数	是否必须	描述
  key	是	用户登录后返回的token
- venue_id	是	场馆id
+ venue_id	是	掌柜id
  venueorder_id	是	订单id
  ISV_voc_content	是	评价内容
  ISV_voc_score	是	评分
@@ -904,15 +904,15 @@
  参数	说明	值
  succeed	操作完成后返回状态	true，操作成功，false，成功失败
  errmsg	操作完成后返回信息	订单时段释放成功 = 10692,
- 场馆评价成功 = 10712,
+ 掌柜评价成功 = 10712,
  用户对一个订单只能评价一次 = 10713,
  不是下单人不能评价 = 10714,
- 场馆评价失败 = 10715,
- 场馆评价异常 = 10716，
+ 掌柜评价失败 = 10715,
+ 掌柜评价异常 = 10716，
  游客无操作权限=10263，
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-12-08T01:45:27.2748213+08:00
- valuse	场馆订单评价id	int
+ valuse	掌柜订单评价id	int
  */
 
 + (void)userEvaluatePlaceOrderWithPlaceID:(NSString *)venue_id orderID:(NSString *)venueorder_id content:(NSString *)ISV_voc_content score:(NSString *)ISV_voc_score program:(NSString *)ISV_voc_program success:(RespondBlock)success failure:(ErrorBlock)failure{
@@ -928,7 +928,7 @@
 }
 
 /*
- 137.获取场馆评价列表
+ 137.获取掌柜评价列表
  网址：
  http://192.168.1.238:5000/Venue/GetVenueCommentList?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTczNDE2MyIsImlhdCI6MTQ1MDk3NDk2NSwianRpIjpmYWxzZX0.gCj6clY4Q8W1AxMvgun4oWvFptMXXa6STbDuO1ChHv0&venue_id=V999999999&page=1&count=10
  类型：get
@@ -936,7 +936,7 @@
  参数说明：
  参数	是否必须	描述
  key	是	用户登录后返回的token
- venue_id	是	场馆ID
+ venue_id	是	掌柜ID
  page	是	页数
  count	是	每页记录数
  
@@ -947,9 +947,9 @@
  "MsgTime": "2016-01-04T18:28:22.1972286+08:00",
  "valuse": [
  {
- "vocomment_id": 3,--场馆评价id
+ "vocomment_id": 3,--掌柜评价id
  "user_id": "59734163", --用户id
- "venue_id": "V999999999", --场馆id
+ "venue_id": "V999999999", --掌柜id
  "venueorder_id": null,
  "ISV_voc_content": "跑步机不错哦，跑跑跑，生命在于奔跑", --评论内容
  "ISV_voc_score": 5, --评分
@@ -973,18 +973,18 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取场馆评论列表成功 = 10722,
- 获取场馆评论列表异常 = 10723,
+ errmsg	操作完成后返回信息	获取掌柜评论列表成功 = 10722,
+ 获取掌柜评论列表异常 = 10723,
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆评价列表的json数组	如上面参数所示
+ valuse	表示掌柜评价列表的json数组	如上面参数所示
  */
 //getVenueCommentList
 
 
 
 /*
- 140.获取我的场馆列表
+ 140.获取我的掌柜列表
  网址：
  http://192.168.1.238:5000/Venue/GetVenueList?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0NjY0Njc3NyIsImlhdCI6MTQ1MDE1MTI0NSwianRpIjpmYWxzZX0.ArcRTd58djPbqaxRpzdd0WU6Yex9xUytf3yIVyXoh30&page=1&count=10
  类型：get
@@ -1002,15 +1002,15 @@
  "MsgTime": "2016-01-05T18:17:57.5371347+08:00",
  "valuse": [
  {
- "venue_id": "V888888888",--场馆ID
- "ISV_vi_venueimages": "img1",--场馆图片
- "ISV_vi_venuename": "科技之都",--场馆名称
- "venueprogram_ids": [--场馆项目
+ "venue_id": "V888888888",--掌柜ID
+ "ISV_vi_venueimages": "img1",--掌柜图片
+ "ISV_vi_venuename": "科技之都",--掌柜名称
+ "venueprogram_ids": [--掌柜项目
  "6",
  "2",
  "4"
  ],
- "ISV_vi_auditstatus": 1,--场馆状态
+ "ISV_vi_auditstatus": 1,--掌柜状态
  "user_id": "46646777",--用户ID
  "ISV_vi_applydate": "2015-12-11T01:11:51.807072"--申请时间
  }
@@ -1024,7 +1024,7 @@
  游客无操作权限=10263，
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆列表的json数组	如上面参数所示
+ valuse	表示掌柜列表的json数组	如上面参数所示
  
  */
 + (void)userGetOwnPlaceListWithPage:(NSUInteger )page count:(NSUInteger )count success:(RespondBlock)success failure:(ErrorBlock)failure{
@@ -1039,7 +1039,7 @@
 }
 
 /*
- 151.获取场馆详情（只能获取属于自己的场馆用于场馆修改)
+ 151.获取掌柜详情（只能获取属于自己的掌柜用于掌柜修改)
  网址：
  http://192.168.1.238:5000/Venue/GetModelInfoex?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0NjY0Njc3NyIsImlhdCI6MTQ1MjIyMjcwNCwianRpIjpmYWxzZX0.KSMSTSrA5KVUNBmtZ2E4hFtzVA2RcYs3Qj6Th2ddn0g&venue_id=V888888888
  类型：get
@@ -1047,7 +1047,7 @@
  参数说明：
  参数	是否必须	描述
  key	是	用户登录后返回的token
- venue_id	是	场馆ID
+ venue_id	是	掌柜ID
  
  返回说明Json：
  {
@@ -1055,11 +1055,11 @@
  "succeed": true,
  "MsgTime": "2016-01-11T20:02:47.2447764+08:00",
  "valuse": {
- "venue_id": "V888888888",--场馆ID
+ "venue_id": "V888888888",--掌柜ID
  "ISV_vi_licenceno": "88888888",--营业执照注册号
  "ISV_vi_idcard": "123456199906164597",--身份证号
  "ISV_vi_name": "神蛇科技",--法人或代理人姓名
- "ISV_vi_invitecode": "999999",--私教提供的邀请码，验证成功后存储进数据库
+ "ISV_vi_invitecode": "999999",--便提供的邀请码，验证成功后存储进数据库
  "ISV_vi_certificateimages": {--相关证件图片
  "IDCard": [----身份证
  "img1",
@@ -1080,7 +1080,7 @@
  "img2"
  ]
  },
- "ISV_vi_venueimages": [--场馆图片
+ "ISV_vi_venueimages": [--掌柜图片
  "http://img.hdshl.com/photos/img1",
  "http://img.hdshl.com/photos/img2",
  "http://img.hdshl.com/photos/img3",
@@ -1088,18 +1088,18 @@
  "http://img.hdshl.com/photos/img5",
  "http://img.hdshl.com/photos/img6"
  ],
- "ISV_vi_venuename": "科技之都",--场馆名称
+ "ISV_vi_venuename": "科技之都",--掌柜名称
  "ISV_vi_opentime": "06:00:00",--营业开始时间
  "ISV_vi_closetime": "1.00:00:00",--营业结束时间
- "ISV_vi_coordinate": {--场馆座标，{"ISV_venue_lat": 1.33, "ISV_venue_lng": 1.22}
+ "ISV_vi_coordinate": {--掌柜座标，{"ISV_venue_lat": 1.33, "ISV_venue_lng": 1.22}
  "ISV_venue_lat": 33,
  "ISV_venue_lng": 33
  },
- "ISV_vi_address": "广东省广州市天河体育馆",--场馆地址
- "ISV_vi_phone": "010-99999999",--场馆电话
- "ISV_vi_mobile": "19999999999",--场馆手机
- "ISV_vi_introduction": "科技强身",--场馆简介
- "ISV_vi_venuetype": 1,--1：社区场馆，2：非社区场馆，暂定两个，要改的时候再加，然后这个字段只需要后台查看
+ "ISV_vi_address": "广东省广州市天河体育馆",--掌柜地址
+ "ISV_vi_phone": "010-99999999",--掌柜电话
+ "ISV_vi_mobile": "19999999999",--掌柜手机
+ "ISV_vi_introduction": "科技强身",--掌柜简介
+ "ISV_vi_venuetype": 1,--1：社区掌柜，2：非社区掌柜，暂定两个，要改的时候再加，然后这个字段只需要后台查看
  "ISV_vi_specialservices": {
  "POS": true,
  "Bath": true,
@@ -1116,8 +1116,8 @@
  "ISV_vi_auditdate": "0001-01-01T00:00:00",--核审时间
  "ISV_vi_score": 0,--评分
  "ISV_vi_reservecount": 3096,--预定次数
- "ISV_vi_isrecommend": true,--是否推荐场馆
- "ISV_venue_programcontent": null,--场馆项目信息json
+ "ISV_vi_isrecommend": true,--是否推荐掌柜
+ "ISV_venue_programcontent": null,--掌柜项目信息json
  "ISV_vi_city": 1,--城市
  "user_id": "46646777",--入驻用户id
  "distance": 9086.56785131583,--距离
@@ -1399,11 +1399,11 @@
  参数说明：
  参数	说明	值
  succeed	操作完成后返回状态	True / false
- errmsg	操作完成后返回信息	获取场馆信息成功=10524,
- 获取场馆信息异常=10525,
+ errmsg	操作完成后返回信息	获取掌柜信息成功=10524,
+ 获取掌柜信息异常=10525,
  登录失败=10000
  MsgTime	操作完成后信息返回时间	2015-10-07T11:25:38.185579+08:00
- valuse	表示场馆详情的json数组	如上面参数所示
+ valuse	表示掌柜详情的json数组	如上面参数所示
  */
 
 + (void)userGetOwnPlaceDetailInfoWithPlaceId:(NSString *)venue_id success:(RespondBlock)success failure:(ErrorBlock)failure{
@@ -1418,7 +1418,7 @@
 }
 
 /**
- *  场馆团队
+ *  掌柜团队
  */
 + (void)placeTeamWithPage:(NSUInteger)page count:(NSUInteger)count success:(RespondBlock)success failure:(ErrorBlock)failure
 {

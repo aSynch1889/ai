@@ -10,7 +10,7 @@
 
 @implementation NSString (ISVOrderStatus)
 
-//根据养生馆订单状态返回状态字符串
+//根据钱xx订单状态返回状态字符串
 + (NSString *)regimenOrderStatusHandleWithStatus:(NSUInteger )status{
 
     NSString *orderStatusStr;
@@ -42,7 +42,7 @@
 }
 
 + (NSString *)useOrdertypeWith:(ISVInOrOutStatus )ordertype{
-    //收支项目，0：提现，1：私教订单费用，2：私教订单补贴，3：私教团购费用，4：私教团购补贴，5：场馆费用，6：场馆补贴，7：养生馆费用，8：养生馆补贴 9 : 初始金额
+    //收支项目，0：提现，1：便订单费用，2：便订单补贴，3：便团购费用，4：便团购补贴，5：掌柜费用，6：掌柜补贴，7：钱xx费用，8：钱xx补贴 9 : 初始金额
     NSString *string = [NSString string];
     switch (ordertype) {
         case ISVInOrOutStatusWithdraw: {
@@ -50,35 +50,35 @@
             break;
         }
         case ISVInOrOutStatusCoachOrderFee: {
-            string = @"私教订单费用";
+            string = @"便订单费用";
             break;
         }
         case ISVInOrOutStatusCoachOrderSubsidy: {
-            string = @"私教订单补贴";
+            string = @"便订单补贴";
             break;
         }
         case ISVInOrOutStatusCourseFee: {
-            string = @"私教团购费用";
+            string = @"便团购费用";
             break;
         }
         case ISVInOrOutStatusCourseSubsidy: {
-            string = @"私教团购补贴";
+            string = @"便团购补贴";
             break;
         }
         case ISVInOrOutStatusPlaceFee: {
-            string = @"场馆费用";
+            string = @"掌柜费用";
             break;
         }
         case ISVInOrOutStatusPlaceSubsidy: {
-            string = @"场馆补贴";
+            string = @"掌柜补贴";
             break;
         }
         case ISVInOrOutStatusRegimenFee: {
-            string = @"养生馆费用";
+            string = @"钱xx费用";
             break;
         }
         case ISVInOrOutStatusRegimenSubsidy: {
-            string = @"养生馆补贴";
+            string = @"钱xx补贴";
             break;
         }
         case ISVInOrOutStatusInitialAmount: {
