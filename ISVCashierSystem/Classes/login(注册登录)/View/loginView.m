@@ -35,7 +35,7 @@
     _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self addSubview:_loginBtn];
     [_loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(_pwdField.mas_bottom).offset(40);
+        make.top.mas_equalTo(_pwdField.mas_bottom).offset(20);
         make.left.mas_equalTo(@10);
         make.right.mas_equalTo(@-10);
         make.height.mas_equalTo(@44);
@@ -49,22 +49,22 @@
     [_regBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_loginBtn.mas_bottom).offset(10);
         make.left.mas_equalTo(@10);
-        make.right.mas_equalTo(@-10);
+        make.right.mas_equalTo(@-110);
         make.height.mas_equalTo(@44);
     }];
     [_regBtn setTitle:@"注册" forState:UIControlStateNormal];
-    _regBtn.backgroundColor = ISVMainlColor;
+    [_regBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
     
     _forgetPwdBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self addSubview:_forgetPwdBtn];
     [_forgetPwdBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(_pwdField.mas_bottom).offset(5);
-        make.left.mas_equalTo(@10);
+        make.centerY.mas_equalTo(_regBtn.mas_centerY);
         make.right.mas_equalTo(@-10);
+        make.width.mas_equalTo(@100);
         make.height.mas_equalTo(@44);
     }];
-    [_forgetPwdBtn setTitle:@"注册" forState:UIControlStateNormal];
-    _forgetPwdBtn.backgroundColor = ISVMainlColor;
+    [_forgetPwdBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
+    [_forgetPwdBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
     
 }
 @end

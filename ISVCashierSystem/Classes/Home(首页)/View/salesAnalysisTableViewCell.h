@@ -10,4 +10,9 @@
 
 @interface salesAnalysisTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) UILabel *timeLabel;//!<  时间
+@property (nonatomic, weak) UILabel *amountLabel;//!<  金额
+
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+
 @end

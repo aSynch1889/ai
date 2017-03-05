@@ -7,7 +7,7 @@
 //
 
 #import "salesAnalysisViewController.h"
-
+#import "salesAnalysisTableViewCell.h"
 @interface salesAnalysisViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, weak) UITableView* dataTableView;
 @property (nonatomic, weak) UISegmentedControl *dataSegControl;
@@ -72,13 +72,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString* cellID = @"cellID";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-    }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
+    salesAnalysisTableViewCell *cell = [salesAnalysisTableViewCell cellWithTableView:tableView];
+    cell.timeLabel.text = @"2017-10-11";
+    cell.amountLabel.text = @"jiner";
     return cell;
 }
 
@@ -87,7 +83,7 @@
     if (_dataTableView == nil) {
         
         CGFloat height = kSCREEN_HEIGHT+ 44;
-        UITableView* tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, kSCREEN_WIDTH, height) style:UITableViewStyleGrouped];
+        UITableView* tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 10, kSCREEN_WIDTH, height) style:UITableViewStyleGrouped];
         tableview.delegate = self;
         tableview.dataSource = self;
         tableview.showsVerticalScrollIndicator = NO;

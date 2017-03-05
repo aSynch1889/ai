@@ -1,0 +1,20 @@
+//
+//  retrievePwdView.h
+//  ISVCashierSystem
+//
+//  Created by aaaa on 17/3/5.
+//  Copyright © 2017年 ISV Co.,Ltd. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface retrievePwdView : UIView
+@property (nonatomic, strong)UITextField *phoneField;//!<  手机号码输入框
+@property (nonatomic, strong)UITextField *verField;//!<  验证码输入框
+@property (nonatomic, strong)UIButton  *verBtn;//!< 验证码获取
+@property (nonatomic, strong)UITextField *pwdField;//!< 密码输入框
+@property (nonatomic, strong)UITextField *confirmPwdField;//!< 再次输入密码
+
+- (void)viewInit;
+
+@end

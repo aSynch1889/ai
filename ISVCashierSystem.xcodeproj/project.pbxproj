@@ -39,6 +39,8 @@
 		00FE23911E6B11EB004A4D82 /* scanCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23901E6B11EB004A4D82 /* scanCodeView.m */; };
 		00FE23941E6B1B4F004A4D82 /* changePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23931E6B1B4F004A4D82 /* changePwdViewController.m */; };
 		00FE23981E6B1B92004A4D82 /* changePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23971E6B1B92004A4D82 /* changePwdView.m */; };
+		00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE239A1E6B9919004A4D82 /* retrievePwdViewController.m */; };
+		00FE239E1E6B995E004A4D82 /* retrievePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE239D1E6B995E004A4D82 /* retrievePwdView.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +130,10 @@
 		00FE23931E6B1B4F004A4D82 /* changePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changePwdViewController.m; sourceTree = "<group>"; };
 		00FE23961E6B1B92004A4D82 /* changePwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changePwdView.h; sourceTree = "<group>"; };
 		00FE23971E6B1B92004A4D82 /* changePwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changePwdView.m; sourceTree = "<group>"; };
+		00FE23991E6B9919004A4D82 /* retrievePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = retrievePwdViewController.h; sourceTree = "<group>"; };
+		00FE239A1E6B9919004A4D82 /* retrievePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = retrievePwdViewController.m; sourceTree = "<group>"; };
+		00FE239C1E6B995E004A4D82 /* retrievePwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = retrievePwdView.h; sourceTree = "<group>"; };
+		00FE239D1E6B995E004A4D82 /* retrievePwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = retrievePwdView.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -380,6 +386,8 @@
 				00FE237E1E6A893E004A4D82 /* registerViewController.m */,
 				00FE23801E6A8965004A4D82 /* loginViewController.h */,
 				00FE23811E6A8965004A4D82 /* loginViewController.m */,
+				00FE23991E6B9919004A4D82 /* retrievePwdViewController.h */,
+				00FE239A1E6B9919004A4D82 /* retrievePwdViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -398,6 +406,8 @@
 				00FE23871E6A8C72004A4D82 /* registerView.m */,
 				00FE23891E6A92BC004A4D82 /* loginView.h */,
 				00FE238A1E6A92BC004A4D82 /* loginView.m */,
+				00FE239C1E6B995E004A4D82 /* retrievePwdView.h */,
+				00FE239D1E6B995E004A4D82 /* retrievePwdView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -619,6 +629,7 @@
 				00FE236E1E6A7E63004A4D82 /* salesAnalysisViewController.m in Sources */,
 				0085D6CC1E6816AD00BCB29C /* AppDelegate.m in Sources */,
 				00FE23721E6A81BC004A4D82 /* salesAnalysisTableViewCell.m in Sources */,
+				00FE239E1E6B995E004A4D82 /* retrievePwdView.m in Sources */,
 				00FE23851E6A89D2004A4D82 /* systemSetupViewController.m in Sources */,
 				00FE22BD1E6877B0004A4D82 /* ISVMeViewController.m in Sources */,
 				00FE236B1E6A7CD0004A4D82 /* collectionSuccessViewController.m in Sources */,
@@ -627,6 +638,7 @@
 				00FE23941E6B1B4F004A4D82 /* changePwdViewController.m in Sources */,
 				00FE23751E6A8788004A4D82 /* addMemberViewController.m in Sources */,
 				00FE23821E6A8965004A4D82 /* loginViewController.m in Sources */,
+				00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */,
 				00FE22C61E69009F004A4D82 /* UIImage+ISVExtension.m in Sources */,
 				00FE22CA1E690F80004A4D82 /* ISVHomeModel.m in Sources */,
 				00FE23681E6A790C004A4D82 /* setAmountViewController.m in Sources */,
