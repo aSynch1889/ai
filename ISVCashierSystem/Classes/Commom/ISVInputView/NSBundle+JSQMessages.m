@@ -1,12 +1,12 @@
 
 #import "NSBundle+JSQMessages.h"
-#import "HMInputBar.h"
+#import "ISVInputBar.h"
 
 @implementation NSBundle (JSQMessages)
 
 + (NSBundle *)jsq_messagesBundle
 {
-    return [NSBundle bundleForClass:[HMInputBar class]];
+    return [NSBundle bundleForClass:[ISVInputBar class]];
 }
 
 + (NSBundle *)jsq_messagesAssetBundle

@@ -1,9 +1,9 @@
 //
 //  RSADataSigner.m
-//  HealthMall
+//  ISV
 //
-//  Created by qiuwei on 15/12/21.
-//  Copyright © 2015年 HealthMall. All rights reserved.
+//  Created by aaaa on 15/12/21.
+//  Copyright © 2017年 ISV. All rights reserved.
 //
 
 #import "RSADataSigner.h"
@@ -24,7 +24,7 @@
     // 在Document文件夹下创建私钥文件
     NSString *signedString = nil;
     NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *path = [documentPath stringByAppendingPathComponent:@"HealthMall-RSAPrivateKey"];
+    NSString *path = [documentPath stringByAppendingPathComponent:@"ISV-RSAPrivateKey"];
     
     // 把密钥写入文件
     NSString *formatKey = [self formatPrivateKey:privateKey];

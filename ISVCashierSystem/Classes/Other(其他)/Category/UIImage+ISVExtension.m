@@ -9,7 +9,7 @@
 #import "UIImage+ISVExtension.h"
 // 获取占位图
 #define kPlaceholderImageBGColor ISVRGB(216, 216, 216)
-#define kPlaceholderCenterImageName @"icon_Placeholder_healthMall"
+#define kPlaceholderCenterImageName @"icon_Placeholder_ISV"
 
 @implementation UIImage (ISVExtension)
 

@@ -1,9 +1,9 @@
 //
 //  NSString+PinYin.h
-//  HealthMall
+//  ISV
 //
-//  Created by jkl on 16/1/10.
-//  Copyright © 2016年 HealthMall. All rights reserved.
+//  Created by aaaa on 16/1/10.
+//  Copyright © 2016年 ISV. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

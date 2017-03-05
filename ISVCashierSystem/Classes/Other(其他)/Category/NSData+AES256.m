@@ -1,9 +1,9 @@
 //
 //  NSData+AES256.m
-//  HealthMall
+//  ISV
 //
-//  Created by 健康猫技术 on 16/1/28.
-//  Copyright © 2016年 HealthMall. All rights reserved.
+//  Created by 便掌柜技术 on 16/1/28.
+//  Copyright © 2016年 ISV. All rights reserved.
 //
 
 #import "NSData+AES256.h"

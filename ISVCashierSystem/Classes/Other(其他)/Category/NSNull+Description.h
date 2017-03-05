@@ -1,9 +1,9 @@
 //
 //  NSNull+Description.h
-//  HealthMall
+//  ISV
 //
-//  Created by jkl on 15/12/3.
-//  Copyright © 2015年 HealthMall. All rights reserved.
+//  Created by aaaa on 15/12/3.
+//  Copyright © 2017年 ISV. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
