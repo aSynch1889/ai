@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HMBaseFormSwitch">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="39"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uX-kq-Ozo">
+                    <rect key="frame" x="20" y="9" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="hgu-2n-Jdr"/>
+                        <constraint firstAttribute="width" constant="70" id="sN9-rC-neA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhh-ep-6ns" customClass="HMSwitchView">
+                    <rect key="frame" x="92" y="7" width="229" height="26"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="IoX-A0-vn0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5uX-kq-Ozo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="9ff-fD-X69"/>
+                <constraint firstItem="5uX-kq-Ozo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B5G-LZ-1zs"/>
+                <constraint firstItem="bhh-ep-6ns" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BXw-HZ-BA4"/>
+                <constraint firstItem="bhh-ep-6ns" firstAttribute="leading" secondItem="5uX-kq-Ozo" secondAttribute="trailing" constant="2" id="YhG-uN-Gkd"/>
+                <constraint firstAttribute="trailing" secondItem="bhh-ep-6ns" secondAttribute="trailing" constant="20" id="xxs-Pc-hWb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="switchView" destination="bhh-ep-6ns" id="GEj-JE-Poc"/>
+                <outlet property="titleLabel" destination="5uX-kq-Ozo" id="8SU-we-jSd"/>
+            </connections>
+            <point key="canvasLocation" x="282.5" y="299.5"/>
+        </view>
+    </objects>
+</document>

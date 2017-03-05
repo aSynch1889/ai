@@ -32,6 +32,7 @@
         make.height.mas_equalTo(@22);
     }];
     self.titleLabel.text = @"收款金额";
+    self.titleLabel.font = ISVFontSize(14);
     
     self.unitLabel = [[UILabel alloc]init];
     [bgView addSubview:self.unitLabel];
@@ -61,9 +62,7 @@
         make.centerX.mas_equalTo(self.inputField.mas_centerX);
         make.height.mas_equalTo(1);
     }];
-    lineView.backgroundColor = [UIColor orangeColor];
-    
-    
+    lineView.backgroundColor = kDefaultLineColor;
     
     self.confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [bgView addSubview:self.confirmBtn];
