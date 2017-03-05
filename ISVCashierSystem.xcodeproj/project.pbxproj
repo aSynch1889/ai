@@ -42,16 +42,11 @@
 		00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE239A1E6B9919004A4D82 /* retrievePwdViewController.m */; };
 		00FE239E1E6B995E004A4D82 /* retrievePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE239D1E6B995E004A4D82 /* retrievePwdView.m */; };
 		00FE23A11E6BAA0A004A4D82 /* setAmoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23A01E6BAA0A004A4D82 /* setAmoutView.m */; };
-		00FE25971E6BB8C0004A4D82 /* libmtasdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE23C11E6BB8C0004A4D82 /* libmtasdk.a */; };
 		00FE25981E6BB8C0004A4D82 /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23C71E6BB8C0004A4D82 /* pinyin.m */; };
-		00FE25A31E6BB8C0004A4D82 /* TaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23E31E6BB8C0004A4D82 /* TaskManager.m */; };
-		00FE25A41E6BB8C0004A4D82 /* libTXYUploader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE23E81E6BB8C0004A4D82 /* libTXYUploader.a */; };
 		00FE25A51E6BB8C0004A4D82 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23EB1E6BB8C0004A4D82 /* Base64.m */; };
 		00FE25A61E6BB8C0004A4D82 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23ED1E6BB8C0004A4D82 /* openssl_wrapper.m */; };
 		00FE25A71E6BB8C0004A4D82 /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23EF1E6BB8C0004A4D82 /* RSADataSigner.m */; };
 		00FE25A81E6BB8C0004A4D82 /* SCRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23F11E6BB8C0004A4D82 /* SCRSA.m */; };
-		00FE25A91E6BB8C0004A4D82 /* libUMSAgent-Rel-phones.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE23F31E6BB8C0004A4D82 /* libUMSAgent-Rel-phones.a */; };
-		00FE25AA1E6BB8C0004A4D82 /* libUMSAgent-Rel-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE23F41E6BB8C0004A4D82 /* libUMSAgent-Rel-simulator.a */; };
 		00FE25AB1E6BB8C0004A4D82 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23F81E6BB8C0004A4D82 /* VPImageCropperViewController.m */; };
 		00FE25AC1E6BB8C0004A4D82 /* WCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23FB1E6BB8C0004A4D82 /* WCAlertView.m */; };
 		00FE25AD1E6BB8C0004A4D82 /* ZXAbstractDoCoMoResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE24001E6BB8C0004A4D82 /* ZXAbstractDoCoMoResultParser.m */; };
@@ -294,7 +289,6 @@
 		00FE27FD1E6BBA5B004A4D82 /* HMMenuConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE271B1E6BBA5B004A4D82 /* HMMenuConfiguration.m */; };
 		00FE27FE1E6BBA5B004A4D82 /* HMMenuTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE271D1E6BBA5B004A4D82 /* HMMenuTable.m */; };
 		00FE27FF1E6BBA5B004A4D82 /* HMNavigationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE271F1E6BBA5B004A4D82 /* HMNavigationMenuView.m */; };
-		00FE28001E6BBA5B004A4D82 /* HMOrderBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27221E6BBA5B004A4D82 /* HMOrderBottomBar.m */; };
 		00FE28011E6BBA5B004A4D82 /* HMOrderHeaderInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27251E6BBA5B004A4D82 /* HMOrderHeaderInfoModel.m */; };
 		00FE28021E6BBA5B004A4D82 /* HMOrderHeaderInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27271E6BBA5B004A4D82 /* HMOrderHeaderInfoView.m */; };
 		00FE28031E6BBA5B004A4D82 /* HMPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE272A1E6BBA5B004A4D82 /* HMPlaceholderTextView.m */; };
@@ -321,7 +315,6 @@
 		00FE281E1E6BBA5C004A4D82 /* HMSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27641E6BBA5B004A4D82 /* HMSearchBar.m */; };
 		00FE281F1E6BBA5C004A4D82 /* HMSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27671E6BBA5B004A4D82 /* HMSegmentedView.m */; };
 		00FE28201E6BBA5C004A4D82 /* HMItemServerBuuton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE276A1E6BBA5B004A4D82 /* HMItemServerBuuton.m */; };
-		00FE28211E6BBA5C004A4D82 /* HMServeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE276C1E6BBA5B004A4D82 /* HMServeView.m */; };
 		00FE28271E6BBA5C004A4D82 /* HMStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE277A1E6BBA5B004A4D82 /* HMStarRatingView.m */; };
 		00FE282A1E6BBA5C004A4D82 /* HMStretchableTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27821E6BBA5B004A4D82 /* HMStretchableTableHeaderView.m */; };
 		00FE282B1E6BBA5C004A4D82 /* HMSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27851E6BBA5B004A4D82 /* HMSwitch.m */; };
@@ -335,10 +328,6 @@
 		00FE28391E6BBA5C004A4D82 /* HMPayWayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27A61E6BBA5B004A4D82 /* HMPayWayModel.m */; };
 		00FE283A1E6BBA5C004A4D82 /* HMPayWayPanelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27A81E6BBA5B004A4D82 /* HMPayWayPanelCell.m */; };
 		00FE283B1E6BBA5C004A4D82 /* HMPayWayPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27AA1E6BBA5B004A4D82 /* HMPayWayPanelView.m */; };
-		00FE28451E6BBAFF004A4D82 /* LZLPersonalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE283E1E6BBAFF004A4D82 /* LZLPersonalData.m */; };
-		00FE28461E6BBAFF004A4D82 /* LZLPushMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28401E6BBAFF004A4D82 /* LZLPushMessage.m */; };
-		00FE28471E6BBAFF004A4D82 /* MsgToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28421E6BBAFF004A4D82 /* MsgToolBox.m */; };
-		00FE28481E6BBAFF004A4D82 /* PushMessageDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28441E6BBAFF004A4D82 /* PushMessageDAO.m */; };
 		00FE284E1E6BBF40004A4D82 /* UIImageView+HMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE284D1E6BBF40004A4D82 /* UIImageView+HMUser.m */; };
 		00FE289A1E6BC00A004A4D82 /* Log_Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE284F1E6BC00A004A4D82 /* Log_Foundation.m */; };
 		00FE289B1E6BC00A004A4D82 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE28511E6BC00A004A4D82 /* NSData+AES256.m */; };
@@ -399,6 +388,7 @@
 		00FE29161E6BC4CB004A4D82 /* PlaySoundUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE29061E6BC4CB004A4D82 /* PlaySoundUtil.m */; };
 		00FE291F1E6BC573004A4D82 /* HMPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE291B1E6BC573004A4D82 /* HMPayModel.m */; };
 		00FE29201E6BC573004A4D82 /* HMPayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE291D1E6BC573004A4D82 /* HMPayResult.m */; };
+		00FE29271E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE29261E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -494,17 +484,8 @@
 		00FE239D1E6B995E004A4D82 /* retrievePwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = retrievePwdView.m; sourceTree = "<group>"; };
 		00FE239F1E6BAA0A004A4D82 /* setAmoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setAmoutView.h; sourceTree = "<group>"; };
 		00FE23A01E6BAA0A004A4D82 /* setAmoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setAmoutView.m; sourceTree = "<group>"; };
-		00FE23C11E6BB8C0004A4D82 /* libmtasdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmtasdk.a; sourceTree = "<group>"; };
-		00FE23C21E6BB8C0004A4D82 /* MTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTA.h; sourceTree = "<group>"; };
-		00FE23C31E6BB8C0004A4D82 /* MTAConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAConfig.h; sourceTree = "<group>"; };
-		00FE23C41E6BB8C0004A4D82 /* MTAFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAFeedback.h; sourceTree = "<group>"; };
 		00FE23C61E6BB8C0004A4D82 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		00FE23C71E6BB8C0004A4D82 /* pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinyin.m; sourceTree = "<group>"; };
-		00FE23E21E6BB8C0004A4D82 /* TaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskManager.h; sourceTree = "<group>"; };
-		00FE23E31E6BB8C0004A4D82 /* TaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskManager.m; sourceTree = "<group>"; };
-		00FE23E61E6BB8C0004A4D82 /* TXYBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXYBase.h; sourceTree = "<group>"; };
-		00FE23E71E6BB8C0004A4D82 /* TXYUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXYUploadManager.h; sourceTree = "<group>"; };
-		00FE23E81E6BB8C0004A4D82 /* libTXYUploader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTXYUploader.a; sourceTree = "<group>"; };
 		00FE23EA1E6BB8C0004A4D82 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		00FE23EB1E6BB8C0004A4D82 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		00FE23EC1E6BB8C0004A4D82 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
@@ -513,9 +494,6 @@
 		00FE23EF1E6BB8C0004A4D82 /* RSADataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataSigner.m; sourceTree = "<group>"; };
 		00FE23F01E6BB8C0004A4D82 /* SCRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRSA.h; sourceTree = "<group>"; };
 		00FE23F11E6BB8C0004A4D82 /* SCRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRSA.m; sourceTree = "<group>"; };
-		00FE23F31E6BB8C0004A4D82 /* libUMSAgent-Rel-phones.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUMSAgent-Rel-phones.a"; sourceTree = "<group>"; };
-		00FE23F41E6BB8C0004A4D82 /* libUMSAgent-Rel-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUMSAgent-Rel-simulator.a"; sourceTree = "<group>"; };
-		00FE23F51E6BB8C0004A4D82 /* UMSAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSAgent.h; sourceTree = "<group>"; };
 		00FE23F71E6BB8C0004A4D82 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
 		00FE23F81E6BB8C0004A4D82 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
 		00FE23FA1E6BB8C0004A4D82 /* WCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAlertView.h; sourceTree = "<group>"; };
@@ -1001,8 +979,6 @@
 		00FE271D1E6BBA5B004A4D82 /* HMMenuTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMenuTable.m; sourceTree = "<group>"; };
 		00FE271E1E6BBA5B004A4D82 /* HMNavigationMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNavigationMenuView.h; sourceTree = "<group>"; };
 		00FE271F1E6BBA5B004A4D82 /* HMNavigationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNavigationMenuView.m; sourceTree = "<group>"; };
-		00FE27211E6BBA5B004A4D82 /* HMOrderBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMOrderBottomBar.h; sourceTree = "<group>"; };
-		00FE27221E6BBA5B004A4D82 /* HMOrderBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMOrderBottomBar.m; sourceTree = "<group>"; };
 		00FE27241E6BBA5B004A4D82 /* HMOrderHeaderInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMOrderHeaderInfoModel.h; sourceTree = "<group>"; };
 		00FE27251E6BBA5B004A4D82 /* HMOrderHeaderInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMOrderHeaderInfoModel.m; sourceTree = "<group>"; };
 		00FE27261E6BBA5B004A4D82 /* HMOrderHeaderInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMOrderHeaderInfoView.h; sourceTree = "<group>"; };
@@ -1049,8 +1025,6 @@
 		00FE27671E6BBA5B004A4D82 /* HMSegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedView.m; sourceTree = "<group>"; };
 		00FE27691E6BBA5B004A4D82 /* HMItemServerBuuton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMItemServerBuuton.h; sourceTree = "<group>"; };
 		00FE276A1E6BBA5B004A4D82 /* HMItemServerBuuton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMItemServerBuuton.m; sourceTree = "<group>"; };
-		00FE276B1E6BBA5B004A4D82 /* HMServeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMServeView.h; sourceTree = "<group>"; };
-		00FE276C1E6BBA5B004A4D82 /* HMServeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMServeView.m; sourceTree = "<group>"; };
 		00FE27791E6BBA5B004A4D82 /* HMStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStarRatingView.h; sourceTree = "<group>"; };
 		00FE277A1E6BBA5B004A4D82 /* HMStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStarRatingView.m; sourceTree = "<group>"; };
 		00FE27811E6BBA5B004A4D82 /* HMStretchableTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStretchableTableHeaderView.h; sourceTree = "<group>"; };
@@ -1074,14 +1048,6 @@
 		00FE27A81E6BBA5B004A4D82 /* HMPayWayPanelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPayWayPanelCell.m; sourceTree = "<group>"; };
 		00FE27A91E6BBA5B004A4D82 /* HMPayWayPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPayWayPanelView.h; sourceTree = "<group>"; };
 		00FE27AA1E6BBA5B004A4D82 /* HMPayWayPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPayWayPanelView.m; sourceTree = "<group>"; };
-		00FE283D1E6BBAFF004A4D82 /* LZLPersonalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLPersonalData.h; sourceTree = "<group>"; };
-		00FE283E1E6BBAFF004A4D82 /* LZLPersonalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLPersonalData.m; sourceTree = "<group>"; };
-		00FE283F1E6BBAFF004A4D82 /* LZLPushMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLPushMessage.h; sourceTree = "<group>"; };
-		00FE28401E6BBAFF004A4D82 /* LZLPushMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLPushMessage.m; sourceTree = "<group>"; };
-		00FE28411E6BBAFF004A4D82 /* MsgToolBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgToolBox.h; sourceTree = "<group>"; };
-		00FE28421E6BBAFF004A4D82 /* MsgToolBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgToolBox.m; sourceTree = "<group>"; };
-		00FE28431E6BBAFF004A4D82 /* PushMessageDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushMessageDAO.h; sourceTree = "<group>"; };
-		00FE28441E6BBAFF004A4D82 /* PushMessageDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushMessageDAO.m; sourceTree = "<group>"; };
 		00FE284C1E6BBF40004A4D82 /* UIImageView+HMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HMUser.h"; sourceTree = "<group>"; };
 		00FE284D1E6BBF40004A4D82 /* UIImageView+HMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HMUser.m"; sourceTree = "<group>"; };
 		00FE284F1E6BC00A004A4D82 /* Log_Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log_Foundation.m; sourceTree = "<group>"; };
@@ -1206,6 +1172,7 @@
 		00FE291D1E6BC573004A4D82 /* HMPayResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPayResult.m; sourceTree = "<group>"; };
 		00FE29211E6BC658004A4D82 /* HealthMallConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthMallConfig.h; sourceTree = "<group>"; };
 		00FE29221E6BC6D2004A4D82 /* HttpConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpConstant.h; sourceTree = "<group>"; };
+		00FE29261E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1216,11 +1183,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00FE25A91E6BB8C0004A4D82 /* libUMSAgent-Rel-phones.a in Frameworks */,
-				00FE25AA1E6BB8C0004A4D82 /* libUMSAgent-Rel-simulator.a in Frameworks */,
+				00FE29271E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd in Frameworks */,
 				8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */,
-				00FE25971E6BB8C0004A4D82 /* libmtasdk.a in Frameworks */,
-				00FE25A41E6BB8C0004A4D82 /* libTXYUploader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1622,28 +1586,13 @@
 		00FE23B51E6BB8C0004A4D82 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				00FE283C1E6BBAFF004A4D82 /* ISVPush */,
-				00FE23C01E6BB8C0004A4D82 /* MTA-1.4.10 */,
 				00FE23C51E6BB8C0004A4D82 /* pinYin */,
-				00FE23E01E6BB8C0004A4D82 /* QCloudSDK-v1.1.3 */,
 				00FE23E91E6BB8C0004A4D82 /* RSA */,
-				00FE23F21E6BB8C0004A4D82 /* UMSAgent */,
 				00FE23F61E6BB8C0004A4D82 /* VPImageCropper */,
 				00FE23F91E6BB8C0004A4D82 /* WCAlertView */,
 				00FE23FC1E6BB8C0004A4D82 /* ZXingObjC */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		00FE23C01E6BB8C0004A4D82 /* MTA-1.4.10 */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23C11E6BB8C0004A4D82 /* libmtasdk.a */,
-				00FE23C21E6BB8C0004A4D82 /* MTA.h */,
-				00FE23C31E6BB8C0004A4D82 /* MTAConfig.h */,
-				00FE23C41E6BB8C0004A4D82 /* MTAFeedback.h */,
-			);
-			path = "MTA-1.4.10";
 			sourceTree = "<group>";
 		};
 		00FE23C51E6BB8C0004A4D82 /* pinYin */ = {
@@ -1653,42 +1602,6 @@
 				00FE23C71E6BB8C0004A4D82 /* pinyin.m */,
 			);
 			path = pinYin;
-			sourceTree = "<group>";
-		};
-		00FE23E01E6BB8C0004A4D82 /* QCloudSDK-v1.1.3 */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23E11E6BB8C0004A4D82 /* HMVideoUpload */,
-				00FE23E41E6BB8C0004A4D82 /* QCloudUploadSDK */,
-			);
-			path = "QCloudSDK-v1.1.3";
-			sourceTree = "<group>";
-		};
-		00FE23E11E6BB8C0004A4D82 /* HMVideoUpload */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23E21E6BB8C0004A4D82 /* TaskManager.h */,
-				00FE23E31E6BB8C0004A4D82 /* TaskManager.m */,
-			);
-			path = HMVideoUpload;
-			sourceTree = "<group>";
-		};
-		00FE23E41E6BB8C0004A4D82 /* QCloudUploadSDK */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23E51E6BB8C0004A4D82 /* Headers */,
-				00FE23E81E6BB8C0004A4D82 /* libTXYUploader.a */,
-			);
-			path = QCloudUploadSDK;
-			sourceTree = "<group>";
-		};
-		00FE23E51E6BB8C0004A4D82 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23E61E6BB8C0004A4D82 /* TXYBase.h */,
-				00FE23E71E6BB8C0004A4D82 /* TXYUploadManager.h */,
-			);
-			path = Headers;
 			sourceTree = "<group>";
 		};
 		00FE23E91E6BB8C0004A4D82 /* RSA */ = {
@@ -1704,16 +1617,6 @@
 				00FE23F11E6BB8C0004A4D82 /* SCRSA.m */,
 			);
 			path = RSA;
-			sourceTree = "<group>";
-		};
-		00FE23F21E6BB8C0004A4D82 /* UMSAgent */ = {
-			isa = PBXGroup;
-			children = (
-				00FE23F31E6BB8C0004A4D82 /* libUMSAgent-Rel-phones.a */,
-				00FE23F41E6BB8C0004A4D82 /* libUMSAgent-Rel-simulator.a */,
-				00FE23F51E6BB8C0004A4D82 /* UMSAgent.h */,
-			);
-			path = UMSAgent;
 			sourceTree = "<group>";
 		};
 		00FE23F61E6BB8C0004A4D82 /* VPImageCropper */ = {
@@ -2578,8 +2481,6 @@
 		00FE27201E6BBA5B004A4D82 /* ISVOrderBottomBar */ = {
 			isa = PBXGroup;
 			children = (
-				00FE27211E6BBA5B004A4D82 /* HMOrderBottomBar.h */,
-				00FE27221E6BBA5B004A4D82 /* HMOrderBottomBar.m */,
 			);
 			path = ISVOrderBottomBar;
 			sourceTree = "<group>";
@@ -2719,8 +2620,6 @@
 			children = (
 				00FE27691E6BBA5B004A4D82 /* HMItemServerBuuton.h */,
 				00FE276A1E6BBA5B004A4D82 /* HMItemServerBuuton.m */,
-				00FE276B1E6BBA5B004A4D82 /* HMServeView.h */,
-				00FE276C1E6BBA5B004A4D82 /* HMServeView.m */,
 			);
 			path = ISVServeView;
 			sourceTree = "<group>";
@@ -2803,21 +2702,6 @@
 				00FE27AA1E6BBA5B004A4D82 /* HMPayWayPanelView.m */,
 			);
 			path = "PayWayPanelView(支付方式)";
-			sourceTree = "<group>";
-		};
-		00FE283C1E6BBAFF004A4D82 /* ISVPush */ = {
-			isa = PBXGroup;
-			children = (
-				00FE283D1E6BBAFF004A4D82 /* LZLPersonalData.h */,
-				00FE283E1E6BBAFF004A4D82 /* LZLPersonalData.m */,
-				00FE283F1E6BBAFF004A4D82 /* LZLPushMessage.h */,
-				00FE28401E6BBAFF004A4D82 /* LZLPushMessage.m */,
-				00FE28411E6BBAFF004A4D82 /* MsgToolBox.h */,
-				00FE28421E6BBAFF004A4D82 /* MsgToolBox.m */,
-				00FE28431E6BBAFF004A4D82 /* PushMessageDAO.h */,
-				00FE28441E6BBAFF004A4D82 /* PushMessageDAO.m */,
-			);
-			path = ISVPush;
 			sourceTree = "<group>";
 		};
 		00FE28C21E6BC3E7004A4D82 /* Private */ = {
@@ -2911,6 +2795,7 @@
 		F2FCA0FB50982E8E7411E11F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00FE29261E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd */,
 				76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */,
 			);
 			name = Frameworks;
@@ -3248,7 +3133,6 @@
 				00FE281D1E6BBA5C004A4D82 /* HMSearchResultViewController.m in Sources */,
 				00FE28B91E6BC00A004A4D82 /* UINavigationController+HMLandscape.m in Sources */,
 				00FE262B1E6BB8C1004A4D82 /* ZXRSSFinderPattern.m in Sources */,
-				00FE28471E6BBAFF004A4D82 /* MsgToolBox.m in Sources */,
 				00FE28371E6BBA5C004A4D82 /* HMVerticalView.m in Sources */,
 				00FE27EB1E6BBA5B004A4D82 /* UIView+JSQMessages.m in Sources */,
 				00FE26471E6BB8C1004A4D82 /* ZXUPCEReader.m in Sources */,
@@ -3273,7 +3157,6 @@
 				00FE25FA1E6BB8C1004A4D82 /* ZXDataMatrixDecoder.m in Sources */,
 				00FE28A71E6BC00A004A4D82 /* NSString+HMPath.m in Sources */,
 				00FE25F81E6BB8C1004A4D82 /* ZXDataMatrixDataBlock.m in Sources */,
-				00FE28481E6BBAFF004A4D82 /* PushMessageDAO.m in Sources */,
 				00FE26431E6BB8C1004A4D82 /* ZXUPCEANExtension5Support.m in Sources */,
 				00FE26151E6BB8C1004A4D82 /* ZXAI01393xDecoder.m in Sources */,
 				00FE289A1E6BC00A004A4D82 /* Log_Foundation.m in Sources */,
@@ -3371,7 +3254,6 @@
 				00FE27F21E6BBA5B004A4D82 /* HMItemPanelView.m in Sources */,
 				00FE26191E6BB8C1004A4D82 /* ZXAI01decoder.m in Sources */,
 				00FE26081E6BB8C1004A4D82 /* ZXDataMatrixX12Encoder.m in Sources */,
-				00FE25A31E6BB8C0004A4D82 /* TaskManager.m in Sources */,
 				00FE25BA1E6BB8C1004A4D82 /* ZXGeoResultParser.m in Sources */,
 				00FE283A1E6BBA5C004A4D82 /* HMPayWayPanelCell.m in Sources */,
 				00FE26111E6BB8C1004A4D82 /* ZXAbstractExpandedDecoder.m in Sources */,
@@ -3409,7 +3291,6 @@
 				00FE28B81E6BC00A004A4D82 /* UINavigationBar+HMExtension.m in Sources */,
 				00FE28061E6BBA5B004A4D82 /* HMMenuPopover.m in Sources */,
 				00FE26451E6BB8C1004A4D82 /* ZXUPCEANReader.m in Sources */,
-				00FE28461E6BBAFF004A4D82 /* LZLPushMessage.m in Sources */,
 				00FE261A1E6BB8C1004A4D82 /* ZXAI01weightDecoder.m in Sources */,
 				00FE26321E6BB8C1004A4D82 /* ZXCode39Reader.m in Sources */,
 				00FE25F11E6BB8C1004A4D82 /* ZXInvertedLuminanceSource.m in Sources */,
@@ -3446,7 +3327,6 @@
 				00FE27DE1E6BBA5B004A4D82 /* HMImageViewContainerListView.m in Sources */,
 				00FE28361E6BBA5C004A4D82 /* HMTextField.m in Sources */,
 				00FE26581E6BB8C1004A4D82 /* ZXQRCode.m in Sources */,
-				00FE28451E6BBAFF004A4D82 /* LZLPersonalData.m in Sources */,
 				00FE26131E6BB8C1004A4D82 /* ZXAI01320xDecoder.m in Sources */,
 				00FE23621E6A5BDD004A4D82 /* UIButton+ISVExt.m in Sources */,
 				00FE263F1E6BB8C1004A4D82 /* ZXOneDReader.m in Sources */,
@@ -3477,8 +3357,6 @@
 				00FE25EA1E6BB8C1004A4D82 /* ZXBinarizer.m in Sources */,
 				00FE27FE1E6BBA5B004A4D82 /* HMMenuTable.m in Sources */,
 				00FE28D51E6BC3E7004A4D82 /* HMNetworking.m in Sources */,
-				00FE28001E6BBA5B004A4D82 /* HMOrderBottomBar.m in Sources */,
-				00FE28211E6BBA5C004A4D82 /* HMServeView.m in Sources */,
 				00FE26591E6BB8C1004A4D82 /* ZXQRCodeBlockPair.m in Sources */,
 				00FE25DA1E6BB8C1004A4D82 /* ZXReedSolomonEncoder.m in Sources */,
 				0085D6C91E6816AD00BCB29C /* main.m in Sources */,

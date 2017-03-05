@@ -119,13 +119,13 @@ NSString *const reachabilityStatusChangeNotification = @"reachabilityStatusChang
                 (errCode.integerValue == 10263))    // 游客无操作权限
             {
                 //创建通知
-                NSNotification *notification =[NSNotification notificationWithName:kNotification_NeedLogin object:nil];
+//                NSNotification *notification =[NSNotification notificationWithName:kNotification_NeedLogin object:nil];
                 
-                [[NSNotificationCenter defaultCenter] postNotification:notification];
+//                [[NSNotificationCenter defaultCenter] postNotification:notification];
                 
             }else if (errCode.integerValue == 10000){
                 
-                [[NSNotificationCenter defaultCenter]  postNotificationName:kNotification_LoginStateChange object:@(NO)];
+//                [[NSNotificationCenter defaultCenter]  postNotificationName:kNotification_LoginStateChange object:@(NO)];
             }
             
             HMErrorModel *error = [[HMErrorModel alloc] init];
@@ -220,12 +220,12 @@ NSString *const reachabilityStatusChangeNotification = @"reachabilityStatusChang
                     (errCode.integerValue == 10263))    // 游客无操作权限
                 {
                     //创建通知
-                    NSNotification *notification = [NSNotification notificationWithName:kNotification_NeedLogin object:nil];
-                    [[NSNotificationCenter defaultCenter] postNotification:notification];
+//                    NSNotification *notification = [NSNotification notificationWithName:kNotification_NeedLogin object:nil];
+//                    [[NSNotificationCenter defaultCenter] postNotification:notification];
                     
                 }else if (errCode.integerValue == 10000){
 
-                    [[NSNotificationCenter defaultCenter]  postNotificationName:kNotification_LoginStateChange object:@(NO)];
+//                    [[NSNotificationCenter defaultCenter]  postNotificationName:kNotification_LoginStateChange object:@(NO)];
                 }
 
                 HMErrorModel *err = [[HMErrorModel alloc] init];
