@@ -13,16 +13,25 @@
 #import "addMemberViewController.h"
 #import "memberManagerViewController.h"
 #import "homeView.h"
+#import "UINavigationBar+ISVExtension.h"
 @interface ISVHomeViewController ()
 @property (nonatomic, strong)homeView *aView;  //实例化一个VView的对象
 @end
 
 @implementation ISVHomeViewController
 
-- (void)viewWillAppear:(BOOL)animated{
-    // Called when the view is about to made visible. Default does nothing
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationController.navigationBar ISV_setBackgroundColor:ISVMainColor];
+}
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar ISV_reset];
+    
 }
 
 - (void)viewDidLoad {
@@ -39,7 +48,7 @@
     [_aView.memberManagerBtn addTarget:self action:@selector(memberManagerBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:_aView];
-    
+    [self.navigationController.navigationBar ISV_setBackgroundColor:ISVMainColor];
 }
 
 - (void)collectionBtnClick {

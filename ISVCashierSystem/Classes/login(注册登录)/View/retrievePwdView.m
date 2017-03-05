@@ -24,6 +24,14 @@
     _phoneField.layer.cornerRadius = 4;
     _phoneField.layer.masksToBounds = YES;
     
+    UIImageView *leftImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    leftImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [leftImageView setImage:[UIImage imageNamed:@"pwd"]];
+    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [leftView addSubview:leftImageView];
+    _phoneField.leftView = leftView;
+    _phoneField.leftViewMode = UITextFieldViewModeAlways;
+    
     _verField = [[UITextField alloc]init];
     [self addSubview:_verField];
     [_verField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -38,12 +46,16 @@
     _verField.layer.masksToBounds = YES;
     
     _verBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _verBtn.frame = CGRectMake(0, 0, 30, 30);
+    _verBtn.frame = CGRectMake(0, 0, 88, 30);
     [_verBtn setTitle:@"验证码" forState:UIControlStateNormal];
-    [_verBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
-    UIView *aView =[[UIView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [aView addSubview:_verBtn];
-    _verField.rightView = aView;
+    _verBtn.backgroundColor = ISVTextColor;
+    _verBtn.titleLabel.font = ISVFontSize(14);
+    _verBtn.layer.cornerRadius =4;
+    _verBtn.clipsToBounds = YES;
+    UIView *rView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 30)];
+    [rView addSubview:_verBtn];
+    _verField.rightView = rView;
+    _verField.rightViewMode = UITextFieldViewModeAlways;
 
     
     _pwdField = [[UITextField alloc]init];

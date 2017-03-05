@@ -24,7 +24,14 @@
     
     [_aView viewInit];
     [self.view addSubview:_aView];
-    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"confirmPwd"] style:0 target:self action:@selector(rightClick)];
+}
+
+/**
+    提交修改
+ */
+- (void)rightClick {
+    NSLog(@"提交修改");
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
