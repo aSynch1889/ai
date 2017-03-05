@@ -33,6 +33,7 @@ static NSString * const kPlacerholderColorKeyPath = @"_placeholderLabel.textColo
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self setUp];
 }
 
@@ -122,4 +123,15 @@ static NSString * const kPlacerholderColorKeyPath = @"_placeholderLabel.textColo
     _textLeftMargin = textLeftMargin;
     [self setNeedsLayout];
 }
+
+-(CGRect)textRectForBounds:(CGRect)bounds{
+    return CGRectInset(bounds, 10, 0);
+    
+}
+
+-(CGRect)editingRectForBounds:(CGRect)bounds{
+    return CGRectInset(bounds, 10, 0);
+    
+}
+
 @end

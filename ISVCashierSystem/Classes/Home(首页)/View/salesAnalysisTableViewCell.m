@@ -29,7 +29,7 @@
         self.timeLabel = tLabel;
         
         // 2.金额
-        UILabel *aLabel = [[UILabel alloc] initWithFrame:CGRectMake(kSCREEN_WIDTH-36-20, 11, 36, 12)];
+        UILabel *aLabel = [[UILabel alloc] initWithFrame:CGRectMake(kSCREEN_WIDTH-100-20, 11, 100, 12)];
         aLabel.font = [UIFont systemFontOfSize:12];
     
         aLabel.textAlignment = NSTextAlignmentRight;

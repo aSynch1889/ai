@@ -21,9 +21,16 @@
     self.title = @"修改密码";
     self.view.backgroundColor = ISVBackgroundColor;
     _aView = [[changePwdView alloc]initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)];
+    
     [_aView viewInit];
     [self.view addSubview:_aView];
     
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [_aView.oldPwdField resignFirstResponder];
+    [_aView.pwdField resignFirstResponder];
+    [_aView.confirmPwdField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

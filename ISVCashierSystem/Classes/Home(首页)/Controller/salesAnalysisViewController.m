@@ -74,7 +74,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     salesAnalysisTableViewCell *cell = [salesAnalysisTableViewCell cellWithTableView:tableView];
     cell.timeLabel.text = @"2017-10-11";
-    cell.amountLabel.text = @"jiner";
+    cell.amountLabel.text = @"+2000";
     return cell;
 }
 

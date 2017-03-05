@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface changePwdView : UIView
+@interface changePwdView : UIView<UITextFieldDelegate>
 
 @property(nonatomic, strong)UITextField *oldPwdField;//!<  旧密码
 @property(nonatomic, strong)UITextField *pwdField;//!<  新密码
