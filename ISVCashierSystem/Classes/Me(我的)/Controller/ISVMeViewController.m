@@ -102,7 +102,13 @@
     
     if (indexPath.section == 0) {
         loginViewController *loginVC = [[loginViewController alloc]init];
-        [weakSelf.navigationController pushViewController:loginVC animated:YES];
+//        [weakSelf.navigationController pushViewController:loginVC animated:YES];
+        
+        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        [weakSelf presentViewController:navVC animated:YES completion:^{
+            
+        }];
+        
     }else if (indexPath.section == 1){
         if (indexPath.row == 0) {
             

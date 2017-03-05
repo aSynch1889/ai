@@ -10,6 +10,7 @@
 #import "loginView.h"
 #import "retrievePwdViewController.h"
 #import "registerViewController.h"
+#import "UINavigationBar+ISVExtension.h"
 @interface loginViewController ()
 @property (nonatomic, strong) loginView *aView;  //实例化一个VView的对象
 @end
@@ -20,13 +21,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //登录页面
-    _aView = [[loginView alloc]initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)];  //初始化时一定要设置frame，否则VView上的两个按钮将无法被点击
-    
+//    self.title = @"登录";
+    _aView = [[loginView alloc]initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)];
     [_aView viewInit];
     [_aView.regBtn addTarget:self action:@selector(userRegister) forControlEvents:UIControlEventTouchUpInside];
     [_aView.forgetPwdBtn addTarget:self action:@selector(retrievePwd) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:_aView];
+    
+    [self.navigationController.navigationBar ISV_setBackgroundColor:[UIColor clearColor]];
+    self.navigationController.navigationBar.tintColor = kColorBlackPercent60;
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : kColorBlackPercent60}];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"X" style:UIBarButtonItemStylePlain target:self action:@selector(rightClick)];
+    
+}
+
+- (void)rightClick {
+    NSLog(@"关闭登录");
+    __weak typeof(self) weakSelf = self;
+    [weakSelf dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 
@@ -45,6 +60,11 @@
     NSLog(@"忘记密码");
     retrievePwdViewController *retVC = [[retrievePwdViewController alloc]init];
     [self.navigationController pushViewController:retVC animated:YES];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [_aView.phoneField resignFirstResponder];
+    [_aView.pwdField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

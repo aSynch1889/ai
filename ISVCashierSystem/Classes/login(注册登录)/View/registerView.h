@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface registerView : UIView
+@interface registerView : UIView<UITextFieldDelegate>
 @property (nonatomic, strong)UITextField *phoneField;//!<  手机号码输入框
 @property (nonatomic, strong)UITextField *verField;//!< 验证码输入框
 @property (nonatomic, strong)UIButton *verBtn;//!<  获取验证码按钮

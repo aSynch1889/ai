@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface loginView : UIView
+@interface loginView : UIView<UITextFieldDelegate>
 @property (nonatomic, strong)UIImageView *iconView;//!<  头像
 @property (nonatomic, strong)UITextField *phoneField;//!<  手机号码输入框
 @property (nonatomic, strong)UITextField *pwdField;//!< 密码输入框
