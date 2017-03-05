@@ -30,7 +30,7 @@
         self.title.textAlignment = NSTextAlignmentCenter;
         self.title.backgroundColor = [UIColor clearColor];
         self.title.textColor = [UIColor whiteColor];
-        self.title.font = HMFontSize(18.0);
+        self.title.font = ISVFontSize(18.0);
         [self addSubview:self.title];
         
         self.arrow = [[UIImageView alloc] initWithImage:[HMMenuConfiguration arrowImage]];

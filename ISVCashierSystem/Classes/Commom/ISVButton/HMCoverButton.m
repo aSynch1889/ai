@@ -40,7 +40,7 @@
                       UIControlEventTouchUpOutside|
                       UIControlEventTouchCancel];
     
-    self.highlightedColor = HMRGBACOLOR(0, 0, 0, 0.1);
+    self.highlightedColor = ISVRGBACOLOR(0, 0, 0, 0.1);
 }
 
 
@@ -48,7 +48,7 @@
 - (void)normal
 {
     [UIView animateWithDuration:0.35 animations:^{
-        self.backgroundColor = HMRGBACOLOR(0, 0, 0, 0.0);
+        self.backgroundColor = ISVRGBACOLOR(0, 0, 0, 0.0);
     }];
 }
 

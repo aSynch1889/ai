@@ -64,13 +64,13 @@
 {
     self.layer.cornerRadius = 5;
     self.layer.masksToBounds = YES;
-    self.backgroundColor = HMRGB(243, 243, 243);
+    self.backgroundColor = ISVRGB(243, 243, 243);
     
     UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 30)];
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
     self.font = [UIFont systemFontOfSize:14];
-    self.textColor = HMRGB(100, 100, 100);
+    self.textColor = ISVRGB(100, 100, 100);
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField

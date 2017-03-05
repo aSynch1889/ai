@@ -33,7 +33,7 @@ static UIView *HUDCoverView_;
     // 初始化HUD
 //    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
     [SVProgressHUD setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]];
-    [SVProgressHUD setBackgroundColor:HMRGBACOLOR(0, 0, 0, 0.7)];
+    [SVProgressHUD setBackgroundColor:ISVRGBACOLOR(0, 0, 0, 0.7)];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     [SVProgressHUD setInfoImage:nil];
 }
@@ -244,7 +244,7 @@ static UIView *HUDCoverView_;
 {
     if (HUDCoverView_ == nil) {
         HUDCoverView_ = [[UIView alloc] init];
-        HUDCoverView_.backgroundColor = HMBackgroundColor;
+        HUDCoverView_.backgroundColor = ISVBackgroundColor;
         HUDCoverView_.userInteractionEnabled = YES;
     }
     return HUDCoverView_;
@@ -253,8 +253,8 @@ static UIView *HUDCoverView_;
 {
     if (HUDStateLabel_ == nil) {
         HUDStateLabel_ = [[UILabel alloc] init];
-        HUDStateLabel_.font = HMFontSize(16.0);
-        HUDStateLabel_.textColor = HMRGB(150, 150, 150);
+        HUDStateLabel_.font = ISVFontSize(16.0);
+        HUDStateLabel_.textColor = ISVRGB(150, 150, 150);
     }
     return HUDStateLabel_;
 }
@@ -263,7 +263,7 @@ static UIView *HUDCoverView_;
 {
     UIButton *reLoadDataBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [reLoadDataBtn setTitle:@"重新加载" forState:UIControlStateNormal];
-    reLoadDataBtn.titleLabel.font = HMFontSize(15.0);
+    reLoadDataBtn.titleLabel.font = ISVFontSize(15.0);
     reLoadDataBtn.size = CGSizeMake(80, 30);
     [reLoadDataBtn setBackgroundImage:[UIImage imageNamed:@"Button_radius5_green_nor"] forState:UIControlStateNormal];
     [reLoadDataBtn setBackgroundImage:[UIImage imageNamed:@"Button_radius5_green_hig"] forState:UIControlStateHighlighted];

@@ -27,7 +27,7 @@
 {
     self.imageView.contentMode = UIViewContentModeCenter;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
-    self.titleLabel.font = HMFontSize(10);
+    self.titleLabel.font = ISVFontSize(10);
     [self setTitleColor:kColorBlackPercent60 forState:UIControlStateNormal];
 }
 

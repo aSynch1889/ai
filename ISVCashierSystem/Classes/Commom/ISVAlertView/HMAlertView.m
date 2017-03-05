@@ -461,7 +461,7 @@ static const CGFloat AlertViewLayerOpacity = 0.95;
     button.titleLabel.adjustsFontSizeToFitWidth = YES;
     button.titleEdgeInsets = kAlertViewButtonTitleEdgeInsets;
     [button setTitleColor:kAlertViewButtonTitleColorNormal forState:UIControlStateNormal];
-    [button setTitleColor:HMMainlColor forState:UIControlStateHighlighted];
+    [button setTitleColor:ISVMainColor forState:UIControlStateHighlighted];
     [button addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
     [button addTarget:self action:@selector(setBackgroundColorForButton:) forControlEvents:UIControlEventTouchDown];
     [button addTarget:self action:@selector(setBackgroundColorForButton:) forControlEvents:UIControlEventTouchDragEnter];

@@ -11,7 +11,7 @@
 
 #ifdef __OBJC__
     #import "Constant.h"
-
+    #import "UIView+HMExtension.h"
 #endif
 
 #endif /* ISV_pch */

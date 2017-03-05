@@ -191,7 +191,7 @@
     if (_titleLabel == nil) {
         UILabel *titleLabel = [[UILabel alloc] init];
         titleLabel.text = @"支付方式";
-        titleLabel.font = HMFontSize(14.0);
+        titleLabel.font = ISVFontSize(14.0);
         titleLabel.textColor = kColorBlackPercent60;
         [self addSubview:titleLabel];
         _titleLabel = titleLabel;

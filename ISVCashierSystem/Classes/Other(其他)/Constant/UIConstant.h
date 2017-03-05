@@ -59,7 +59,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define ISVContraColor ISVRGB(254,145,146)  // 本项目通用粉红色
 
 #define kProjectIconTitColor ISVRGB(60, 198, 119)   // 项目图标绿色
-
+#define kContactListColor kColorBlackPercent80  // 联系人的字体颜色
+#define kCoachOrderDetailByAppointSecondsInterval (10 * 60)// 10分钟
 // 常用黑色
 #define kColorBlackPercent80 ISVRGB(54, 54, 54)
 #define kColorBlackPercent60 ISVRGB(103, 103, 103)

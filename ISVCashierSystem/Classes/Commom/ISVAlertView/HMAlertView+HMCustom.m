@@ -77,7 +77,7 @@
     textField.backgroundColor = [UIColor whiteColor];
     textField.font = [UIFont systemFontOfSize:14];
     textField.placeholder = placeholder;
-    textField.tintColor = HMMainlColor;
+    textField.tintColor = ISVMainColor;
     [textField becomeFirstResponder];
     
     [textField addTarget:self action:@selector(textDidChange:) forControlEvents:UIControlEventEditingChanged];
@@ -115,7 +115,7 @@
                                             otherTitles:(NSArray *)otherTitles
                                             contentView:(UIView *)view
                                               completion:(HMAlertViewCompletionBlock)completion];
-    [alert setCancelButtonTextColor:HMRGB(255, 131, 131)];
+    [alert setCancelButtonTextColor:ISVRGB(255, 131, 131)];
     return alert;
 }
 

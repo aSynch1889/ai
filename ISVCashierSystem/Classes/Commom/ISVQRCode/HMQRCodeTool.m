@@ -10,7 +10,7 @@
 #import <CoreImage/CoreImage.h>
 #import "HMScan/HMScanViewController.h"
 #import "ISVNavigationController.h"
-#import "ISVSystemTool.h"
+#import "HMSystemTool.h"
 #import "ZXingObjC.h"   // 图片识别二维码（为了兼容iOS7）
 #import "HMNetworkingConst.h"
 #import "SCRSA.h"
@@ -119,7 +119,9 @@ static NSString * const publicKeyStr = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSq
             }
             
         }];
-        HMNavigationController *navVC = [[HMNavigationController alloc] initWithRootViewController:scanViewController];
+#warning 未修复完成
+//        HMNavigationController *navVC = [[HMNavigationController alloc] initWithRootViewController:scanViewController];
+        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:scanViewController];
         [viewController presentViewController:navVC animated:YES completion:nil];
         
     } failedCallback:^() {

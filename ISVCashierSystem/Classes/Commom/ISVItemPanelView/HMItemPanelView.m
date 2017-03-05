@@ -35,7 +35,7 @@
             
             HMItemButton *button = [HMItemButton itemButtonWithTitle:title icon:icons[index]];
             [button setTag:index];
-            [button setTitleColor:HMRGB(128, 128, 128) forState:UIControlStateNormal];
+            [button setTitleColor:ISVRGB(128, 128, 128) forState:UIControlStateNormal];
             [button addTarget:self action:@selector(didSelected:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:button];
             [button setFrame:frame];

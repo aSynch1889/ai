@@ -8,8 +8,8 @@
 
 #import "HMEasyHitBtn.h"
 
-#define kBackgoundColorForNormal HMRGB(240, 240, 240)
-#define kBackgoundColorForSelected HMMainlColor
+#define kBackgoundColorForNormal ISVRGB(240, 240, 240)
+#define kBackgoundColorForSelected ISVMainColor
 
 @implementation HMEasyHitBtn
 
@@ -17,8 +17,8 @@
 {
     HMEasyHitBtn *btn = [[self alloc] init];
 
-    [btn setTitleColor:HMRGB(150, 150, 150) forState:UIControlStateNormal];
-    [btn setTitleColor:HMRGB(255, 255, 255) forState:UIControlStateSelected];
+    [btn setTitleColor:ISVRGB(150, 150, 150) forState:UIControlStateNormal];
+    [btn setTitleColor:ISVRGB(255, 255, 255) forState:UIControlStateSelected];
     btn.titleLabel.font = [UIFont systemFontOfSize:12];
     [btn addTarget:btn action:@selector(touchUpInside) forControlEvents:UIControlEventTouchUpInside];
     return btn;
@@ -28,7 +28,7 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        self.titleLabel.textColor = HMRGB(150, 150, 150);
+        self.titleLabel.textColor = ISVRGB(150, 150, 150);
         self.titleLabel.backgroundColor = kBackgoundColorForNormal;
         self.titleLabel.layer.cornerRadius = 8;
         self.titleLabel.layer.masksToBounds = YES;

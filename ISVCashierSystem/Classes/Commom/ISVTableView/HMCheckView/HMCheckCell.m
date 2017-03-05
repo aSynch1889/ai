@@ -33,9 +33,9 @@
 
 - (void)setUp
 {
-    self.iconImageView.layer.cornerRadius = self.iconImageView.width * 0.5;
+    self.iconImageView.layer.cornerRadius = self.iconImageView.frame.size.width * 0.5;
     self.iconImageView.layer.masksToBounds = YES;
-    self.iconImageView.backgroundColor = HMBackgroundColor;
+    self.iconImageView.backgroundColor = ISVBackgroundColor;
     
 }
 

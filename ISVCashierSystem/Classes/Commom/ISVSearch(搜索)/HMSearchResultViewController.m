@@ -24,7 +24,7 @@ static CGFloat const kSearchResultViewControllerCellHeight = 64.0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = HMBackgroundColor;
+    self.view.backgroundColor = ISVBackgroundColor;
 }
 
 #pragma mark - ResultsList<UITableViewDataSource>

@@ -37,7 +37,7 @@
 
 - (void)setUp
 {
-    self.backgroundColor = HMBackgroundColor;
+    self.backgroundColor = ISVBackgroundColor;
     self.contentView.backgroundColor = [UIColor whiteColor];
     
     // 按钮间距
@@ -52,9 +52,9 @@
             id item = items[i];
             HMHorizontalButton *button = [HMHorizontalButton buttonWithType:UIButtonTypeCustom];
 
-            button.titleLabel.font = HMFontSize(12.0);
+            button.titleLabel.font = ISVFontSize(12.0);
             [button setTitleColor:kColorBlackPercent20 forState:UIControlStateNormal];
-            [button setTitleColor:HMMainlColor forState:UIControlStateSelected];
+            [button setTitleColor:ISVMainColor forState:UIControlStateSelected];
             if ([item isKindOfClass:[NSString class]]) {
                 [button setTitle:item forState:UIControlStateNormal];
                 

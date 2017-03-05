@@ -58,7 +58,7 @@
             }
             [sectionBtn  setTitle:sectionBtnTitle forState:UIControlStateNormal];
             [sectionBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-            sectionBtn.titleLabel.font = HMFontSize(16.0);//默认显示的标题设置
+            sectionBtn.titleLabel.font = ISVFontSize(16.0);//默认显示的标题设置
             
             [sectionBtn setImage:[UIImage imageNamed:@"icon_button_Triangle_NotSel"] forState:UIControlStateNormal];
             [sectionBtn setImage:[UIImage imageNamed:@"icon_button_Triangle_Sel"] forState:UIControlStateSelected];
@@ -77,7 +77,7 @@
         // 添加底部横线
         CGFloat bottomLineViewHeight = 1.0;
         UIView *bottomLineView = [[UIView alloc] initWithFrame:CGRectMake(0, frame.size.height - bottomLineViewHeight, frame.size.width, bottomLineViewHeight)];
-        bottomLineView.backgroundColor = HMRGB(242, 242, 242);
+        bottomLineView.backgroundColor = ISVRGB(242, 242, 242);
         [self addSubview:bottomLineView];
     }
     return self;
@@ -100,7 +100,7 @@
     
     _nameLabel = [[UILabel alloc] init];
     _nameLabel.frame = CGRectMake(0, 0, self.width * 0.5, kDefaultCellHeight);
-    _nameLabel.font = HMFontSize(14);
+    _nameLabel.font = ISVFontSize(14);
     _nameLabel.textColor = kColorBlackPercent80;
     _nameLabel.text = [self.dataSource titleInSection:_currentExtendSection index:indexPath.row];
     _nameLabel.textAlignment = NSTextAlignmentCenter;

@@ -124,7 +124,7 @@
 - (UILabel *)nameLabel{
     if (_nameLabel == nil) {
         UILabel *label = [[UILabel alloc]init];
-        label.font = HMFontSize(14.0);
+        label.font = ISVFontSize(14.0);
         label.textColor = kColorBlackForText;
         [self addSubview:label];
         [label mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -29,8 +29,8 @@
         btn.frame = CGRectMake(i * (btnWidth + margin) , 0, btnWidth, 40);
         
         [btn setTitle:title forState:UIControlStateNormal];
-        [btn setTitleColor:HMRGBACOLOR(255, 255, 255, 0.6) forState:UIControlStateNormal];
-        [btn setTitleColor:HMRGBACOLOR(255, 255, 255, 1.0) forState:UIControlStateSelected];
+        [btn setTitleColor:ISVRGBACOLOR(255, 255, 255, 0.6) forState:UIControlStateNormal];
+        [btn setTitleColor:ISVRGBACOLOR(255, 255, 255, 1.0) forState:UIControlStateSelected];
         btn.tintColor = [UIColor clearColor];
         btn.titleLabel.font = [UIFont systemFontOfSize:16];
         btn.tag = i;

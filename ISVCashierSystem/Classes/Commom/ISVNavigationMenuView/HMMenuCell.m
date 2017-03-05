@@ -25,7 +25,7 @@
 //        self.contentView.backgroundColor = [UIColor color:[HMMenuConfiguration itemsColor] withAlpha:[HMMenuConfiguration menuAlpha]];
 //        self.textLabel.textColor = [HMMenuConfiguration itemTextColor];
 //        self.textLabel.textAlignment = NSTextAlignmentCenter;
-//        self.textLabel.font = HMFontSize(14);
+//        self.textLabel.font = ISVFontSize(14);
 //        self.selectionStyle = UITableViewCellEditingStyleNone;
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, 40)];
         titleLabel.font = [UIFont systemFontOfSize:14];
@@ -95,7 +95,7 @@
     _title = title;
     CGSize size =[title boundingRectWithSize:CGSizeMake(MAXFLOAT, self.titleLabel.frame.size.height)
                                                               options:NSStringDrawingUsesLineFragmentOrigin
-                                                           attributes:@{NSFontAttributeName:HMFontSize(14)}
+                                                           attributes:@{NSFontAttributeName:ISVFontSize(14)}
                                                               context:nil].size;
     
     NSLog(@"size.width=%f, size.height=%f", size.width, size.height);
@@ -113,7 +113,7 @@
     
     if (checked)
     {
-        self.titleLabel.textColor = HMMainlColor;
+        self.titleLabel.textColor = ISVMainColor;
         self.iconView.hidden = NO;
     }
     else

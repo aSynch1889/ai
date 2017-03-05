@@ -33,7 +33,7 @@
     [super viewDidLoad];
     
     self.title = @"扫一扫";
-    self.view.backgroundColor = HMBackgroundColor;
+    self.view.backgroundColor = ISVBackgroundColor;
     
     //设置为当前的宽高
     self.view.frame = kSCREEN_BOUNDS;

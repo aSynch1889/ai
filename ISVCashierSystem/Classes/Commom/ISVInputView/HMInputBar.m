@@ -77,7 +77,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 
 - (void)jsq_configureMessagesViewController
 {
-    self.view.backgroundColor = HMRGBACOLOR(0, 0, 0, 0.0);
+    self.view.backgroundColor = ISVRGBACOLOR(0, 0, 0, 0.0);
     
     self.jsq_isObserving = NO;
     
@@ -85,7 +85,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     
     self.inputToolbar.delegate = self;
     self.inputToolbar.contentView.textView.delegate = self;
-    self.inputToolbar.contentView.textView.tintColor = HMMainlColor;
+    self.inputToolbar.contentView.textView.tintColor = ISVMainColor;
     UIControl *view = (UIControl *)self.view;
     [view addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchDown];
     
@@ -313,7 +313,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     [self jsq_setToolbarBottomLayoutGuideConstant:heightFromBottom];
     
     [UIView animateWithDuration:0.35 animations:^{
-        self.view.backgroundColor = HMRGBACOLOR(0, 0, 0, 0.5);
+        self.view.backgroundColor = ISVRGBACOLOR(0, 0, 0, 0.5);
     }];
 }
 
@@ -555,7 +555,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     [self.view endEditing:YES];
     
     [UIView animateWithDuration:0.35 animations:^{
-        self.view.backgroundColor = HMRGBACOLOR(0, 0, 0, 0);
+        self.view.backgroundColor = ISVRGBACOLOR(0, 0, 0, 0);
     } completion:^(BOOL finished) {
         [self.view removeFromSuperview];
     }];

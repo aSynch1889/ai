@@ -74,7 +74,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
     if (_chooseView != nil) return _chooseView;
     
     _chooseView = [[UIView alloc] initWithFrame:CGRectMake(0, self.showFrame.origin.y, kSCREEN_WIDTH, 0)];
-    _chooseView.backgroundColor = HMRGB(242, 242, 242);
+    _chooseView.backgroundColor = ISVRGB(242, 242, 242);
     _chooseView.layer.masksToBounds = YES;
     CGFloat leading = 10;  // 距离屏幕边距
     CGFloat lineH = 1;
@@ -98,7 +98,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
     UILabel *sexLabel = [[UILabel alloc] initWithFrame:CGRectMake(leading, 7, 70, 21)];
     sexLabel.text = @"私教性别:";
     sexLabel.font = [UIFont systemFontOfSize:14];
-    sexLabel.textColor = HMRGB(100, 100, 100);
+    sexLabel.textColor = ISVRGB(100, 100, 100);
     [sexView addSubview:sexLabel];
     
     HMEasyHitBtn *maleBtn = [HMEasyHitBtn easyHitBtn];
@@ -134,7 +134,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
 
     
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(leading, sexView.height-lineH, lineW, lineH)];
-    line.backgroundColor = HMRGB(242, 242, 242);
+    line.backgroundColor = ISVRGB(242, 242, 242);
     line.userInteractionEnabled = NO;
     [sexView addSubview:line];
     
@@ -156,7 +156,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
     
     UILabel *qcLabel = [[UILabel alloc] initWithFrame:CGRectMake(maleX, 10, 0, 20)];
     qcLabel.font = qcFont;
-    qcLabel.textColor = HMMainlColor;
+    qcLabel.textColor = ISVMainColor;
     [qualificationChoose addSubview:qcLabel];
     self.qcLabel = qcLabel;
     
@@ -184,7 +184,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
     
     // 5.重置按钮
     HMHollowButton *resetBtn = [HMHollowButton hollowButtonWithTitle:@"重 置" frame:CGRectMake((kSCREEN_WIDTH-80)*0.5, CGRectGetMaxY(timeChooseRect)+10, 80, 30)];
-    resetBtn.themeColor = HMRGB(255, 99, 99);
+    resetBtn.themeColor = ISVRGB(255, 99, 99);
     resetBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [resetBtn addTarget:self action:@selector(resetBtnPressed) forControlEvents:UIControlEventTouchUpInside];
     [scrollView addSubview:resetBtn];
@@ -288,13 +288,13 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
             weakSelf.qcBtn.frame = qcRect;
             
             [weakSelf.qcBtn setTitle:@"更换" forState:UIControlStateNormal];
-            weakSelf.qcBtn.themeColor = HMRGB(200, 200, 200);
+            weakSelf.qcBtn.themeColor = ISVRGB(200, 200, 200);
             
             [weakSelf updateDisplayChooseTriangle];
         } else
         {
             [weakSelf.qcBtn setTitle:@"选择" forState:UIControlStateNormal];
-            weakSelf.qcBtn.themeColor = HMMainlColor;
+            weakSelf.qcBtn.themeColor = ISVMainColor;
     
             // 资质
             CGRect qcLabelRect = self.qcLabel.frame;
@@ -325,7 +325,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
     self.femaleIcon.highlighted = NO;
     
     [self.qcBtn setTitle:@"选择" forState:UIControlStateNormal];
-    self.qcBtn.themeColor = HMMainlColor;
+    self.qcBtn.themeColor = ISVMainColor;
     
     [self.chooseItems removeAllObjects];
     
@@ -401,7 +401,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
         UIButton *sortBtn = [UIButton buttonWithType:UIButtonTypeSystem];
         sortBtn.frame = CGRectMake(0, 0, btnWidth, 30);
         [sortBtn setTitle:_sortTitles[0] forState:UIControlStateNormal];
-        [sortBtn setTitleColor:HMMainlColor forState:UIControlStateNormal];
+        [sortBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
         sortBtn.titleLabel.font = kTitleFont;
         [sortBtn addTarget:self action:@selector(sortBtnPressed) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:sortBtn];
@@ -411,8 +411,8 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
         UIButton *chooseBtn = [UIButton buttonWithType:UIButtonTypeSystem];
         chooseBtn.frame = CGRectMake(btnWidth, 0, btnWidth, 30);
         [chooseBtn setTitle:@"筛选" forState:UIControlStateNormal];
-        [chooseBtn setTitleColor:HMRGB(150, 150, 150) forState:UIControlStateNormal];
-        [chooseBtn setTitleColor:HMMainlColor forState:UIControlStateSelected];
+        [chooseBtn setTitleColor:ISVRGB(150, 150, 150) forState:UIControlStateNormal];
+        [chooseBtn setTitleColor:ISVMainColor forState:UIControlStateSelected];
         chooseBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [chooseBtn addTarget:self action:@selector(chooseBtnPressed) forControlEvents:UIControlEventTouchUpInside];
         chooseBtn.tintColor = [UIColor whiteColor];
@@ -421,7 +421,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
         
         // 中间竖线
         UIView *line = [[UIView alloc] initWithFrame:CGRectMake(btnWidth, 5, 1, 20)];
-        line.backgroundColor = HMRGB(230, 230, 230);
+        line.backgroundColor = ISVRGB(230, 230, 230);
         [self addSubview:line];
         
         // 角标(小三角图片)
@@ -476,7 +476,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
         
         [UIView animateWithDuration:0.3 animations:^{
             self.sortTableView.frame = CGRectMake(0, 0, kSCREEN_WIDTH, sortTableHeight);
-            self.coverView.backgroundColor = HMRGBACOLOR(0, 0, 0, 0.5);
+            self.coverView.backgroundColor = ISVRGBACOLOR(0, 0, 0, 0.5);
             self.triangle1.transform = CGAffineTransformRotate(self.triangle1.transform, M_PI);
         }];
     }
@@ -515,7 +515,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
     if (_coverView == nil)
     {
         UIView *coverView = [[UIView alloc] initWithFrame:self.showFrame];
-        coverView.backgroundColor = HMRGBACOLOR(0, 0, 0, 0);
+        coverView.backgroundColor = ISVRGBACOLOR(0, 0, 0, 0);
         [self.showView addSubview:coverView];
         _coverView = coverView;
     }
@@ -529,7 +529,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
 
     _sortTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, 0)];
     _sortTableView.layer.masksToBounds = YES;
-    _sortTableView.separatorColor = HMRGB(242, 242, 242);
+    _sortTableView.separatorColor = ISVRGB(242, 242, 242);
     _sortTableView.scrollEnabled = NO;
     _sortTableView.dataSource = self;
     _sortTableView.delegate = self;
@@ -623,7 +623,7 @@ HMItemChooseViewDelegate, HMBottomToolBarDelagate>
             self.sortTableView.frame = CGRectMake(0, 0.0, kSCREEN_WIDTH, 0);
             self.triangle1.transform = CGAffineTransformRotate(self.triangle1.transform, M_PI);
             self.sortTableView.alpha = 0.8;
-            self.coverView.backgroundColor = HMRGBACOLOR(0, 0, 0, 0.0);
+            self.coverView.backgroundColor = ISVRGBACOLOR(0, 0, 0, 0.0);
         } completion:^(BOOL finished) {
             [self.coverView removeFromSuperview];
             self.sortTableView.alpha = 1.0;

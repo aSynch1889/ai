@@ -47,7 +47,7 @@
 
     UIButton *sendButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [sendButton setTitle:sendTitle forState:UIControlStateNormal];
-    [sendButton setTitleColor:HMMainlColor forState:UIControlStateNormal];
+    [sendButton setTitleColor:ISVMainColor forState:UIControlStateNormal];
     [sendButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateDisabled];
 
     sendButton.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];

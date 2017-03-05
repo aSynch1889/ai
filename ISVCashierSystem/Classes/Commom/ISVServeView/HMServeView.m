@@ -83,7 +83,7 @@
         CGFloat marge = ((self.width - 40) -5*buttonW)/4.0;
         [button setFrame:CGRectMake(20 +(buttonW +marge)*rol , CGRectGetMaxY(self.serveLable.frame) + 10 + (4+(buttonH +10))*row, buttonW, buttonH)];
     }
-    self.serveLable.font = HMFontSize(14);
+    self.serveLable.font = ISVFontSize(14);
     self.serveLable.textColor = kColorBlackForText;
     self.height = CGRectGetMaxY(self.serveLable.frame) + (buttonH + 10) * 2;
 }

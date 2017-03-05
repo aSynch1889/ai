@@ -60,7 +60,7 @@ NSString * const HMCheckCellID = @"HMCheckCellID";
 {
 //    _multipleCheck = YES;// 多行模式
     self.iconRounded = YES;
-    self.backgroundColor = HMBackgroundColor;
+    self.backgroundColor = ISVBackgroundColor;
     _currenIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     
     [self.checkeds removeAllObjects];
@@ -347,7 +347,7 @@ NSString * const HMCheckCellID = @"HMCheckCellID";
         [tableView setContentOffset:CGPointMake(0, -top)];
 
         //设置索引列文本的颜色
-        tableView.sectionIndexColor = HMRGB(137, 137, 137);
+        tableView.sectionIndexColor = ISVRGB(137, 137, 137);
         tableView.sectionIndexBackgroundColor = [UIColor whiteColor];
 //        tableView.sectionIndexTrackingBackgroundColor = [UIColor whiteColor];
         

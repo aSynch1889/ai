@@ -33,9 +33,9 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
     {
         UILabel *label = [[UILabel alloc] init];
-        label.textColor = HMRGB(150, 150, 150);
+        label.textColor = ISVRGB(150, 150, 150);
         label.font = [UIFont systemFontOfSize:14];
-        self.tintColor = HMMainlColor;
+        self.tintColor = ISVMainColor;
         [self.contentView addSubview:label];
         self.label = label;
     }
@@ -56,10 +56,10 @@
     
     if (didSelected)
     {
-        self.label.textColor = HMMainlColor;
+        self.label.textColor = ISVMainColor;
     } else
     {
-        self.label.textColor = HMRGB(150, 150, 150);
+        self.label.textColor = ISVRGB(150, 150, 150);
     }
 }
 

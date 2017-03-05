@@ -110,9 +110,9 @@
         btn.tag = i;
         
         [btn setTitle:switchModel.title forState:UIControlStateNormal];
-        btn.titleLabel.font = HMFontSize(13.0);
+        btn.titleLabel.font = ISVFontSize(13.0);
         
-        [btn setTitleColor:HMRGB(92, 92, 92) forState:UIControlStateNormal];
+        [btn setTitleColor:ISVRGB(92, 92, 92) forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
         [btn setBackgroundImage:[UIImage imageNamed:@"Button_radius8_LightGray_nor"] forState:UIControlStateNormal];
         [btn setBackgroundImage:[UIImage imageNamed:@"Button_radius8_green_nor"] forState:UIControlStateSelected];

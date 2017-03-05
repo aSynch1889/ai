@@ -210,8 +210,8 @@ NSString *const ID = @"HMBannerViewCell";
     {
         UIPageControl *pageControl = [[UIPageControl alloc] init];
         pageControl.numberOfPages = self.imagesGroup.count;
-        pageControl.pageIndicatorTintColor = HMRGBACOLOR(255, 255, 255, 0.5);
-        pageControl.currentPageIndicatorTintColor = HMMainlColor;
+        pageControl.pageIndicatorTintColor = ISVRGBACOLOR(255, 255, 255, 0.5);
+        pageControl.currentPageIndicatorTintColor = ISVMainColor;
         [self addSubview:pageControl];
         _pageControl = pageControl;
     }

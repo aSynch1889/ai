@@ -178,7 +178,7 @@
     {
         // 添加按钮
         HMCoverButton *btn = [HMCoverButton coverButtonWithFrame:CGRectMake(0, 0, kWidth, kHeight)];
-        btn.highlightedColor = HMRGBACOLOR(0, 0, 0, 0);
+        btn.highlightedColor = ISVRGBACOLOR(0, 0, 0, 0);
         [self addSubview:btn];
         self.coverBtn = btn;
     }

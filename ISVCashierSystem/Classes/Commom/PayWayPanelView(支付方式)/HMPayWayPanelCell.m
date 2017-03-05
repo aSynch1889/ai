@@ -39,8 +39,8 @@
     self.imageView.layer.cornerRadius = 5;
     self.imageView.layer.masksToBounds = YES;
     self.accessoryView = self.checkView;
-    self.textLabel.textColor = HMRGB(92, 92, 92);
-    self.textLabel.font = HMFontSize(14.0);
+    self.textLabel.textColor = ISVRGB(92, 92, 92);
+    self.textLabel.font = ISVFontSize(14.0);
 }
 
 - (void)layoutSubviews

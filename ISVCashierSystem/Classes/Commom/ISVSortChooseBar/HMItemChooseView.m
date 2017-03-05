@@ -36,7 +36,7 @@
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(leading, 7, 100, 21)];
     titleLabel.text = title;
     titleLabel.font = [UIFont systemFontOfSize:14];
-    titleLabel.textColor = HMRGB(100, 100, 100);
+    titleLabel.textColor = ISVRGB(100, 100, 100);
     if (items.count == 0)
     {
         titleLabel.frame = CGRectMake(leading, (chooseViewH-21)*0.5, 100, 21);
@@ -44,7 +44,7 @@
     [chooseView addSubview:titleLabel];
     
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(leading, chooseViewH-lineH, lineW, lineH)];
-    line.backgroundColor = HMRGB(242, 242, 242);
+    line.backgroundColor = ISVRGB(242, 242, 242);
     line.userInteractionEnabled = NO;
     [chooseView addSubview:line];
     
