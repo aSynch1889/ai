@@ -40,7 +40,7 @@
     _verBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _verBtn.frame = CGRectMake(0, 0, 30, 30);
     [_verBtn setTitle:@"验证码" forState:UIControlStateNormal];
-    [_verBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [_verBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
     UIView *aView =[[UIView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
     [aView addSubview:_verBtn];
     _verField.rightView = aView;

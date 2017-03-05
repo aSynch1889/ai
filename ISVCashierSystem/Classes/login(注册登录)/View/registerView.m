@@ -51,7 +51,7 @@
         make.height.mas_equalTo(@44);
     }];
     [_regBtn setTitle:@"下一步" forState:UIControlStateNormal];
-    _regBtn.backgroundColor = ISVMainlColor;
+    _regBtn.backgroundColor = ISVMainColor;
     
 }
 @end

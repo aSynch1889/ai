@@ -41,7 +41,7 @@
         make.height.mas_equalTo(@44);
     }];
     [_loginBtn setTitle:@"登录" forState:UIControlStateNormal];
-    _loginBtn.backgroundColor = ISVMainlColor;
+    _loginBtn.backgroundColor = ISVMainColor;
     
     
     _regBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -53,7 +53,7 @@
         make.height.mas_equalTo(@44);
     }];
     [_regBtn setTitle:@"注册" forState:UIControlStateNormal];
-    [_regBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [_regBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
     
     _forgetPwdBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self addSubview:_forgetPwdBtn];
@@ -64,7 +64,7 @@
         make.height.mas_equalTo(@44);
     }];
     [_forgetPwdBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
-    [_forgetPwdBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [_forgetPwdBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
     
 }
 @end

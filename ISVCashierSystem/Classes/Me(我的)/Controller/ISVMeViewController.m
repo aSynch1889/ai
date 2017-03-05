@@ -87,7 +87,7 @@
         cell.accessoryType = UITableViewCellAccessoryNone;
         cell.textLabel.text = @"退出登录";
         cell.textLabel.textAlignment = NSTextAlignmentCenter;
-        cell.textLabel.textColor = ISVMainlColor;
+        cell.textLabel.textColor = ISVMainColor;
     }
 
     

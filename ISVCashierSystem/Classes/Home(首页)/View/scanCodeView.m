@@ -34,7 +34,7 @@
     }];
     [titleBtn setTitle:@"我要收款" forState:UIControlStateNormal];
     [titleBtn setImage:[UIImage imageNamed:@"titleBtn"] forState:UIControlStateNormal];
-    [titleBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [titleBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
     titleBtn.backgroundColor = ISVBackgroundColor;
     
     self.codeLabel = [[UILabel alloc]init];
@@ -78,7 +78,7 @@
     self.setAmountBtn.backgroundColor = [UIColor whiteColor];
     self.setAmountBtn.layer.cornerRadius = 8;
     self.setAmountBtn.layer.masksToBounds = YES;
-    [self.setAmountBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [self.setAmountBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
 
 }
 

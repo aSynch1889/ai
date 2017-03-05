@@ -18,7 +18,7 @@
 +(void)initialize {
     // 设置导航栏背景色
     UINavigationBar *nav = [UINavigationBar appearance];
-    nav.barTintColor = ISVMainlColor;
+    nav.barTintColor = ISVMainColor;
     nav.tintColor = [UIColor whiteColor];
     
     [nav setShadowImage:[UIImage new]];

@@ -41,6 +41,7 @@
 		00FE23981E6B1B92004A4D82 /* changePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23971E6B1B92004A4D82 /* changePwdView.m */; };
 		00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE239A1E6B9919004A4D82 /* retrievePwdViewController.m */; };
 		00FE239E1E6B995E004A4D82 /* retrievePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE239D1E6B995E004A4D82 /* retrievePwdView.m */; };
+		00FE23A11E6BAA0A004A4D82 /* setAmoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23A01E6BAA0A004A4D82 /* setAmoutView.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +135,8 @@
 		00FE239A1E6B9919004A4D82 /* retrievePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = retrievePwdViewController.m; sourceTree = "<group>"; };
 		00FE239C1E6B995E004A4D82 /* retrievePwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = retrievePwdView.h; sourceTree = "<group>"; };
 		00FE239D1E6B995E004A4D82 /* retrievePwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = retrievePwdView.m; sourceTree = "<group>"; };
+		00FE239F1E6BAA0A004A4D82 /* setAmoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setAmoutView.h; sourceTree = "<group>"; };
+		00FE23A01E6BAA0A004A4D82 /* setAmoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setAmoutView.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -365,6 +368,8 @@
 				00FE238D1E6B0F95004A4D82 /* homeView.m */,
 				00FE238F1E6B11EB004A4D82 /* scanCodeView.h */,
 				00FE23901E6B11EB004A4D82 /* scanCodeView.m */,
+				00FE239F1E6BAA0A004A4D82 /* setAmoutView.h */,
+				00FE23A01E6BAA0A004A4D82 /* setAmoutView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -629,6 +634,7 @@
 				00FE236E1E6A7E63004A4D82 /* salesAnalysisViewController.m in Sources */,
 				0085D6CC1E6816AD00BCB29C /* AppDelegate.m in Sources */,
 				00FE23721E6A81BC004A4D82 /* salesAnalysisTableViewCell.m in Sources */,
+				00FE23A11E6BAA0A004A4D82 /* setAmoutView.m in Sources */,
 				00FE239E1E6B995E004A4D82 /* retrievePwdView.m in Sources */,
 				00FE23851E6A89D2004A4D82 /* systemSetupViewController.m in Sources */,
 				00FE22BD1E6877B0004A4D82 /* ISVMeViewController.m in Sources */,

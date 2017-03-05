@@ -14,7 +14,7 @@
 
 - (void)viewInit {
     UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, kSCREEN_WIDTH, 140)];
-    bgView.backgroundColor = ISVMainlColor;
+    bgView.backgroundColor = ISVMainColor;
     [self addSubview:bgView];
     
     self.collectionBtn = [[UIButton alloc]init];
@@ -66,7 +66,7 @@
     [self.aiBtn setImage:[UIImage imageNamed:@"ai"] forState:UIControlStateNormal];
     self.aiBtn.backgroundColor = [UIColor whiteColor];
     self.aiBtn.showsTouchWhenHighlighted = YES;
-    [self.aiBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [self.aiBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
     [self.aiBtn adjustButtonImageTopAndTitleBottom];
     
     self.addMemberBtn = [[UIButton alloc]init];
@@ -82,7 +82,7 @@
     self.addMemberBtn.backgroundColor = [UIColor whiteColor];
     [self.addMemberBtn adjustButtonImageRightAndTitleLeft];
     self.addMemberBtn.showsTouchWhenHighlighted = YES;
-    [self.addMemberBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [self.addMemberBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
     
     self.memberManagerBtn = [[UIButton alloc]init];
     [self addSubview:self.memberManagerBtn];
@@ -98,7 +98,7 @@
     self.memberManagerBtn.showsTouchWhenHighlighted = YES;
     [self.memberManagerBtn adjustButtonImageRightAndTitleLeft];
     
-    [self.memberManagerBtn setTitleColor:ISVMainlColor forState:UIControlStateNormal];
+    [self.memberManagerBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
     
 }
 

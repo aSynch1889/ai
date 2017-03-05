@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"扫描二维/条形码";
-    self.view.backgroundColor = ISVMainlColor;
+    self.view.backgroundColor = ISVMainColor;
     
     _aView = [[scanCodeView alloc]initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)];
     
