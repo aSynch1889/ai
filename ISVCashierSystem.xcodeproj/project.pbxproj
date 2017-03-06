@@ -386,6 +386,7 @@
 		00FE29201E6BC573004A4D82 /* ISVPayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE291D1E6BC573004A4D82 /* ISVPayResult.m */; };
 		00FE29271E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE29261E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd */; };
 		00FE292A1E6C77F2004A4D82 /* memberManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE29291E6C77F2004A4D82 /* memberManagerTableViewCell.m */; };
+		00FE292D1E6D1CAB004A4D82 /* ISVCustomSegView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE292C1E6D1CAB004A4D82 /* ISVCustomSegView.m */; };
 		8B15F7EB4C6BAAB9B931C876 /* libPods-ISVCashierSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */; };
 /* End PBXBuildFile section */
 
@@ -1164,6 +1165,8 @@
 		00FE29261E6BDBD4004A4D82 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		00FE29281E6C77F2004A4D82 /* memberManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memberManagerTableViewCell.h; sourceTree = "<group>"; };
 		00FE29291E6C77F2004A4D82 /* memberManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = memberManagerTableViewCell.m; sourceTree = "<group>"; };
+		00FE292B1E6D1CAB004A4D82 /* ISVCustomSegView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVCustomSegView.h; sourceTree = "<group>"; };
+		00FE292C1E6D1CAB004A4D82 /* ISVCustomSegView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVCustomSegView.m; sourceTree = "<group>"; };
 		42EA1701F47141B334D3F1AA /* Pods-ISVCashierSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.release.xcconfig"; sourceTree = "<group>"; };
 		76EB028E7DB3B69CFDF78173 /* libPods-ISVCashierSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISVCashierSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFE15AFA39A8A84A0894642 /* Pods-ISVCashierSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVCashierSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVCashierSystem/Pods-ISVCashierSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2596,6 +2599,8 @@
 			children = (
 				00FE27661E6BBA5B004A4D82 /* ISVSegmentedView.h */,
 				00FE27671E6BBA5B004A4D82 /* ISVSegmentedView.m */,
+				00FE292B1E6D1CAB004A4D82 /* ISVCustomSegView.h */,
+				00FE292C1E6D1CAB004A4D82 /* ISVCustomSegView.m */,
 			);
 			path = ISVSegmentedView;
 			sourceTree = "<group>";
@@ -3243,6 +3248,7 @@
 				00FE29121E6BC4CB004A4D82 /* ISVUserInterfaceTool.m in Sources */,
 				00FE264A1E6BB8C1004A4D82 /* ZXQRCodeDataMask.m in Sources */,
 				00FE25D41E6BB8C1004A4D82 /* ZXMathUtils.m in Sources */,
+				00FE292D1E6D1CAB004A4D82 /* ISVCustomSegView.m in Sources */,
 				00FE27AD1E6BBA5B004A4D82 /* ISVAlertView+ISVStyle.m in Sources */,
 				00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */,
 				00FE25F31E6BB8C1004A4D82 /* ZXPlanarYUVLuminanceSource.m in Sources */,

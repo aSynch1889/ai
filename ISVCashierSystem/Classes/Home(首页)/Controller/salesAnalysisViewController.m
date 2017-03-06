@@ -8,11 +8,12 @@
 
 #import "salesAnalysisViewController.h"
 #import "salesAnalysisTableViewCell.h"
-@interface salesAnalysisViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "ISVItemSwitchBar.h"
+@interface salesAnalysisViewController ()<UITableViewDelegate,UITableViewDataSource,ISVItemSwitchBarDelegate>
 @property (nonatomic, weak) UITableView* dataTableView;
 @property (nonatomic, weak) UISegmentedControl *dataSegControl;
 @property (nonatomic, strong)NSMutableArray *dataList;//数据源数组
-
+@property (nonatomic, strong)ISVItemSwitchBar *switchBar;
 @end
 
 @implementation salesAnalysisViewController
@@ -23,38 +24,27 @@
     self.title = @"销售分析";
     self.view.backgroundColor = ISVBackgroundColor;
     [self.view addSubview:self.dataTableView];
-    NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"今天",@"本周",@"本月",@"更多",nil];
-    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
-    segmentedControl.frame = CGRectMake(0,kNavBarHeight,kSCREEN_WIDTH,44);
-    segmentedControl.selectedSegmentIndex = 0;
-    segmentedControl.tintColor = [UIColor redColor];
-    segmentedControl.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:segmentedControl];
+//    [self.view addSubview:_switchBar];
+    self.navigationItem.titleView = self.switchBar;
     
-    [segmentedControl addTarget:self action:@selector(didClicksegmentedControlAction:)forControlEvents:UIControlEventValueChanged];
+}
+#pragma mark - <HMItemSwitchBar>
+- (void)itemSwitchBar:(ISVItemSwitchBar *)bar didSelectedAtIndex:(NSInteger)index
+{
+    
 }
 
-- (void)didClicksegmentedControlAction:(UISegmentedControl *)Seg{
-    NSInteger Index = Seg.selectedSegmentIndex;
-    NSLog(@"Index %li",(long)Index);
-    switch (Index) {
-        case 0:
-            NSLog(@"点击了第一个");
-            break;
-        case 1:
-            NSLog(@"点击了第二个");
-            break;
-        case 2:
-            NSLog(@"点击了第三个");
-            break;
-        case 3:
-            NSLog(@"点击了第四个");
-            break;
-        default:
-            break;
+#pragma mark - getter
+- (ISVItemSwitchBar *)switchBar
+{
+    if (_switchBar == nil) {
+        NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"今天",@"本周",@"本月",@"更多",nil];
+        ISVItemSwitchBar *bar = [ISVItemSwitchBar itemSwitchBarWithTitles:segmentedArray];
+        bar.delegate = self;
+        _switchBar = bar;
     }
+    return _switchBar;
 }
-
 
 #pragma  mark tabelview 代理及数据源方法
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -107,10 +97,9 @@
     return _dataTableView;
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
-
-
 @end
