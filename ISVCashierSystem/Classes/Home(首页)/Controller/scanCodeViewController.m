@@ -10,11 +10,26 @@
 #import "UIView+ISVRoundedCorners.h"
 #import "setAmountViewController.h"
 #import "scanCodeView.h"
+#import "UINavigationBar+ISVExtension.h"
 @interface scanCodeViewController ()
 @property(nonatomic, copy)scanCodeView *aView;
 @end
 
 @implementation scanCodeViewController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationController.navigationBar ISV_setBackgroundColor:ISVMainColor];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar ISV_reset];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,7 +45,7 @@
     
     [self.view addSubview:_aView];
     
-    
+    [self.navigationController.navigationBar ISV_setBackgroundColor:ISVMainColor];
     
 }
 

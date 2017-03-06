@@ -20,7 +20,7 @@
         make.height.mas_equalTo(@88);
     }];
     [_iconView setImage:[UIImage imageNamed:@"userIcon"]];
-    
+    [_iconView setContentMode:UIViewContentModeScaleAspectFill];
     
     _phoneField = [[ISVTextField alloc]init];
     [self addSubview:_phoneField];
@@ -90,6 +90,7 @@
     [self addSubview:_regBtn];
     [_regBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_loginBtn.mas_bottom).offset(10);
+//        make.centerX.mas_equalTo(_loginBtn.mas_centerX);
         make.left.mas_equalTo(@20);
         make.right.mas_equalTo(@-110);
         make.height.mas_equalTo(@44);
