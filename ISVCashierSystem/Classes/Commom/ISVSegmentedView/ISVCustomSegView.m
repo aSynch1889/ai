@@ -8,7 +8,6 @@
 
 #import "ISVCustomSegView.h"
 
-#define kSelectedColor [UIColor grayColor]
 #define kNormalColor   [UIColor lightGrayColor]
 // Button进行封装
 @interface ISVCustomSegButton:UIButton
@@ -64,8 +63,8 @@
             ISVCustomSegButton *button = [[ISVCustomSegButton alloc] initWithFrame:CGRectMake(i *buttonWidth, 0, buttonWidth, frame.size.height)];
             // 默认选中第一个 设置状态
             if (i == 0) {
-                [button setTitleColor:kSelectedColor forState:UIControlStateNormal];
-                button.lineView.backgroundColor = kSelectedColor;
+                [button setTitleColor:ISVMainColor forState:UIControlStateNormal];
+                button.lineView.backgroundColor = ISVMainColor;
                 // 保留为上次选择中的button
                 _lastClickButton = button;
             }
@@ -87,8 +86,8 @@
     // 连续点击同一个不响应回调
     if (_lastClickButton != button) {
         // 设置状态
-        [button setTitleColor:kSelectedColor forState:UIControlStateNormal];
-        button.lineView.backgroundColor = kSelectedColor;
+        [button setTitleColor:ISVMainColor forState:UIControlStateNormal];
+        button.lineView.backgroundColor = ISVMainColor;
         [_lastClickButton setTitleColor:kNormalColor forState:UIControlStateNormal];
         _lastClickButton.lineView.backgroundColor = kNormalColor;
         _lastClickButton = button;

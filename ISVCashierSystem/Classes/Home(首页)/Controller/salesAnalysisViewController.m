@@ -8,12 +8,11 @@
 
 #import "salesAnalysisViewController.h"
 #import "salesAnalysisTableViewCell.h"
-#import "ISVItemSwitchBar.h"
-@interface salesAnalysisViewController ()<UITableViewDelegate,UITableViewDataSource,ISVItemSwitchBarDelegate>
+#import "ISVCustomSegView.h"
+@interface salesAnalysisViewController ()<UITableViewDelegate,UITableViewDataSource,ISVCustomSegViewDelegate>
 @property (nonatomic, weak) UITableView* dataTableView;
 @property (nonatomic, weak) UISegmentedControl *dataSegControl;
 @property (nonatomic, strong)NSMutableArray *dataList;//数据源数组
-@property (nonatomic, strong)ISVItemSwitchBar *switchBar;
 @end
 
 @implementation salesAnalysisViewController
@@ -24,26 +23,15 @@
     self.title = @"销售分析";
     self.view.backgroundColor = ISVBackgroundColor;
     [self.view addSubview:self.dataTableView];
-//    [self.view addSubview:_switchBar];
-    self.navigationItem.titleView = self.switchBar;
+    NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"今天",@"本周",@"本月",@"更多",nil];
+
+    ISVCustomSegView *segView = [[ISVCustomSegView alloc]initWithNumberOfTitles:segmentedArray andFrame:CGRectMake(0, kNavBarHeight, kSCREEN_WIDTH, 44) delegate:self];
     
-}
-#pragma mark - <HMItemSwitchBar>
-- (void)itemSwitchBar:(ISVItemSwitchBar *)bar didSelectedAtIndex:(NSInteger)index
-{
-    
+    [self.view addSubview:segView];
 }
 
-#pragma mark - getter
-- (ISVItemSwitchBar *)switchBar
-{
-    if (_switchBar == nil) {
-        NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"今天",@"本周",@"本月",@"更多",nil];
-        ISVItemSwitchBar *bar = [ISVItemSwitchBar itemSwitchBarWithTitles:segmentedArray];
-        bar.delegate = self;
-        _switchBar = bar;
-    }
-    return _switchBar;
+- (void)D_selectedTag:(NSInteger)tag{
+    NSLog(@"%ld",(long)tag);
 }
 
 #pragma  mark tabelview 代理及数据源方法
