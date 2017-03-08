@@ -1,15 +1,14 @@
-
 //
-//  scanCodeView.m
+//  collectionCodeView.m
 //  ISVCashierSystem
 //
-//  Created by aaaa on 17/3/4.
+//  Created by aaaa on 17/3/8.
 //  Copyright © 2017年 ISV Co.,Ltd. All rights reserved.
 //
 
-#import "scanCodeView.h"
+#import "collectionCodeView.h"
 
-@implementation scanCodeView
+@implementation collectionCodeView
 
 - (void)viewInit {
     UIView *bgView = [[UIView alloc]init];
@@ -79,7 +78,7 @@
     self.setAmountBtn.layer.cornerRadius = 8;
     self.setAmountBtn.layer.masksToBounds = YES;
     [self.setAmountBtn setTitleColor:ISVMainColor forState:UIControlStateNormal];
-
+    
 }
 
 @end

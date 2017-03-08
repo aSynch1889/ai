@@ -14,6 +14,7 @@
 #import "memberManagerViewController.h"
 #import "homeView.h"
 #import "UINavigationBar+ISVExtension.h"
+#import "collectionCodeViewController.h"
 @interface ISVHomeViewController ()
 @property (nonatomic, strong)homeView *aView;  //实例化一个VView的对象
 @end
@@ -43,6 +44,7 @@
     [_aView viewInit];
     
     [_aView.collectionBtn addTarget:self action:@selector(collectionBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [_aView.scanBtn addTarget:self action:@selector(scanBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [_aView.aiBtn addTarget:self action:@selector(aiBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [_aView.addMemberBtn addTarget:self action:@selector(addMemberBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [_aView.memberManagerBtn addTarget:self action:@selector(memberManagerBtnClick) forControlEvents:UIControlEventTouchUpInside];
@@ -51,7 +53,18 @@
     [self.navigationController.navigationBar ISV_setBackgroundColor:ISVMainColor];
 }
 
+/**
+    收款码
+ */
 - (void)collectionBtnClick {
+    collectionCodeViewController* collecCodeVC = [[collectionCodeViewController alloc]init];
+    [self .navigationController pushViewController:collecCodeVC animated:YES];
+}
+
+/**
+    扫一扫
+ */
+- (void)scanBtnClick {
     scanCodeViewController* scanCodeVC = [[scanCodeViewController alloc]init];
     [self .navigationController pushViewController:scanCodeVC animated:YES];
 }

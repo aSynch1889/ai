@@ -14,6 +14,8 @@
 		0085D6D71E6816AD00BCB29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085D6D51E6816AD00BCB29C /* LaunchScreen.storyboard */; };
 		0085D6E21E6816AD00BCB29C /* ISVCashierSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6E11E6816AD00BCB29C /* ISVCashierSystemTests.m */; };
 		0085D6ED1E6816AD00BCB29C /* ISVCashierSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */; };
+		00F6CC081E6FAEEF0054CA9F /* collectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */; };
+		00F6CC0B1E6FB00C0054CA9F /* collectionCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */; };
 		00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22AF1E687087004A4D82 /* ISVTabBarController.m */; };
 		00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */; };
 		00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */; };
@@ -36,7 +38,6 @@
 		00FE23881E6A8C72004A4D82 /* registerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23871E6A8C72004A4D82 /* registerView.m */; };
 		00FE238B1E6A92BC004A4D82 /* loginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE238A1E6A92BC004A4D82 /* loginView.m */; };
 		00FE238E1E6B0F95004A4D82 /* homeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE238D1E6B0F95004A4D82 /* homeView.m */; };
-		00FE23911E6B11EB004A4D82 /* scanCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23901E6B11EB004A4D82 /* scanCodeView.m */; };
 		00FE23941E6B1B4F004A4D82 /* changePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23931E6B1B4F004A4D82 /* changePwdViewController.m */; };
 		00FE23981E6B1B92004A4D82 /* changePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE23971E6B1B92004A4D82 /* changePwdView.m */; };
 		00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE239A1E6B9919004A4D82 /* retrievePwdViewController.m */; };
@@ -424,6 +425,10 @@
 		0085D6E81E6816AD00BCB29C /* ISVCashierSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISVCashierSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISVCashierSystemUITests.m; sourceTree = "<group>"; };
 		0085D6EE1E6816AD00BCB29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F6CC061E6FAEEF0054CA9F /* collectionCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionCodeViewController.h; sourceTree = "<group>"; };
+		00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCodeViewController.m; sourceTree = "<group>"; };
+		00F6CC091E6FB00C0054CA9F /* collectionCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionCodeView.h; sourceTree = "<group>"; };
+		00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCodeView.m; sourceTree = "<group>"; };
 		00FE22AE1E687087004A4D82 /* ISVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVTabBarController.h; sourceTree = "<group>"; };
 		00FE22AF1E687087004A4D82 /* ISVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVTabBarController.m; sourceTree = "<group>"; };
 		00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVNavigationController.h; sourceTree = "<group>"; };
@@ -471,8 +476,6 @@
 		00FE238A1E6A92BC004A4D82 /* loginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginView.m; sourceTree = "<group>"; };
 		00FE238C1E6B0F95004A4D82 /* homeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeView.h; sourceTree = "<group>"; };
 		00FE238D1E6B0F95004A4D82 /* homeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeView.m; sourceTree = "<group>"; };
-		00FE238F1E6B11EB004A4D82 /* scanCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanCodeView.h; sourceTree = "<group>"; };
-		00FE23901E6B11EB004A4D82 /* scanCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanCodeView.m; sourceTree = "<group>"; };
 		00FE23921E6B1B4F004A4D82 /* changePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changePwdViewController.h; sourceTree = "<group>"; };
 		00FE23931E6B1B4F004A4D82 /* changePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changePwdViewController.m; sourceTree = "<group>"; };
 		00FE23961E6B1B92004A4D82 /* changePwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changePwdView.h; sourceTree = "<group>"; };
@@ -1326,6 +1329,8 @@
 				00FE23741E6A8788004A4D82 /* addMemberViewController.m */,
 				00FE23761E6A8851004A4D82 /* memberManagerViewController.h */,
 				00FE23771E6A8851004A4D82 /* memberManagerViewController.m */,
+				00F6CC061E6FAEEF0054CA9F /* collectionCodeViewController.h */,
+				00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1477,14 +1482,14 @@
 				00FE23711E6A81BC004A4D82 /* salesAnalysisTableViewCell.m */,
 				00FE238C1E6B0F95004A4D82 /* homeView.h */,
 				00FE238D1E6B0F95004A4D82 /* homeView.m */,
-				00FE238F1E6B11EB004A4D82 /* scanCodeView.h */,
-				00FE23901E6B11EB004A4D82 /* scanCodeView.m */,
 				00FE239F1E6BAA0A004A4D82 /* setAmoutView.h */,
 				00FE23A01E6BAA0A004A4D82 /* setAmoutView.m */,
 				00FE29281E6C77F2004A4D82 /* memberManagerTableViewCell.h */,
 				00FE29291E6C77F2004A4D82 /* memberManagerTableViewCell.m */,
 				00FE292E1E6D55B8004A4D82 /* salesAnalysisView.h */,
 				00FE292F1E6D55B8004A4D82 /* salesAnalysisView.m */,
+				00F6CC091E6FB00C0054CA9F /* collectionCodeView.h */,
+				00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3021,7 +3026,6 @@
 				00FE25E91E6BB8C1004A4D82 /* ZXStringUtils.m in Sources */,
 				00FE282B1E6BBA5C004A4D82 /* ISVSwitch.m in Sources */,
 				00FE25FF1E6BB8C1004A4D82 /* ZXDataMatrixC40Encoder.m in Sources */,
-				00FE23911E6B11EB004A4D82 /* scanCodeView.m in Sources */,
 				00FE25C81E6BB8C1004A4D82 /* ZXURIParsedResult.m in Sources */,
 				00FE26221E6BB8C1004A4D82 /* ZXRSSExpandedFieldParser.m in Sources */,
 				00FE27F41E6BBA5B004A4D82 /* ISVFormLabel.m in Sources */,
@@ -3065,6 +3069,7 @@
 				00FE25B11E6BB8C0004A4D82 /* ZXBizcardResultParser.m in Sources */,
 				00FE237F1E6A893E004A4D82 /* registerViewController.m in Sources */,
 				00FE265E1E6BB8C1004A4D82 /* ZXMultiFinderPatternFinder.m in Sources */,
+				00F6CC0B1E6FB00C0054CA9F /* collectionCodeView.m in Sources */,
 				00FE26511E6BB8C1004A4D82 /* ZXQRCodeVersion.m in Sources */,
 				00FE25B01E6BB8C0004A4D82 /* ZXAddressBookParsedResult.m in Sources */,
 				00FE28A81E6BC00A004A4D82 /* NSString+PinYin.m in Sources */,
@@ -3312,6 +3317,7 @@
 				00FE28D31E6BC3E7004A4D82 /* ISVError.m in Sources */,
 				00FE26341E6BB8C1004A4D82 /* ZXCode93Reader.m in Sources */,
 				00FE25F91E6BB8C1004A4D82 /* ZXDataMatrixDecodedBitStreamParser.m in Sources */,
+				00F6CC081E6FAEEF0054CA9F /* collectionCodeViewController.m in Sources */,
 				00FE25BD1E6BB8C1004A4D82 /* ZXParsedResult.m in Sources */,
 				00FE264F1E6BB8C1004A4D82 /* ZXQRCodeFormatInformation.m in Sources */,
 				00FE28BC1E6BC00A004A4D82 /* UIView+ISVAnimation.m in Sources */,
