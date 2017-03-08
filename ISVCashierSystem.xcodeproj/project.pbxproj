@@ -17,6 +17,7 @@
 		00F6CC081E6FAEEF0054CA9F /* collectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */; };
 		00F6CC0B1E6FB00C0054CA9F /* collectionCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */; };
 		00F6CC0E1E6FB84B0054CA9F /* ISVHomeDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */; };
+		00F6CC111E6FE3380054CA9F /* HWScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC101E6FE3380054CA9F /* HWScanViewController.m */; };
 		00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22AF1E687087004A4D82 /* ISVTabBarController.m */; };
 		00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */; };
 		00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */; };
@@ -432,6 +433,8 @@
 		00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCodeView.m; sourceTree = "<group>"; };
 		00F6CC0C1E6FB84B0054CA9F /* ISVHomeDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVHomeDataView.h; sourceTree = "<group>"; };
 		00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVHomeDataView.m; sourceTree = "<group>"; };
+		00F6CC0F1E6FE3380054CA9F /* HWScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWScanViewController.h; sourceTree = "<group>"; };
+		00F6CC101E6FE3380054CA9F /* HWScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWScanViewController.m; sourceTree = "<group>"; };
 		00FE22AE1E687087004A4D82 /* ISVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVTabBarController.h; sourceTree = "<group>"; };
 		00FE22AF1E687087004A4D82 /* ISVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVTabBarController.m; sourceTree = "<group>"; };
 		00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVNavigationController.h; sourceTree = "<group>"; };
@@ -2544,6 +2547,8 @@
 		00FE27461E6BBA5B004A4D82 /* ISVQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				00F6CC0F1E6FE3380054CA9F /* HWScanViewController.h */,
+				00F6CC101E6FE3380054CA9F /* HWScanViewController.m */,
 				00FE27471E6BBA5B004A4D82 /* ISVQRCodeTool.h */,
 				00FE27481E6BBA5B004A4D82 /* ISVQRCodeTool.m */,
 				00FE27491E6BBA5B004A4D82 /* HMScan */,
@@ -3172,6 +3177,7 @@
 				00FE282A1E6BBA5C004A4D82 /* ISVStretchableTableHeaderView.m in Sources */,
 				00FE27DD1E6BBA5B004A4D82 /* ISVImagePickerController.m in Sources */,
 				00FE263B1E6BB8C1004A4D82 /* ZXITFWriter.m in Sources */,
+				00F6CC111E6FE3380054CA9F /* HWScanViewController.m in Sources */,
 				00FE25B21E6BB8C0004A4D82 /* ZXBookmarkDoCoMoResultParser.m in Sources */,
 				00FE25F21E6BB8C1004A4D82 /* ZXLuminanceSource.m in Sources */,
 				00FE25C61E6BB8C1004A4D82 /* ZXTelResultParser.m in Sources */,

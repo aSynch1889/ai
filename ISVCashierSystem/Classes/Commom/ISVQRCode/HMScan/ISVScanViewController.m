@@ -23,7 +23,9 @@
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *scanTop;
 @property (nonatomic, strong) CADisplayLink *link;
 @property (nonatomic, strong) AVCaptureSession *session;
-//@property (nonatomic, weak) UIButton *openTorchButton;// 闪关灯
+@property (nonatomic, strong) AVCaptureDevice *device;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *preview;
+//@property (nonatomic, weak) IBOutlet UIButton *openTorchButton;// 闪关灯
 
 @end
 
@@ -56,6 +58,8 @@
     [self.view.layer insertSublayer:previewLayer atIndex:0];
     
     [self setUpNav];
+    //设置参数
+    [self setupCamera];
 }
 
 // 初始化导航条
@@ -71,6 +75,41 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];
 }
 
+- (void)setupCamera
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //初始化相机设备
+        _device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+        
+        //初始化输入流
+        AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:_device error:nil];
+        
+        //初始化输出流
+        AVCaptureMetadataOutput *output = [[AVCaptureMetadataOutput alloc] init];
+        //设置代理，主线程刷新
+        [output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
+        
+        //初始化链接对象
+        _session = [[AVCaptureSession alloc] init];
+        //高质量采集率
+        [_session setSessionPreset:AVCaptureSessionPresetHigh];
+        
+        if ([_session canAddInput:input]) [_session addInput:input];
+        if ([_session canAddOutput:output]) [_session addOutput:output];
+        
+        //条码类型（二维码/条形码）
+        output.metadataObjectTypes = [NSArray arrayWithObjects:AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeQRCode, nil];
+        
+        //更新界面
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _preview = [AVCaptureVideoPreviewLayer layerWithSession:_session];
+            _preview.videoGravity = AVLayerVideoGravityResizeAspectFill;
+            _preview.frame = CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT);
+            [self.view.layer insertSublayer:_preview atIndex:0];
+            [_session startRunning];
+        });
+    });
+}
 
 // 在页面将要显示的时候添加定时器
 - (void)viewWillAppear:(BOOL)animated{
