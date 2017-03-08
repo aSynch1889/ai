@@ -7,12 +7,10 @@
 //
 
 #import "ISVScanViewController.h"
-#import "AVCaptureSession+ZZYQRCodeAndBarCodeExtension.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "ISVQRCodeTool.h"
-
 #import "UIBarButtonItem+ISVExtension.h"
 #import "ISVHUD.h"
 
@@ -26,6 +24,8 @@
 @property (nonatomic, strong) AVCaptureDevice *device;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *preview;
 @property (nonatomic, weak) UIImageView *line;
+@property (nonatomic, assign) NSInteger distance;
+@property (nonatomic, strong) NSTimer *timer;
 //@property (nonatomic, weak) IBOutlet UIButton *openTorchButton;// 闪关灯
 
 @end
@@ -36,31 +36,25 @@
     [super viewDidLoad];
     
     self.title = @"扫一扫";
-    self.view.backgroundColor = ISVBackgroundColor;
     
-    //设置为当前的宽高
-    self.view.frame = kSCREEN_BOUNDS;
-    
+    _distance = 0;
     // 添加跟屏幕刷新频率一样的定时器
     CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(scan)];
     self.link = link;
-    // 获取读取读取二维码的会话
-    self.session = [AVCaptureSession readQRCodeWithMetadataObjectsDelegate:self];
     
     [self setUpNav];
     [self creatControl];
     //设置参数
     [self setupCamera];
+
+    
 }
 
 // 初始化导航条
 - (void)setUpNav
 {
-    // 1.关闭按钮
-    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:0 target:self action:@selector(closeItemPressed)];
-    
     // 1.返回按钮
-//    UIBarButtonItem *closeItem = [UIBarButtonItem backBarButtonItemWithTitle:nil target:self action:@selector(closeItemPressed)];
+    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:0 target:self action:@selector(closeItemPressed)];
     
     self.navigationItem.leftBarButtonItem = closeItem;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];
@@ -132,9 +126,6 @@
     
     //开启照明按钮
     UIButton *lightBtn = [[UIButton alloc] initWithFrame:CGRectMake(kSCREEN_WIDTH - 100, 0, 100, tabBarH)];
-    lightBtn.titleLabel.font = [UIFont systemFontOfSize:16.0f];
-//    [lightBtn setTitle:@"开启照明" forState:UIControlStateNormal];
-//    [lightBtn setTitle:@"关闭照明" forState:UIControlStateSelected];
     [lightBtn setImage:[UIImage imageNamed:@"flashON"] forState:UIControlStateNormal];
     [lightBtn addTarget:self action:@selector(openTorchButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
     [tabBarView addSubview:lightBtn];
@@ -176,8 +167,8 @@
             _preview.videoGravity = AVLayerVideoGravityResizeAspectFill;
             _preview.frame = CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT);
             [self.view.layer insertSublayer:_preview atIndex:0];
-            CGRect rect = CGRectMake((kSCREEN_WIDTH - 250) / 2, (kSCREEN_HEIGHT - 250 - 72)/2, 250, 250);
-            output.rectOfInterest = [_preview metadataOutputRectOfInterestForRect:rect];
+//            CGRect rect = CGRectMake((kSCREEN_WIDTH - 250) / 2, (kSCREEN_HEIGHT - 250 - 72)/2, 250, 250);
+//            output.rectOfInterest = [_preview metadataOutputRectOfInterestForRect:rect];
             [_session startRunning];
         });
     });
@@ -198,10 +189,17 @@
 }
 // 扫描动画
 - (void)scan{
-    self.scanTop.constant -= 2;
-    if (self.scanTop.constant <= -170) {
-        self.scanTop.constant = 170;
+//    self.scanTop.constant -= 2;
+//    if (self.scanTop.constant <= -170) {
+//        self.scanTop.constant = 170;
+//    }
+    
+    if (_distance++ > kSCREEN_WIDTH * 0.65) {
+        _distance = 0;
     }
+    _line.frame = CGRectMake(0, _distance, kSCREEN_WIDTH * 0.65, 2);
+    
+    
 }
 
 
@@ -299,15 +297,13 @@
     BOOL isLightOpened = [self isLightOpened];
     
     if (isLightOpened) {
-        //        [torchBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"scan_flash_closed" ofType:@"png"]] forState:UIControlStateNormal];
+        [torchBtn setImage:[UIImage imageNamed:@"flashOFF"] forState:UIControlStateNormal];
         [torchBtn setBackgroundColor:[UIColor clearColor]];
-        [torchBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//        [self.openTorchButton setTitle:@"开灯"forState:UIControlStateNormal];
+    
     }else{
-            //        [torchBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"scan_flash_opened" ofType:@"png"]] forState:UIControlStateNormal];
-        [torchBtn setBackgroundColor:[UIColor whiteColor]];
-        [torchBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//        [self.openTorchButton setTitle:@"关灯"forState:UIControlStateNormal];
+        [torchBtn setImage:[UIImage imageNamed:@"flashON"] forState:UIControlStateNormal];
+        [torchBtn setBackgroundColor:[UIColor clearColor]];
+    
     }
     
     [self openLight:!isLightOpened];
@@ -359,7 +355,6 @@
     [pickerImageVC setTitle:@"相册"];
     [self presentViewController:pickerImageVC animated:YES completion:nil];
 }
-
 
 //绘制角图片
 - (void)drawImageForImageView:(UIImageView *)imageView

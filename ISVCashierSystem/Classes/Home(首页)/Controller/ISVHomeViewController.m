@@ -18,7 +18,7 @@
 #import "ISVQRCodeTool.h"
 #import "ISVHomeDataView.h"
 #import "ISVHomeModel.h"
-#import "HWScanViewController.h"
+
 @interface ISVHomeViewController ()
 @property (nonatomic, strong)homeView *aView;  //实例化一个VView的对象
 @end
@@ -75,8 +75,7 @@
 - (void)scanBtnClick {
 
     [ISVQRCodeTool showScanControllWithViewController:self forRule:0];
-//    HWScanViewController *vc = [[HWScanViewController alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 /**

@@ -17,7 +17,6 @@
 		00F6CC081E6FAEEF0054CA9F /* collectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */; };
 		00F6CC0B1E6FB00C0054CA9F /* collectionCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */; };
 		00F6CC0E1E6FB84B0054CA9F /* ISVHomeDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */; };
-		00F6CC111E6FE3380054CA9F /* HWScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC101E6FE3380054CA9F /* HWScanViewController.m */; };
 		00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22AF1E687087004A4D82 /* ISVTabBarController.m */; };
 		00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */; };
 		00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */; };
@@ -305,9 +304,7 @@
 		00FE280B1E6BBA5B004A4D82 /* HMPopover_pointer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FE27371E6BBA5B004A4D82 /* HMPopover_pointer@2x.png */; };
 		00FE280C1E6BBA5B004A4D82 /* HMPopover_pointer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FE27381E6BBA5B004A4D82 /* HMPopover_pointer@3x.png */; };
 		00FE28131E6BBA5B004A4D82 /* ISVQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27481E6BBA5B004A4D82 /* ISVQRCodeTool.m */; };
-		00FE28141E6BBA5B004A4D82 /* AVCaptureSession+ZZYQRCodeAndBarCodeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE274B1E6BBA5B004A4D82 /* AVCaptureSession+ZZYQRCodeAndBarCodeExtension.m */; };
 		00FE28151E6BBA5B004A4D82 /* ISVScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE274D1E6BBA5B004A4D82 /* ISVScanViewController.m */; };
-		00FE28161E6BBA5B004A4D82 /* ISVScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00FE274E1E6BBA5B004A4D82 /* ISVScanViewController.xib */; };
 		00FE28171E6BBA5B004A4D82 /* ISVRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27531E6BBA5B004A4D82 /* ISVRefreshFooter.m */; };
 		00FE28181E6BBA5B004A4D82 /* ISVRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27551E6BBA5B004A4D82 /* ISVRefreshHeader.m */; };
 		00FE28191E6BBA5B004A4D82 /* ISVScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE27581E6BBA5B004A4D82 /* ISVScoreView.m */; };
@@ -433,8 +430,6 @@
 		00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCodeView.m; sourceTree = "<group>"; };
 		00F6CC0C1E6FB84B0054CA9F /* ISVHomeDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVHomeDataView.h; sourceTree = "<group>"; };
 		00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVHomeDataView.m; sourceTree = "<group>"; };
-		00F6CC0F1E6FE3380054CA9F /* HWScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWScanViewController.h; sourceTree = "<group>"; };
-		00F6CC101E6FE3380054CA9F /* HWScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWScanViewController.m; sourceTree = "<group>"; };
 		00FE22AE1E687087004A4D82 /* ISVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVTabBarController.h; sourceTree = "<group>"; };
 		00FE22AF1E687087004A4D82 /* ISVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVTabBarController.m; sourceTree = "<group>"; };
 		00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVNavigationController.h; sourceTree = "<group>"; };
@@ -1006,11 +1001,8 @@
 		00FE27381E6BBA5B004A4D82 /* HMPopover_pointer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HMPopover_pointer@3x.png"; sourceTree = "<group>"; };
 		00FE27471E6BBA5B004A4D82 /* ISVQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVQRCodeTool.h; sourceTree = "<group>"; };
 		00FE27481E6BBA5B004A4D82 /* ISVQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVQRCodeTool.m; sourceTree = "<group>"; };
-		00FE274A1E6BBA5B004A4D82 /* AVCaptureSession+ZZYQRCodeAndBarCodeExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureSession+ZZYQRCodeAndBarCodeExtension.h"; sourceTree = "<group>"; };
-		00FE274B1E6BBA5B004A4D82 /* AVCaptureSession+ZZYQRCodeAndBarCodeExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureSession+ZZYQRCodeAndBarCodeExtension.m"; sourceTree = "<group>"; };
 		00FE274C1E6BBA5B004A4D82 /* ISVScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVScanViewController.h; sourceTree = "<group>"; };
 		00FE274D1E6BBA5B004A4D82 /* ISVScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVScanViewController.m; sourceTree = "<group>"; };
-		00FE274E1E6BBA5B004A4D82 /* ISVScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISVScanViewController.xib; sourceTree = "<group>"; };
 		00FE27501E6BBA5B004A4D82 /* ISVRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVRefresh.h; sourceTree = "<group>"; };
 		00FE27511E6BBA5B004A4D82 /* ISVRefreshConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVRefreshConstant.h; sourceTree = "<group>"; };
 		00FE27521E6BBA5B004A4D82 /* ISVRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVRefreshFooter.h; sourceTree = "<group>"; };
@@ -2547,8 +2539,6 @@
 		00FE27461E6BBA5B004A4D82 /* ISVQRCode */ = {
 			isa = PBXGroup;
 			children = (
-				00F6CC0F1E6FE3380054CA9F /* HWScanViewController.h */,
-				00F6CC101E6FE3380054CA9F /* HWScanViewController.m */,
 				00FE27471E6BBA5B004A4D82 /* ISVQRCodeTool.h */,
 				00FE27481E6BBA5B004A4D82 /* ISVQRCodeTool.m */,
 				00FE27491E6BBA5B004A4D82 /* HMScan */,
@@ -2559,11 +2549,8 @@
 		00FE27491E6BBA5B004A4D82 /* HMScan */ = {
 			isa = PBXGroup;
 			children = (
-				00FE274A1E6BBA5B004A4D82 /* AVCaptureSession+ZZYQRCodeAndBarCodeExtension.h */,
-				00FE274B1E6BBA5B004A4D82 /* AVCaptureSession+ZZYQRCodeAndBarCodeExtension.m */,
 				00FE274C1E6BBA5B004A4D82 /* ISVScanViewController.h */,
 				00FE274D1E6BBA5B004A4D82 /* ISVScanViewController.m */,
-				00FE274E1E6BBA5B004A4D82 /* ISVScanViewController.xib */,
 			);
 			path = HMScan;
 			sourceTree = "<group>";
@@ -2941,7 +2928,6 @@
 				00FE281B1E6BBA5B004A4D82 /* ISVSearchCell.xib in Resources */,
 				00FE27D51E6BBA5B004A4D82 /* HUD_NonConnect@2x.png in Resources */,
 				00FE28301E6BBA5C004A4D82 /* HMTabBarForUpIndicator.png in Resources */,
-				00FE28161E6BBA5B004A4D82 /* ISVScanViewController.xib in Resources */,
 				00FE280C1E6BBA5B004A4D82 /* HMPopover_pointer@3x.png in Resources */,
 				00FE28051E6BBA5B004A4D82 /* ISVPleaseUpdateViewController.xib in Resources */,
 				00FE280B1E6BBA5B004A4D82 /* HMPopover_pointer@2x.png in Resources */,
@@ -3046,7 +3032,6 @@
 				00FE235C1E691D60004A4D82 /* UIColor+ISVExtension.m in Sources */,
 				00FE27FF1E6BBA5B004A4D82 /* ISVNavigationMenuView.m in Sources */,
 				00FE27FD1E6BBA5B004A4D82 /* ISVMenuConfiguration.m in Sources */,
-				00FE28141E6BBA5B004A4D82 /* AVCaptureSession+ZZYQRCodeAndBarCodeExtension.m in Sources */,
 				00FE26601E6BB8C1004A4D82 /* ZXQRCodeReader.m in Sources */,
 				00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */,
 				00FE25A71E6BB8C0004A4D82 /* RSADataSigner.m in Sources */,
@@ -3177,7 +3162,6 @@
 				00FE282A1E6BBA5C004A4D82 /* ISVStretchableTableHeaderView.m in Sources */,
 				00FE27DD1E6BBA5B004A4D82 /* ISVImagePickerController.m in Sources */,
 				00FE263B1E6BB8C1004A4D82 /* ZXITFWriter.m in Sources */,
-				00F6CC111E6FE3380054CA9F /* HWScanViewController.m in Sources */,
 				00FE25B21E6BB8C0004A4D82 /* ZXBookmarkDoCoMoResultParser.m in Sources */,
 				00FE25F21E6BB8C1004A4D82 /* ZXLuminanceSource.m in Sources */,
 				00FE25C61E6BB8C1004A4D82 /* ZXTelResultParser.m in Sources */,
