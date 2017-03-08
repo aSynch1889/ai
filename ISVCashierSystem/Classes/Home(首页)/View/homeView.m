@@ -44,20 +44,20 @@
     
     
     
-    UIView *dataView = [[UIView alloc]init];
-    [self addSubview:dataView];
-    [dataView mas_makeConstraints:^(MASConstraintMaker *make) {
+    _dataView = [[UIView alloc]init];
+    [self addSubview:_dataView];
+    [_dataView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(bgView.mas_bottom).offset(-30);
         make.left.mas_equalTo(@10);
         make.right.mas_equalTo(@-10);
         make.height.mas_equalTo(@60);
     }];
-    dataView.backgroundColor = [UIColor whiteColor];
+    _dataView.backgroundColor = [UIColor whiteColor];
     
     self.aiBtn = [[UIButton alloc]init];
     [self addSubview:self.aiBtn];
     [self.aiBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(dataView.mas_bottom).offset(10);
+        make.top.mas_equalTo(_dataView.mas_bottom).offset(10);
         make.left.mas_equalTo(self.mas_left);
         make.width.mas_equalTo(kSCREEN_WIDTH/2 - 1);
         make.height.mas_equalTo(@200);

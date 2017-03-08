@@ -62,11 +62,10 @@
 - (void)setUpNav
 {
     // 1.关闭按钮
-//    UIImage *close = [UIImage imageNamed:@"Nav_Button_close"];
-//    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithImage:close style:0 target:self action:@selector(closeItemPressed)];
+    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back"] style:0 target:self action:@selector(closeItemPressed)];
     
     // 1.返回按钮
-    UIBarButtonItem *closeItem = [UIBarButtonItem backBarButtonItemWithTitle:nil target:self action:@selector(closeItemPressed)];
+//    UIBarButtonItem *closeItem = [UIBarButtonItem backBarButtonItemWithTitle:nil target:self action:@selector(closeItemPressed)];
     
     self.navigationItem.leftBarButtonItem = closeItem;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];

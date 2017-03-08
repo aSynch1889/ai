@@ -15,6 +15,9 @@
 #import "homeView.h"
 #import "UINavigationBar+ISVExtension.h"
 #import "collectionCodeViewController.h"
+#import "ISVQRCodeTool.h"
+#import "ISVHomeDataView.h"
+#import "ISVHomeModel.h"
 @interface ISVHomeViewController ()
 @property (nonatomic, strong)homeView *aView;  //实例化一个VView的对象
 @end
@@ -51,6 +54,10 @@
     
     [self.view addSubview:_aView];
     [self.navigationController.navigationBar ISV_setBackgroundColor:ISVMainColor];
+    
+    ISVHomeDataView *bView = [[ISVHomeDataView alloc]initWithFrame:_aView.dataView.frame];
+    [bView viewInit];
+    [_aView.dataView addSubview:bView];
 }
 
 /**
@@ -65,8 +72,8 @@
     扫一扫
  */
 - (void)scanBtnClick {
-    scanCodeViewController* scanCodeVC = [[scanCodeViewController alloc]init];
-    [self .navigationController pushViewController:scanCodeVC animated:YES];
+
+    [ISVQRCodeTool showScanControllWithViewController:self forRule:0];
 }
 
 /**

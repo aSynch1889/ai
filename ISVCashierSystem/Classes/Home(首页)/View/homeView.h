@@ -14,7 +14,7 @@
 @property(nonatomic, strong)UIButton *aiBtn;//智能分析
 @property(nonatomic, strong)UIButton *addMemberBtn;//新增会员
 @property(nonatomic, strong)UIButton *memberManagerBtn;//会员管理
-
+@property(nonatomic, strong)UIView *dataView;//!< 中间数据
 - (void)viewInit;
 
 @end

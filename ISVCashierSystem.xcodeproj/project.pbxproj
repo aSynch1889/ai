@@ -16,6 +16,7 @@
 		0085D6ED1E6816AD00BCB29C /* ISVCashierSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */; };
 		00F6CC081E6FAEEF0054CA9F /* collectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */; };
 		00F6CC0B1E6FB00C0054CA9F /* collectionCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */; };
+		00F6CC0E1E6FB84B0054CA9F /* ISVHomeDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */; };
 		00FE22B01E687087004A4D82 /* ISVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22AF1E687087004A4D82 /* ISVTabBarController.m */; };
 		00FE22B31E6870AD004A4D82 /* ISVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B21E6870AD004A4D82 /* ISVNavigationController.m */; };
 		00FE22BA1E68779F004A4D82 /* ISVHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE22B91E68779F004A4D82 /* ISVHomeViewController.m */; };
@@ -429,6 +430,8 @@
 		00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCodeViewController.m; sourceTree = "<group>"; };
 		00F6CC091E6FB00C0054CA9F /* collectionCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionCodeView.h; sourceTree = "<group>"; };
 		00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCodeView.m; sourceTree = "<group>"; };
+		00F6CC0C1E6FB84B0054CA9F /* ISVHomeDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVHomeDataView.h; sourceTree = "<group>"; };
+		00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVHomeDataView.m; sourceTree = "<group>"; };
 		00FE22AE1E687087004A4D82 /* ISVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVTabBarController.h; sourceTree = "<group>"; };
 		00FE22AF1E687087004A4D82 /* ISVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVTabBarController.m; sourceTree = "<group>"; };
 		00FE22B11E6870AD004A4D82 /* ISVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVNavigationController.h; sourceTree = "<group>"; };
@@ -1490,6 +1493,8 @@
 				00FE292F1E6D55B8004A4D82 /* salesAnalysisView.m */,
 				00F6CC091E6FB00C0054CA9F /* collectionCodeView.h */,
 				00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */,
+				00F6CC0C1E6FB84B0054CA9F /* ISVHomeDataView.h */,
+				00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2866,6 +2871,7 @@
 		0085D6BC1E6816AD00BCB29C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ISV;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "ISV Co.,Ltd";
 				TargetAttributes = {
@@ -3272,6 +3278,7 @@
 				00FE262C1E6BB8C1004A4D82 /* ZXRSSPair.m in Sources */,
 				00FE25B71E6BB8C1004A4D82 /* ZXExpandedProductParsedResult.m in Sources */,
 				00FE25F41E6BB8C1004A4D82 /* ZXResult.m in Sources */,
+				00F6CC0E1E6FB84B0054CA9F /* ISVHomeDataView.m in Sources */,
 				00FE22CA1E690F80004A4D82 /* ISVHomeModel.m in Sources */,
 				00FE25C91E6BB8C1004A4D82 /* ZXURIResultParser.m in Sources */,
 				00FE23681E6A790C004A4D82 /* setAmountViewController.m in Sources */,

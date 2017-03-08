@@ -61,7 +61,7 @@ static NSString * const publicKeyStr = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSq
     // 暂时不对指定的路由处理
     
     __weak typeof(viewController) weakVC = viewController;
-    [self showScanControllWithViewController:viewController completeBlock:^(ISVQRCodeToolRule foromRule, NSString *value) {
+    [self showScanControllWithViewController:weakVC completeBlock:^(ISVQRCodeToolRule foromRule, NSString *value) {
         
 
     }];
@@ -111,8 +111,8 @@ static NSString * const publicKeyStr = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSq
             
         }];
 #warning 未修复完成
-//        ISVNavigationController *navVC = [[ISVNavigationController alloc] initWithRootViewController:scanViewController];
-        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:scanViewController];
+        ISVNavigationController *navVC = [[ISVNavigationController alloc] initWithRootViewController:scanViewController];
+//        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:scanViewController];
         [viewController presentViewController:navVC animated:YES completion:nil];
         
     } failedCallback:^() {
