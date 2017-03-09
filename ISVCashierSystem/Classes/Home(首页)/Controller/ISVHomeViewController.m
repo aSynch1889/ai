@@ -43,7 +43,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithHexColor:@"#eeedf3"];
 
-    _aView = [[homeView alloc]initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)];  //初始化时一定要设置frame，否则VView上的两个按钮将无法被点击
+    _aView = [[homeView alloc]initWithFrame:CGRectMake(0, 0, kSCREEN_WIDTH, kSCREEN_HEIGHT)]; 
     
     [_aView viewInit];
     

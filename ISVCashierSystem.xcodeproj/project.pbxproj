@@ -14,6 +14,7 @@
 		0085D6D71E6816AD00BCB29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085D6D51E6816AD00BCB29C /* LaunchScreen.storyboard */; };
 		0085D6E21E6816AD00BCB29C /* ISVCashierSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6E11E6816AD00BCB29C /* ISVCashierSystemTests.m */; };
 		0085D6ED1E6816AD00BCB29C /* ISVCashierSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */; };
+		0096C8DA1E70159500A7C01D /* UIImageView+ISVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0096C8D91E70159500A7C01D /* UIImageView+ISVExtension.m */; };
 		00F6CC081E6FAEEF0054CA9F /* collectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */; };
 		00F6CC0B1E6FB00C0054CA9F /* collectionCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */; };
 		00F6CC0E1E6FB84B0054CA9F /* ISVHomeDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0D1E6FB84B0054CA9F /* ISVHomeDataView.m */; };
@@ -424,6 +425,8 @@
 		0085D6E81E6816AD00BCB29C /* ISVCashierSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISVCashierSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISVCashierSystemUITests.m; sourceTree = "<group>"; };
 		0085D6EE1E6816AD00BCB29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0096C8D81E70159500A7C01D /* UIImageView+ISVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ISVExtension.h"; sourceTree = "<group>"; };
+		0096C8D91E70159500A7C01D /* UIImageView+ISVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ISVExtension.m"; sourceTree = "<group>"; };
 		00F6CC061E6FAEEF0054CA9F /* collectionCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionCodeViewController.h; sourceTree = "<group>"; };
 		00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionCodeViewController.m; sourceTree = "<group>"; };
 		00F6CC091E6FB00C0054CA9F /* collectionCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionCodeView.h; sourceTree = "<group>"; };
@@ -1460,6 +1463,8 @@
 				00FE23611E6A5BDD004A4D82 /* UIButton+ISVExt.m */,
 				00FE23631E6A6A69004A4D82 /* UIView+ISVRoundedCorners.h */,
 				00FE23641E6A6A69004A4D82 /* UIView+ISVRoundedCorners.m */,
+				0096C8D81E70159500A7C01D /* UIImageView+ISVExtension.h */,
+				0096C8D91E70159500A7C01D /* UIImageView+ISVExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -3283,6 +3288,7 @@
 				00FE25E51E6BB8C1004A4D82 /* ZXGridSampler.m in Sources */,
 				00FE25E01E6BB8C1004A4D82 /* ZXCharacterSetECI.m in Sources */,
 				00FE282C1E6BBA5C004A4D82 /* ISVSwitchView.m in Sources */,
+				0096C8DA1E70159500A7C01D /* UIImageView+ISVExtension.m in Sources */,
 				00FE28A91E6BC00A004A4D82 /* UIBarButtonItem+ISVExtension.m in Sources */,
 				00FE28B81E6BC00A004A4D82 /* UINavigationBar+ISVExtension.m in Sources */,
 				00FE28061E6BBA5B004A4D82 /* ISVMenuPopover.m in Sources */,
