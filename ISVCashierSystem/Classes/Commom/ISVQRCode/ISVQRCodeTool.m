@@ -110,9 +110,7 @@ static NSString * const publicKeyStr = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSq
             }
             
         }];
-#warning 未修复完成
         ISVNavigationController *navVC = [[ISVNavigationController alloc] initWithRootViewController:scanViewController];
-//        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:scanViewController];
         [viewController presentViewController:navVC animated:YES completion:nil];
         
     } failedCallback:^() {

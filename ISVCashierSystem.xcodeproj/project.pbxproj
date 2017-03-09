@@ -14,6 +14,9 @@
 		0085D6D71E6816AD00BCB29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085D6D51E6816AD00BCB29C /* LaunchScreen.storyboard */; };
 		0085D6E21E6816AD00BCB29C /* ISVCashierSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6E11E6816AD00BCB29C /* ISVCashierSystemTests.m */; };
 		0085D6ED1E6816AD00BCB29C /* ISVCashierSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */; };
+		009587991E718B26000B5536 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 009587981E718B26000B5536 /* beep.wav */; };
+		0095879C1E719481000B5536 /* ISVRuleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095879B1E719481000B5536 /* ISVRuleTool.m */; };
+		009587A01E719753000B5536 /* ISVWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095879F1E719753000B5536 /* ISVWebViewViewController.m */; };
 		0096C8DA1E70159500A7C01D /* UIImageView+ISVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0096C8D91E70159500A7C01D /* UIImageView+ISVExtension.m */; };
 		00F6CC081E6FAEEF0054CA9F /* collectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC071E6FAEEF0054CA9F /* collectionCodeViewController.m */; };
 		00F6CC0B1E6FB00C0054CA9F /* collectionCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6CC0A1E6FB00C0054CA9F /* collectionCodeView.m */; };
@@ -425,6 +428,11 @@
 		0085D6E81E6816AD00BCB29C /* ISVCashierSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISVCashierSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0085D6EC1E6816AD00BCB29C /* ISVCashierSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISVCashierSystemUITests.m; sourceTree = "<group>"; };
 		0085D6EE1E6816AD00BCB29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009587981E718B26000B5536 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		0095879A1E719481000B5536 /* ISVRuleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVRuleTool.h; sourceTree = "<group>"; };
+		0095879B1E719481000B5536 /* ISVRuleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVRuleTool.m; sourceTree = "<group>"; };
+		0095879E1E719753000B5536 /* ISVWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVWebViewViewController.h; sourceTree = "<group>"; };
+		0095879F1E719753000B5536 /* ISVWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVWebViewViewController.m; sourceTree = "<group>"; };
 		0096C8D81E70159500A7C01D /* UIImageView+ISVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ISVExtension.h"; sourceTree = "<group>"; };
 		0096C8D91E70159500A7C01D /* UIImageView+ISVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ISVExtension.m"; sourceTree = "<group>"; };
 		00F6CC061E6FAEEF0054CA9F /* collectionCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionCodeViewController.h; sourceTree = "<group>"; };
@@ -1271,6 +1279,31 @@
 			path = ISVCashierSystemUITests;
 			sourceTree = "<group>";
 		};
+		009587961E718B26000B5536 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				009587971E718B26000B5536 /* wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		009587971E718B26000B5536 /* wav */ = {
+			isa = PBXGroup;
+			children = (
+				009587981E718B26000B5536 /* beep.wav */,
+			);
+			path = wav;
+			sourceTree = "<group>";
+		};
+		0095879D1E719738000B5536 /* ISVWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0095879E1E719753000B5536 /* ISVWebViewViewController.h */,
+				0095879F1E719753000B5536 /* ISVWebViewViewController.m */,
+			);
+			path = ISVWebViewController;
+			sourceTree = "<group>";
+		};
 		00FE22AB1E68704A004A4D82 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1361,6 +1394,7 @@
 		00FE22BE1E68FC0D004A4D82 /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				009587961E718B26000B5536 /* Resources */,
 				00FE28C21E6BC3E7004A4D82 /* Private */,
 				00FE23B41E6BB8C0004A4D82 /* ThirdParty */,
 				00FE23B01E6BB6CE004A4D82 /* Tool */,
@@ -1573,6 +1607,8 @@
 				00FE29001E6BC4CB004A4D82 /* ISVUserTokenManager.m */,
 				00FE29051E6BC4CB004A4D82 /* PlaySoundUtil.h */,
 				00FE29061E6BC4CB004A4D82 /* PlaySoundUtil.m */,
+				0095879A1E719481000B5536 /* ISVRuleTool.h */,
+				0095879B1E719481000B5536 /* ISVRuleTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -2222,6 +2258,7 @@
 		00FE26641E6BBA5B004A4D82 /* Commom */ = {
 			isa = PBXGroup;
 			children = (
+				0095879D1E719738000B5536 /* ISVWebViewController */,
 				00FE26661E6BBA5B004A4D82 /* ISVAlertView */,
 				00FE266D1E6BBA5B004A4D82 /* ISVBannerView */,
 				00FE26721E6BBA5B004A4D82 /* ISVBaseModel */,
@@ -2928,6 +2965,7 @@
 				00FE28081E6BBA5B004A4D82 /* HMPopover_item_bg@3x.png in Resources */,
 				00FE27D81E6BBA5B004A4D82 /* hm_icon_ImageMark_seleted@2x.png in Resources */,
 				00FE27E21E6BBA5B004A4D82 /* ISVInputBar.xib in Resources */,
+				009587991E718B26000B5536 /* beep.wav in Resources */,
 				0085D6D41E6816AD00BCB29C /* Assets.xcassets in Resources */,
 				00FE27D31E6BBA5B004A4D82 /* HUD_NoData@2x.png in Resources */,
 				00FE281B1E6BBA5B004A4D82 /* ISVSearchCell.xib in Resources */,
@@ -3260,9 +3298,11 @@
 				00FE29121E6BC4CB004A4D82 /* ISVUserInterfaceTool.m in Sources */,
 				00FE264A1E6BB8C1004A4D82 /* ZXQRCodeDataMask.m in Sources */,
 				00FE25D41E6BB8C1004A4D82 /* ZXMathUtils.m in Sources */,
+				0095879C1E719481000B5536 /* ISVRuleTool.m in Sources */,
 				00FE292D1E6D1CAB004A4D82 /* ISVCustomSegView.m in Sources */,
 				00FE27AD1E6BBA5B004A4D82 /* ISVAlertView+ISVStyle.m in Sources */,
 				00FE239B1E6B9919004A4D82 /* retrievePwdViewController.m in Sources */,
+				009587A01E719753000B5536 /* ISVWebViewViewController.m in Sources */,
 				00FE25F31E6BB8C1004A4D82 /* ZXPlanarYUVLuminanceSource.m in Sources */,
 				00FE262E1E6BB8C1004A4D82 /* ZXCodaBarReader.m in Sources */,
 				00FE22C61E69009F004A4D82 /* UIImage+ISVExtension.m in Sources */,

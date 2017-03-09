@@ -18,7 +18,6 @@
 
 @interface ISVScanViewController ()<AVCaptureMetadataOutputObjectsDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint *scanTop;
 @property (nonatomic, strong) CADisplayLink *link;
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureDevice *device;
@@ -188,22 +187,14 @@
 }
 // 扫描动画
 - (void)scan{
-//    self.scanTop.constant -= 2;
-//    if (self.scanTop.constant <= -170) {
-//        self.scanTop.constant = 170;
-//    }
-    
     if (_distance++ > kSCREEN_WIDTH * 0.65) {
         _distance = 0;
     }
     _line.frame = CGRectMake(0, _distance, kSCREEN_WIDTH * 0.65, 2);
     
-    
 }
 
-
 #pragma mark ---------------------AVCaptureMetadataOutputObjectsDelegate--------------------
-
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
     if (metadataObjects.count > 0) {
         
